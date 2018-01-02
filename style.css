@@ -84,6 +84,15 @@ p {
 	line-height:1.2em;
 }
 
+/* Links */
+a {
+	color:black;
+}
+
+a:hover{
+	color:grey;
+}
+
 /* * * * * * * NAV BAR * * * * * * */
 .navbar {
 	position:fixed;

@@ -4,14 +4,6 @@ html, body {
     text-align:center;
 }
 
-a {
-	color:black;
-}
-
-a:hover{
-	color:grey;
-}
-
 #about {
 	margin-top:1em;
 	padding:0;
