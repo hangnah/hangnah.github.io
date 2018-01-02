@@ -1,4 +1,8 @@
 /* font-family: 'Zilla Slab', serif; */
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
 
 body, html {
 	height:100%;
