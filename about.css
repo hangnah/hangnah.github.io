@@ -4,6 +4,14 @@ html, body {
     text-align:center;
 }
 
+a {
+	color:black;
+}
+
+a:hover{
+	color:grey;
+}
+
 #about {
 	margin-top:1em;
 	padding:0;
@@ -52,7 +60,8 @@ html, body {
 	/* text */
 	#about table tr td:nth-child(2) {
 		display:block;
-		width:100%;
+		width:95%;
+		margin-right:5px;
 	}
 	/* image */
 	#about table tr td:nth-child(1) {
