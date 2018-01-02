@@ -26,7 +26,7 @@ h2 {
 	font-size:1em;
 
 	letter-spacing:.1em;
-	line-height:.5em;
+	line-height:1em;
 }
 
 /* Buttons, Bold */
@@ -42,7 +42,7 @@ button {
 	width:175px;
 	border:none;
 	background:#D27979;
-	padding:5px;
+	padding:8px;
 
 	font-family: 'Nunito', serif;
 	font-weight:700;

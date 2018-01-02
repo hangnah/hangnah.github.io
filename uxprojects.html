@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="uxprojects.css">
+
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800|Zilla+Slab:400,500,700" rel="stylesheet">
+
+<!-- META TAGS -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="description" content="Hannah Pham • UI/UX Designer">
+<meta name="keywords" content="Hannah Pham, Hannah Pham UCLA, Design for America, DFA, DFA at UCLA, Design for America at UCLA, Hannah Pham ARK">
+
+<title>Hannah Pham • UX Projects</title>
+</head>
+
+<body>
+<!-- NAV BAR -->
+<div class="navbar">
+	<div class="title"><a href="index.html">
+		<span id="title-name">Hannah Pham • </span>
+		<span id="title-role">UI/UX Designer</span>
+	</a></div>
+	<div class="pages">
+		<div class="work">
+			<a>Work</a>
+			<div class="work-dropdown">
+				<a href="#">UX Projects</a>
+				<a href="#">Graphic Design</a>
+			</div>
+		</div>
+		<a href="#">About</a>
+		<a href="https://goo.gl/nWZd5k" target="_blank">Resume</a>
+	</div>
+</div>
+
+<!-- NAV BAR : MOBILE -->
+<div class="navbar-mobile"">
+	<div class="navbar-mobile-pages">
+	<a href="index.html">Home</a>
+	<a>Work</a>
+	<a href="#" class="work-mobile active">UX Projects</a>
+	<a href="#" class="work-mobile">Graphic Design</a>
+	<a href="/">About</a>
+	<a href="https://goo.gl/nWZd5k" target="_blank">Resume</a>
+	</div>
+	<div class="navbar-button">
+    <span></span>
+  	</div>
+</div>
+
+
+<div class="projects">
+	<div id="one">
+		<div id="one-img">
+			<img src="homeImg/royalway.jpg">
+		</div>
+		<div id="one-text">
+			<h2>Royal Way Spiritual Center</h2>
+			<h4>UI/UX DESIGNER</h4>
+			<p>Designed 10+ hi-fidelity wireframes to reflect the branding of the organization’s peaceful identity.</p>
+			<button>VIEW PROJECT</button>
+		</div>
+	</div>
+	<div id="two">
+		<div id="two-img">
+			<img src="homeImg/markitplace.jpg">
+		</div>
+		<div id="two-text">
+			<h2>MarkItPlace</h2>
+			<h4>DESIGNER</h4>
+			<p>Created the visual brand guide and hi-fidelity wireframes for my team at LA Hacks 2017.</p>
+			<button>VIEW PROJECT</button>
+		</div>
+	</div>
+	<div id="three">
+		<div id="three-img">
+			<img src="homeImg/peers.jpg">
+		</div>
+		<div id="three-text">
+			<h2>UCLA PEERS Clinic</h2>
+			<h4>CLIENT PARTNER, UX RESEARCHER, DESIGNER</h4>
+			<p>Served as the liaison between the clinic and my team, and conducted in-person interviews with focus groups.</p>
+			<button>VIEW PROJECT</button>
+		</div>
+	</div>
+</div>
+<div class="viewmore">
+	<button id="cta">VIEW GRAPHIC DESIGNS</button>
+</div>
+
+<!-- JQUERY : MENU BAR : FADE IN/OUT -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+(function($) {          
+    $(document).ready(function(){                    
+                $('.navbar').fadeIn(500);
+    });
+})(jQuery);
+</script>
+
+<!-- JQUERY : MENU BAR : MOBILE -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+  $(".navbar-button").click(function() {
+    $(".navbar-mobile").toggleClass("navbar-active");
+    $(".navbar-button").toggleClass("btn");
+  });
+});
+
+</script>
+
+</body>
+
+<footer>
+	<p>© Hannah Pham 2018</p>
+</footer>
+
+</html>
