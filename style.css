@@ -73,6 +73,13 @@ h4 {
 	line-height:1em;
 }
 
+/* Subtitles, Regular, Sans-Serif, Smaller */
+h5 {
+	font-family: 'Nunito', serif;
+	font-weight:700;
+	font-size:.8em;
+	letter-spacing:.2em;
+}
 
 /* Body, Regular */
 p {
