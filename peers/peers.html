@@ -13,12 +13,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-	<meta name="description" content="Hannah Pham • UI/UX Designer. I am studying cognitive science at UCLA, with a specialization in computing and a minor in digital humanities.">
-	<meta name="keywords" content="Hannah Pham, Hannah Pham UCLA, Design for America, DFA, DFA at UCLA, Design for America at UCLA, Hannah Pham ARK">
+	<meta name="description" content="UCLA PEERS Clinic • Served as the liaison between the clinic and my team, and conducted in-person interviews with focus groups.">
+	<meta name="keywords" content="Hannah Pham, Hannah Pham UCLA, UCLA PEERS Clinic, UCLA PEERS">
 
 </head>
 
 <body>
+
+<!-- NAV BAR -->
+<div class="navbar">
+	<div class="title"><a href="index.html">
+		<span id="title-name">Hannah Pham • </span>
+		<span id="title-role">UI/UX Designer</span>
+	</a></div>
+	<div class="pages">
+		<a href="/projects.html" class="active">Projects</a>
+		<a href="/about.html">About</a>
+		<a href="https://goo.gl/nWZd5k" target="_blank">Resume</a>
+	</div>
+</div>
+
+<!-- NAV BAR : MOBILE -->
+<div class="navbar-mobile"">
+	<div class="navbar-mobile-pages">
+		<a href="/index.html">Home</a>
+		<a href="/projects.html">Projects</a>
+		<a href="/about.html">About</a>
+		<a href="https://goo.gl/nWZd5k" target="_blank">Resume</a>
+	</div>
+	<div class="navbar-button">
+    	<span></span>
+  	</div>
+</div>
+
 <!-- HEADER -->
 <div id="header">
 	<img src="img/peers.jpg" alt="UCLA PEERS Clinic">
@@ -105,6 +132,35 @@
 	</div>
 </div>
 </div>
+
+
+<!-- JQUERY : MENU BAR : FADE IN/OUT -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+(function($) {          
+    $(document).ready(function(){                    
+        $(window).scroll(function(){                        
+            if ($(this).scrollTop() > document.getElementById("header").offsetHeight) {
+                $('.navbar').fadeIn(500);
+            } else {
+                $('.navbar').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);
+</script>
+
+<!-- JQUERY : MENU BAR : MOBILE -->
+<script type="text/javascript">
+	$(document).ready(function() {
+  $(".navbar-button").click(function() {
+    $(".navbar-mobile").toggleClass("navbar-active");
+    $(".navbar-button").toggleClass("btn");
+  });
+});
+
+</script>
 
 </body>
 
