@@ -3,6 +3,12 @@
     width: device-width;
 }
 
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
 html, body {
     min-height: 100%;
     max-height:100%;
@@ -14,19 +20,6 @@ h2 {
 }
 
 /* * * * * * * * BUTTONS * * * * * * */
-
-.viewmore{
-	margin:1em;
-}
-
-#cta {
-	width:250px;
-	background-color:#D27979;
-}
-#cta:hover {
-	background:#D5AFAF;
-	color:#424242;
-}
 
 button {
 	cursor:pointer;
@@ -54,113 +47,57 @@ button:active {
 	box-shadow: inset 0 0 3px white;
 }
 
-/* * * * * * * * ONE * * * * * * */
+/* * * * * * * * order of flex * * * * * * */
 #one {
 	display:flex;
   	align-items: center;
   	flex-direction:row-reverse;
 }
-#one-text {
-	width:50%;
-	text-align:center;
-}
-
-#one h2, h4, p{
-	max-width:48%;
-	margin-left:25%;
-}
-
-#one-img{
-	width:50%;
-}
-#one img{
-	width:100%;
-}
-
-/* * * * * * * * TWO * * * * * * */
 #two {
 	display:flex;
   	align-items: center;
 }
-
-#two-text {
-	max-width:50%;
-	text-align:center;
-}
-#two h2, h4, p{
-	max-width:48%;
-	margin-left:25%;
-}
-
-#two-img{
-	max-width:50%;
-}
-#two img{
-	width:100%;
-}
-
-/* * * * * * * * THREE * * * * * * */
 #three {
 	display:flex;
   	align-items: center;
 	flex-direction:row-reverse;
 }
 
-#three-text {
+/* * * * * FORMAT * * * */
+.text {
 	width:50%;
 	text-align:center;
 }
-#three h2, h4, p{
-	max-width:48%; 
-	margin-left:25%;
+.img {
+	width:50%;
 }
 
-#three-img{
-	max-width:50%;
-}
-#three img{
+#one,
+#two,
+#three,
+img{
 	width:100%;
+}
+
+
+.text {
+	padding:5em;
 }
 
 /* * * * * * * RESPONSIVE * * * * * * */
 /*** MEDIUM SCREEN ***/
 @media screen and (max-width:800px){
-	#one{
+	#one, #two, #three {
 		display:block;
   		flex-direction:column;
 	}
-	#one-text{
+	.text{
 		width:100%;
 		margin-bottom:2em;
+		padding:2em;
 		display:inline-block;
 	}
-	#one-img{
+	.img{
 		width:100%;
-	}
-
-	#two{
-		display:block;
-  		flex-direction:column;
-	}
-	#two-text{
-		width:100%;
-		margin-bottom:2em;
-		display:inline-block;
-	}
-	#two-img{
-		max-width:100%;
-	}
-
-	#three{
-		display:block;
-  		flex-direction:column;
-	}
-	#three-text{
-		width:100%;
-		margin-bottom:2em;
-		display:inline-block;
-	}
-	#three-img{
-		max-width:100%;
 	}
 }
