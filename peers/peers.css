@@ -1,0 +1,166 @@
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
+
+body, html {
+	height:100%;
+	margin:0;
+}
+a{
+	text-decoration:none;
+}
+
+/*small text*/
+.small-text{
+	font-size:.8em;
+}
+/* * * * * * * * HEADER * * * * * * * */
+#header {
+	width:100%;
+	display:flex;
+
+	justify-content:center;
+}
+#header img{
+	width:40%;
+	height:100%;
+}
+#header-bg{
+	background-color:#D27979;
+	width:70%;
+	text-align:center;
+}
+/* center text */
+#header-text{
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	color:white;
+}
+/* button */
+#header button {
+	cursor:pointer;
+	width:175px;
+	border:none;
+	background:white;
+	padding:8px;
+
+	font-family: 'Nunito', serif;
+	font-weight:700;
+	font-size:.75em;
+	letter-spacing:.2em;
+	color:#424242;
+
+	-webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+#header button:hover {
+	background-color:#D5AFAF;
+	color:white;
+}
+
+#header button:active {
+	box-shadow: inset 0 0 3px white;
+}
+
+/* * * * * * * * FULL text * * * * * * * */
+#full-text{
+	width:60%;
+	margin:auto;
+}
+
+/* * * * * * * * INFO * * * * * * * */
+#info{
+	width:100%;
+	display:grid;
+	grid-template-columns:25% 25% 25% 25%;
+	padding-top:1em;
+}
+/* remove list style type */
+#info ul{
+	list-style-type:none;
+	padding-left:0;
+}
+#info li{
+	font-family: 'Nunito', sans-serif;
+	font-weight:400;
+	font-size:.8em;
+
+	letter-spacing:.05em;
+	line-height:1.4em;
+}
+
+/* * * * * * * * PROJECT INFO * * * * * * * */
+#project li{
+	font-family: 'Nunito', sans-serif;
+	font-weight:400;
+	font-size:1em;
+
+	letter-spacing:.05em;
+	line-height:1.2em;
+}
+
+/* * * * * * * * CTA * * * * * * * */
+#cta button{
+	width:75%;
+	margin-bottom:1em;
+}
+#cta {
+	text-align:center;
+	padding-bottom:2em;
+}
+#back {
+
+	display:block;
+	text-align:center;
+	font-family: 'Nunito', serif;
+	font-weight:700;
+	font-size:.75em;
+	letter-spacing:.2em;
+}
+
+/* * * * * * * RESPONSIVE * * * * * * */
+/*** MEDIUM SCREEN ***/
+@media screen and (max-width:800px){
+	
+}
+
+/*** SMALL SCREEN + MOBILE ***/
+@media screen and (max-width:600px){
+	/* * * * * * * ABOUT * * * * * * */
+	#header{
+		flex-flow:column-reverse;
+		width:100%;
+	}
+	#header img{
+		width:100%;
+	}
+	#header-bg{
+		width:100%;
+		height:100%;
+	}
+	#header-text{
+  		color:white;
+  		position:relative;
+  		top: 50%;
+  		transform: translateY(15%);
+	}
+
+	/* REST OF PAGE */
+	#full-text{
+		width:85%;
+	}
+}
+
+/* ** MOBILE ** */
+@media screen and (max-width:480px){
+	/* * * * * * * INFO * * * * * * */
+
+	#info
+	{
+		text-align:center;
+		 grid-template-columns: 50% 50%;
+	}
+}
