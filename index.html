@@ -152,7 +152,7 @@
 (function($) {          
     $(document).ready(function(){                    
         $(window).scroll(function(){                          
-            if ($(this).scrollTop() > window.innerHeight) {
+            if ($(this).scrollTop() > window.innerHeight()) {
                 $('.navbar').fadeIn(500);
             } else {
                 $('.navbar').fadeOut(500);
