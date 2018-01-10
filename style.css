@@ -79,6 +79,19 @@ h5 {
 	font-weight:700;
 	font-size:.8em;
 	letter-spacing:.2em;
+	background-color
+}
+
+/* Button v.2 */
+h6 {
+	font-family: 'Nunito', serif;
+	font-weight:300;
+	font-size:.75em;
+	letter-spacing:.2em;
+
+	padding:.75em;
+	max-width:115px;
+	border-style:solid;
 }
 
 /* Body, Regular */
