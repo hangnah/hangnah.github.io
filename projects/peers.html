@@ -4,7 +4,7 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="../style.css">
-	<link rel="stylesheet" type="text/css" href="peers.css">
+	<link rel="stylesheet" type="text/css" href="style_projects.css">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800|Zilla+Slab:400,500,700" rel="stylesheet">
 	
 	<title>Hannah Pham • UCLA PEERS Clinic</title>
@@ -22,7 +22,7 @@
 
 <!-- NAV BAR -->
 <div class="navbar">
-	<div class="title"><a href="">
+	<div class="title"><a href="../index.html">
 		<span id="title-name">Hannah Pham • </span>
 		<span id="title-role">UI/UX Designer</span>
 	</a></div>
@@ -37,7 +37,7 @@
 <div class="navbar-mobile"">
 	<div class="navbar-mobile-pages">
 		<a href="/index.html">Home</a>
-		<a href="/projects.html">Projects</a>
+		<a href="../projects.html">Projects</a>
 		<a href="/about.html">About</a>
 		<a href="https://goo.gl/nWZd5k" target="_blank">Resume</a>
 	</div>
@@ -135,21 +135,24 @@
 </div>
 
 
-<!-- JQUERY : MENU BAR : FADE IN/OUT -->
+<!-- JAVASCRIPT / JQUERY -->
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
-(function($) {          
+
+/* JQUERY : MENU BAR : FADE IN/OUT */                 
     $(document).ready(function(){                    
-        $(window).scroll(function(){                        
-            if ($(this).scrollTop() > document.getElementById("header").offsetHeight) {
-                $('.navbar').fadeIn(500);
-            } else {
-                $('.navbar').fadeOut(500);
-            }
-        });
+        $('.navbar').fadeIn(500);
     });
-})(jQuery);
+
+/* JQUERY : MENU BAR : MOBILE */
+	$(document).ready(function() {
+  		$(".navbar-button").click(function() {
+    	$(".navbar-mobile").toggleClass("navbar-active");
+    	$(".navbar-button").toggleClass("btn");
+  		});
+	});
+
 </script>
 
 </body>

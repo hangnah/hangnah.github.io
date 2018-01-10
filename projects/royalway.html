@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="style_projects.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800|Zilla+Slab:400,500,700" rel="stylesheet">
+	
+	<title>Hannah Pham • Royal Way Spiritual Center</title>
+
+	<!-- META TAGS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="description" content="Royal Way • Designed 10+ high-fidelity wireframes for the Royal Way Spiritual Center, reflecting the branding of the peaceful identity of Royal Way.">
+	<meta name="keywords" content="Hannah Pham, Hannah Pham UCLA">
+
+</head>
+
+<body>
+
+<!-- NAV BAR -->
+<div class="navbar">
+	<div class="title"><a href="../index.html">
+		<span id="title-name">Hannah Pham • </span>
+		<span id="title-role">UI/UX Designer</span>
+	</a></div>
+	<div class="pages">
+		<a href="../projects.html">Projects</a>
+		<a href="/about.html">About</a>
+		<a href="https://goo.gl/nWZd5k" target="_blank">Resume</a>
+	</div>
+</div>
+
+<!-- NAV BAR : MOBILE -->
+<div class="navbar-mobile"">
+	<div class="navbar-mobile-pages">
+		<a href="/index.html">Home</a>
+		<a href="../projects.html">Projects</a>
+		<a href="/about.html">About</a>
+		<a href="https://goo.gl/nWZd5k" target="_blank">Resume</a>
+	</div>
+	<div class="navbar-button">
+    	<span></span>
+  	</div>
+</div>
+
+<!-- HEADER -->
+<div id="header">
+	<img src="img_royalway/royalway.jpg" alt="Royal Way Spiritual Center">
+	<div id="header-bg">
+		<div id="header-text">
+			<h1>Royal Way Spiritual Center</h1>
+			<p>October - December 2017</p>
+			<a href="http://royalwayspiritualcenter.org" target="_blank"><button>VIEW WEBSITE ></button></a>
+		</div>
+	</div>
+</div>
+
+<!-- INFO -->
+<div id="full-text">
+<div id="info">
+	<div class="info-format" id="info-role">
+		<h3>ROLE</h3>
+		<ul>
+			<li>UI/UX Designer</li>
+		</ul>
+	</div>
+	<div class="info-format" id="info-skills">
+		<h3>SKILLS</h3>
+		<ul>
+			<li>Wireframing</li>
+			<li>Visual Design</li>
+		</ul>
+	</div>
+	<div class="info-format" id="info-tools">
+		<h3>TOOLS</h3>
+		<ul>
+			<li>Sketch</li>
+		</ul>
+	</div>
+	<div class="info-format" id="info-deliverables">
+		<h3>DELIVERABLES</h3>
+		<ul>
+			<li>Wireframes</li>
+		</ul>
+	</div>
+
+</div>
+
+<div id="project">
+	<div id="overview">
+		<h1>Overview</h1>
+		<p>The Royal Way Spiritual Center is a ranch that houses groups interested in meditation. I redesigned the website to reflect the peaceful nature of the organization, focusing on clean and sophisticated layouts to attract younger people.<p>
+	</div>
+	<div id="design">
+		<h1>Design</h1>
+		<p>There were over 10+ stages of wireframes.</p>
+	</div>
+	<div id="deliverables">
+		<h1>Deliverables</h1>
+		<p>After communicating with the client and team members in the office, the wireframes were sent to the development team to build the website.</p>
+	</div>
+	<div id="cta">
+		<a href="http://royalwayspiritualcenter.org/" target="_blank"><button>VIEW WEBSITE ></button></a>
+		<a href="../projects.html" id="back">< BACK TO PROJECTS</a>
+	</div>
+</div>
+</div>
+
+
+<!-- JQUERY : MENU BAR : FADE IN/OUT -->
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+(function($) {          
+    $(document).ready(function(){                    
+        $(window).scroll(function(){                        
+            if ($(this).scrollTop() > document.getElementById("header").offsetHeight) {
+                $('.navbar').fadeIn(500);
+            } else {
+                $('.navbar').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);
+</script>
+
+</body>
+
+<footer>
+	<p>© Hannah Pham 2018</p>
+</footer>
+
+</html>

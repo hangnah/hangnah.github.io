@@ -26,19 +26,12 @@
 </script>
 
 
-
 <title>Hannah Pham</title>
 
 </head>
 
-<body>
-<!-- JQUERY : SCROLL TO TOP -->
-<script type="text/javascript">
-	$(function() {
-     $('body').scrollTop(0);
-   });
-</script>
-
+<body onload="load()">
+	
 <!-- NAV BAR -->
 <div class="navbar">
 	<div class="title"><a href="#">
@@ -56,7 +49,7 @@
 <div class="navbar-mobile"">
 	<div class="navbar-mobile-pages">
 		<a class="active">Home</a>
-		<a href="#projects">Projects</a>
+		<a href="projects.html">Projects</a>
 		<a href="about.html">About</a>
 		<a href="https://goo.gl/nWZd5k" target="_blank">Resume</a>
 	</div>
@@ -92,27 +85,29 @@
 <ul id="projects">
 	<li class="projects-ux" id="one" onclick="">
 		<img src="homeImg/royalway.jpg" alt="Royal Way Spiritual Center">
+		<a href="projects/royalway.html">
 		<div class="overlay">
 			<span class="overlay-text">
 				<h2>Royal Way Spiritual Center</h2>
 				<h5>UI/UX DESIGNER</h5>
 			</span>
 		</div>
+		</a>
 	</li>
 	<li class="projects-ux" id="two" onclick="">
 		<img src="homeImg/markitplace.jpg" alt="MarkItPlace">
+		<a href="projects/markitplace.html">
 		<div class="overlay">
 			<span class="overlay-text">
 				<h2>MarkItPlace</h2>
 				<h5>DESIGNER</h5>
 			</span>
 		</div>
+		</a>
 	</li>
 	<li class="projects-ux" id="three" onclick="">
-
-		
 		<img src="homeImg/peers.jpg" alt="UCLA PEERS Clinic">
-		<a href="peers/peers.html">
+		<a href="projects/peers.html">
 		<div class="overlay">
 			<span class="overlay-text">
 				<h2>UCLA PEERS Clinic</h2>
@@ -155,11 +150,13 @@
 	</form>
 </div>
 
-<!-- JQUERY : MENU BAR : FADE IN/OUT -->
+<!-- JAVASCRIPT / JQUERY -->
 <script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
-(function($) {          
-    $(document).ready(function(){                    
+
+/* JQUERY : MENU BAR : FADE IN/OUT */        
+   	$(document).ready(function(){                    
         $(window).scroll(function(){                          
             if ($(this).scrollTop() > window.innerHeight) {
                 $('.navbar').fadeIn(500);
@@ -168,19 +165,19 @@
             }
         });
     });
-})(jQuery);
-</script>
 
-<!-- JQUERY : MENU BAR : MOBILE -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
+/* JQUERY : MENU BAR : MOBILE */
 	$(document).ready(function() {
-  $(".navbar-button").click(function() {
-    $(".navbar-mobile").toggleClass("navbar-active");
-    $(".navbar-button").toggleClass("btn");
-  });
-});
+  		$(".navbar-button").click(function() {
+    	$(".navbar-mobile").toggleClass("navbar-active");
+    	$(".navbar-button").toggleClass("btn");
+  		});
+	});
 
+/* JAVASCRIPT : SCROLL TO TOP */
+function load() {
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
+	}
 </script>
 
 </body>

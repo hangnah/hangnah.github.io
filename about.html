@@ -37,7 +37,7 @@
 <div class="navbar-mobile"">
 	<div class="navbar-mobile-pages">
 		<a href="index.html">Home</a>
-		<a href="index.html#projects">Projects</a>
+		<a href="projects.html">Projects</a>
 		<a class="active">About</a>
 		<a href="https://goo.gl/nWZd5k" target="_blank">Resume</a>
 	</div>
@@ -57,7 +57,7 @@
 				<p>I became interested in webspaces and design in 2007, when I created a WordPress blog to document my love of animals and Club Penguin (which has been set as private to save you from second-hand embarrassment). I’d like to think that my knowledge of writing blog posts and designing graphics has improved since then.</p>
 				<p>Originally from the San Francisco Bay Area, I am studying cognitive science at UCLA, with a specialization in computing and a minor in digital humanities. I have dabbled in graphic design and online marketing at <a href="elliefunday.com" target="_blank">EllieFunDay</a>, organized workshops on design thinking at <a href="https://facebook.com/DFAatUCLA" target="_blank">Design for America (DFA)</a>, and assisted in UI/UX with awesome female creatives at <a href="https://willaca.com" target="_blank">Willa Creative Agency</a>. I am currently a UI/UX/Marketing intern at <a href="tutorfly.org" target="_blank">Tutorfly</a>.</p>
 				<p>I get excited over perfectly curated Spotify playlists, seasonal candy cane Hershey’s Kisses, and matcha flavored anything.</p>
-				<p>You can contact me here, or find me on <a href="https://linkedin.com/in/hannahhp" target="_blank">LinkedIn</a>, <a href="https://instagram.com/hangnah" target="_blank">Instagram</a>, or <a href="https://behance.net/hannahhp" target="_blank">Behance.</a></p>
+				<p>You can email me <a href="mailto:hpham19@ucla.edu">here</a>, or find me on <a href="https://linkedin.com/in/hannahhp" target="_blank">LinkedIn</a>, <a href="https://instagram.com/hangnah" target="_blank">Instagram</a>, or <a href="https://behance.net/hannahhp" target="_blank">Behance.</a></p>
 			</td>
 		</tr>
 	</table>
@@ -68,28 +68,28 @@
 </div>
 
 
-<!-- JQUERY : MENU BAR : FADE IN/OUT -->
-<script src="https://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript">
-(function($) {          
-    $(document).ready(function(){                    
-                $('.navbar').fadeIn(500);
-    });
-})(jQuery);
-</script>
 
-<!-- JQUERY : MENU BAR : MOBILE -->
+
+
+<!-- JAVASCRIPT / JQUERY -->
+<script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
+
+/* JQUERY : MENU BAR : FADE IN/OUT */                 
+    $(document).ready(function(){                    
+        $('.navbar').fadeIn(500);
+    });
+
+/* JQUERY : MENU BAR : MOBILE */
 	$(document).ready(function() {
-  $(".navbar-button").click(function() {
-    $(".navbar-mobile").toggleClass("navbar-active");
-    $(".navbar-button").toggleClass("btn");
-  });
-});
+  		$(".navbar-button").click(function() {
+    	$(".navbar-mobile").toggleClass("navbar-active");
+    	$(".navbar-button").toggleClass("btn");
+  		});
+	});
 
 </script>
-
 </body>
 
 <footer>
