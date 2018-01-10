@@ -127,18 +127,18 @@
 		</span>
 	</div>
 
-	<form id="contact-form" action="" method="post">
+	<form id="contact-form" action="email.php" method="post">
 		<fieldset>
-			<input placeholder="Name" type="text" tabindex="1" required autofocus>
+			<input placeholder="Name" name="name" type="text" tabindex="1" required>
 		</fieldset>
 		<fieldset>
-			<input placeholder="Email" type="email" tabindex="2" required>
+			<input placeholder="Email" name="email" type="email" tabindex="2" required>
 		</fieldset>
 		<fieldset>
-			<input placeholder="Subject" type="text" tabindex="3" required>
+			<input placeholder="Subject" name="subject" type="text" tabindex="3" required>
 		</fieldset>
 		<fieldset>
-			<textarea id="message" placeholder="Message" type="text" tabindex="4" required></textarea>
+			<textarea id="message" name="message" placeholder="Message" type="text" tabindex="4" required></textarea>
 		</fieldset>
 		<fieldset>
 			<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">SEND</button>
