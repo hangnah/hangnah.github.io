@@ -90,14 +90,17 @@ img{
 	#one, #two, #three {
 		display:block;
   		flex-direction:column;
+  		transition:1s ease-in-out;
 	}
 	.text{
 		width:100%;
 		margin-bottom:2em;
 		padding:2em;
 		display:inline-block;
+		transition:1s ease-in-out;
 	}
 	.img{
 		width:100%;
+		transition:1s ease-in-out;
 	}
 }

@@ -120,21 +120,24 @@
 </div>
 
 
-<!-- JQUERY : MENU BAR : FADE IN/OUT -->
+<!-- JAVASCRIPT / JQUERY -->
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
-(function($) {          
+
+/* JQUERY : MENU BAR : FADE IN/OUT */                 
     $(document).ready(function(){                    
-        $(window).scroll(function(){                        
-            if ($(this).scrollTop() > document.getElementById("header").offsetHeight) {
-                $('.navbar').fadeIn(500);
-            } else {
-                $('.navbar').fadeOut(500);
-            }
-        });
+        $('.navbar').fadeIn(500);
     });
-})(jQuery);
+
+/* JQUERY : MENU BAR : MOBILE */
+	$(document).ready(function() {
+  		$(".navbar-button").click(function() {
+    	$(".navbar-mobile").toggleClass("navbar-active");
+    	$(".navbar-button").toggleClass("btn");
+  		});
+	});
+
 </script>
 
 </body>
