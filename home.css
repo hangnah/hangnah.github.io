@@ -1,7 +1,7 @@
 /* * * * * * * HERO * * * * * * */
 
 #hero {
-	background-color: #D27979;
+	background-color: #2F5E53;
 	height:100%;
 
 	/* position and scale */
@@ -22,6 +22,36 @@
 	left:50%;
 	transform:translate(-50%, -50%);
 	color:white;
+}
+
+#arrow {
+	top:90%;
+	height:100%;
+	width:100%;
+	color:white;
+	text-align:center;
+	font-weight:700;
+	text-decoration:none;
+}
+
+/* arrow style */
+#arrow {
+	position:absolute;
+}
+#arrow a {
+	color:white;
+	font-weight:700;
+	text-decoration:none;
+	font-size:2em;
+}
+
+#arrow a:hover{
+	color:#21433B;
+}
+
+/* arrow move down */
+.arrowDown {
+
 }
 
 /* * * * * * * ABOUT * * * * * * */
@@ -121,7 +151,8 @@
 }
 
 #projects a:hover{
-	color:black;
+	color:#21433B;
+	transition: 0.4s;
 }
 
 /* * * * * * * PROJECTS : GRAPHIC DESIGN * * * * * * */

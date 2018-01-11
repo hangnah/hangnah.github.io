@@ -27,7 +27,7 @@ a{
 	height:100%;
 }
 #header-bg{
-	background-color:#D27979;
+	background-color:#2F5E53;
 	width:70%;
 	text-align:center;
 }
@@ -57,7 +57,7 @@ a{
 }
 
 #header button:hover {
-	background-color:#D5AFAF;
+	background-color:#21433B;
 	color:white;
 }
 

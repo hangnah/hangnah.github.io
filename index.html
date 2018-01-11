@@ -65,12 +65,17 @@
 		<h2>UI/UX Designer</h2>
 		<h2>+ INFJ</h2>
 	</div>
+
+
+	<div id="arrow" class="arrowDown">
+		<a href="#about"><p>V</p></a>
+	</div>
 </div>
 
 <!-- ABOUT -->
 <div id="about">
 	<table>
-		<tr>
+		<tr id="about-scroll">
 			<td><img src="homeImg/about_old.png" alt="Me at 5 years old"></td>
 			<td>
 				<p>I am a tinkerer, an empathizer, and a lover of good design.</p>
@@ -149,12 +154,14 @@
 <!-- JAVASCRIPT / JQUERY -->
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="smoothscroll.js"></script>
 <script type="text/javascript">
 
 /* JQUERY : MENU BAR : FADE IN/OUT */        
    	$(document).ready(function(){                    
-        $(window).scroll(function(){                          
-            if ($(this).scrollTop() > window.innerHeight) {
+        $(window).scroll(function(){  
+        	var height = window.innerHeight - 2;           
+            if ($(this).scrollTop() > height) {
                 $('.navbar').fadeIn(500);
             } else {
                 $('.navbar').fadeOut(500);
@@ -174,6 +181,7 @@
 function load() {
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
 	}
+
 </script>
 
 </body>

@@ -41,7 +41,7 @@ button {
 	cursor:pointer;
 	width:175px;
 	border:none;
-	background:#D27979;
+	background:#2F5E53;
 	padding:8px;
 
 	font-family: 'Nunito', serif;
@@ -55,8 +55,8 @@ button {
 }
 
 button:hover {
-	background-color:#D5AFAF;
-	color:#424242;
+	background-color:#21433B;
+	color:#EEECE9;
 }
 
 button:active {
@@ -110,7 +110,8 @@ a {
 }
 
 a:hover{
-	color:grey;
+	color:#2F5E53;
+	transition:0.3s;
 }
 
 /* * * * * * * NAV BAR * * * * * * */
@@ -118,9 +119,8 @@ a:hover{
 	position:fixed;
 	top:0;
 	width:100%;
-	background-color:#D27979;
-
-	box-shadow:0 0.25px 10px 1px #b8b8b8;
+	background-color:#2F5E53;
+	
 	display:none;
 
 	z-index:99;
@@ -169,12 +169,12 @@ a:hover{
 	transition-duration:  0.5s;
 }
 .pages a:hover {
-	background-color:#B46565;
+	background-color:#21433B;
 	font-weight:600;
 }
 
 .active {
-	background-color:#B46565;
+	background-color:#21433B;
 	font-weight:600;
 
 	pointer-events:none;
@@ -213,7 +213,7 @@ a:hover{
 
 /* * * * * * * NAV BAR : MOBILE * * * * * * */
 .navbar-mobile{
-	background:#424242;
+	background:#2F5E53;
 	width:200px;
 	height:100%;
 	position:fixed;
@@ -246,7 +246,7 @@ a:hover{
 }
 
 .navbar-mobile a:hover{
-	background-color:#B46565;
+	background-color:#21433B;
 	font-weight:600;
 }
 .navbar-mobile .work-mobile{
@@ -255,7 +255,7 @@ a:hover{
 
 /* Hamburger button */
 .navbar-button{
-	background-color:#424242;
+	background-color:#2F5E53;
 	opacity:.5;
 	width:50px;
 	height:50px;
@@ -269,7 +269,8 @@ a:hover{
 }
 
 .navbar-button:hover{
-	background-color:black;
+	background-color:#21433B;
+	transition: 0.5s;
 }
 
 /* Creates three lines for button */
