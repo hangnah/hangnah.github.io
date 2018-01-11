@@ -46,7 +46,7 @@ header( "Location: $home" );
 // send email
 
 else {
-	mail("$email_to", $subject, $message);
+	mail($email_to, $subject, $message);
 	header("Location: $home");
 }
 
