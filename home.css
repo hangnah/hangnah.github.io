@@ -1,3 +1,34 @@
+/* * * * * * * NAV BAR HERO * * * * * * */
+.navbar-hero{
+	position:absolute;
+	padding-top:2em;
+	padding-bottom:2em;
+	width:100%;
+	z-index:99;
+	text-align:center;
+
+
+	font-family: 'Nunito', sans-serif;
+	font-weight:700;
+	font-size:.85em;
+	letter-spacing:.3em;
+}
+
+.pages-hero a{
+	margin:6%;
+	padding:1em;
+	text-decoration:none;
+	color:white;
+
+	-webkit-transition-duration:  0.5s;
+	-moz-transition-duration:  0.5s;
+	transition-duration:  0.5s;
+}
+.pages-hero a:hover {
+	background-color:#21433B;
+	font-weight:600;
+}
+
 /* * * * * * * HERO * * * * * * */
 
 #hero {
@@ -24,34 +55,25 @@
 	color:white;
 }
 
-#arrow {
-	top:90%;
+.arrow {
 	height:100%;
 	width:100%;
 	color:white;
 	text-align:center;
-	font-weight:700;
-	text-decoration:none;
 }
 
 /* arrow style */
-#arrow {
+.arrow a {
 	position:absolute;
-}
-#arrow a {
 	color:white;
 	font-weight:700;
 	text-decoration:none;
 	font-size:2em;
+	bottom:0;
 }
 
-#arrow a:hover{
+.arrow a:hover{
 	color:#21433B;
-}
-
-/* arrow move down */
-.arrowDown {
-
 }
 
 /* * * * * * * ABOUT * * * * * * */
@@ -311,6 +333,10 @@ textarea::placeholder{
 
 /*** SMALL SCREEN + MOBILE ***/
 @media screen and (max-width:600px){
+	/* NAV ON HERO */
+	.navbar-hero{
+		display:none;
+	}
 	/* * * * * * * PROJECTS * * * * * * */
 	.projects-ux {
   		width: 100%;
