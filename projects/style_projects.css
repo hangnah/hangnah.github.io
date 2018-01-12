@@ -72,6 +72,7 @@ img{
 #full-text{
 	width:60%;
 	margin:auto;
+	display:block;
 }
 
 /* * * * * * * * INFO * * * * * * * */
@@ -189,7 +190,8 @@ img{
 		display:block;
 	}
 	.low-fidelity img {
-		width:100%
+		width:100%;
+		transition:0.5s ease-in;
 	}
 }
 
@@ -208,6 +210,7 @@ img{
 	}
 	.branding img{
 		width:100%;
+		transition:0.5s ease-in;
 	}
 
 }
