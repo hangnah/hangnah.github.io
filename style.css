@@ -334,10 +334,21 @@ footer {
 	padding:1px;
 }
 
-footer p{
-	font-size:.75em;
+.copyright p{
+	font-size:0.8em;
+}
+.copyright a{
+	font-weight:800;
+	text-decoration:none;
 }
 
+footer p{
+	font-size:.66em;
+}
+
+footer a{
+	color:white;
+}
 /* * * * * * * RESPONSIVE * * * * * * */
 /*** MEDIUM SCREEN ***/
 @media screen and (max-width:800px){
