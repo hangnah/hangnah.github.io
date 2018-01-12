@@ -6,7 +6,7 @@ html, body {
 
 #about {
 	margin-top:1em;
-	padding:0;
+	padding-bottom:0;
 	text-align:center;
 }
 
@@ -25,7 +25,9 @@ html, body {
 #about table {
 	width:100%;
 	border-spacing:collapse;
-	padding:2em;
+	padding-left:2em;
+	padding-right:2em;
+	padding-top:2em;
 }
 
 #about table td {
