@@ -348,6 +348,7 @@ footer p{
 
 footer a{
 	color:white;
+	text-decoration: none;
 }
 /* * * * * * * RESPONSIVE * * * * * * */
 /*** MEDIUM SCREEN ***/
