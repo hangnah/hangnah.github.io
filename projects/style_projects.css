@@ -16,6 +16,9 @@ img{
 	font-size:.8em;
 }
 /* * * * * * * * HEADER * * * * * * * */
+#header-container{
+	display:block;
+}
 #header {
 	width:100%;
 	display:flex;
