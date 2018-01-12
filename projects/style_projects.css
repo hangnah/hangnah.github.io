@@ -201,6 +201,9 @@ img{
 
 /* ** MOBILE ** */
 @media screen and (max-width:480px){
+	div#block-yui_3_17_2_8_1474310106021_8531 {
+     height: 423px;
+   }
 	/* * * * * * * INFO * * * * * * */
 
 	#info
