@@ -7,10 +7,10 @@ body, html {
 	height:100%;
 	margin:0;
 }
-a{
-	text-decoration:none;
-}
 
+img{
+	width:100%;
+}
 /*small text*/
 .small-text{
 	font-size:.8em;
@@ -102,6 +102,31 @@ a{
 	line-height:1.2em;
 }
 
+
+/* * * * * * * * PEERS : IMG * * * * * * * */
+.low-fidelity{
+	text-align:center;
+	display:grid;
+	grid-gap:50px;
+}
+
+.low-fidelity img {
+	width:49%
+}
+
+/* * * * * * * * MARKITPLACE : IMG * * * * * * * */
+.branding{
+	display:flex;
+	align-items:center;
+}
+.logo img{
+	width:100%;
+}
+
+.colors img{
+	width:100%;
+}
+
 /* * * * * * * * CTA * * * * * * * */
 #cta button{
 	width:75%;
@@ -155,6 +180,14 @@ a{
 	#full-text{
 		width:85%;
 	}
+
+	/* PEERS : IMG */
+	.low-fidelity {
+		display:block;
+	}
+	.low-fidelity img {
+		width:100%
+	}
 }
 
 /* ** MOBILE ** */
@@ -166,4 +199,12 @@ a{
 		text-align:center;
 		 grid-template-columns: 50% 50%;
 	}
+	/* MARKITPLACE : IMG */
+	.branding{
+		display:block;
+	}
+	.branding img{
+		width:100%;
+	}
+
 }
