@@ -159,15 +159,13 @@ img{
 /*** SMALL SCREEN + MOBILE ***/
 @media screen and (max-width:600px){
 	/* * * * * * * ABOUT * * * * * * */
-	#header-container{
-		display:block;
-	}
 	#header{
 		flex-flow:column-reverse;
 		width:100%;
 	}
 	#header img{
 		width:100%;
+		height:100%;
 		transition:0.5s ease-in;
 	}
 	#header-bg{
@@ -177,7 +175,6 @@ img{
 	}
 	#header-text{
   		color:white;
-  		position:relative;
   		top: 50%;
   		transform: translateY(15%);
   		transition:0.5s ease-in;
@@ -186,7 +183,6 @@ img{
 	/* REST OF PAGE */
 	#full-text{
 		width:85%;
-		display:block;
 	}
 
 	/* PEERS : IMG */
@@ -201,9 +197,6 @@ img{
 
 /* ** MOBILE ** */
 @media screen and (max-width:480px){
-	div#block-yui_3_17_2_8_1474310106021_8531 {
-     height: 423px;
-   }
 	/* * * * * * * INFO * * * * * * */
 
 	#info
