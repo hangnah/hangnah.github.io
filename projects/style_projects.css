@@ -162,6 +162,7 @@ img{
 	#header{
 		flex-flow:column-reverse;
 		width:100%;
+		flex-shrink:0;
 	}
 	#header img{
 		width:100%;
