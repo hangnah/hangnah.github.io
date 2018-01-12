@@ -159,6 +159,9 @@ img{
 /*** SMALL SCREEN + MOBILE ***/
 @media screen and (max-width:600px){
 	/* * * * * * * ABOUT * * * * * * */
+	#header-container{
+		display:block;
+	}
 	#header{
 		flex-flow:column-reverse;
 		width:100%;
@@ -183,6 +186,7 @@ img{
 	/* REST OF PAGE */
 	#full-text{
 		width:85%;
+		display:block;
 	}
 
 	/* PEERS : IMG */
