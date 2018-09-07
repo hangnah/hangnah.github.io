@@ -11,7 +11,8 @@
 
 html, body {
     min-height: 100%;
-    max-height:100%;
+	max-height:100%;
+	max-width:100%;
     text-align:center;
 }
 
@@ -51,7 +52,7 @@ button:active {
 #one {
 	display:flex;
   	align-items: center;
-  	flex-direction:row-reverse;
+	flex-direction:row-reverse;
 }
 #two {
 	display:flex;
@@ -62,23 +63,26 @@ button:active {
   	align-items: center;
 	flex-direction:row-reverse;
 }
+#four {
+	display:flex;
+  	align-items: center;
+}
+#five {
+	display:flex;
+  	align-items: center;
+  	flex-direction:row-reverse;
+}
+
 
 /* * * * * FORMAT * * * */
 .text {
 	width:50%;
 	text-align:center;
 }
-.img {
-	width:50%;
-}
 
-#one,
-#two,
-#three,
-img{
+.projects img {
 	width:100%;
 }
-
 
 .text {
 	padding:5em;
@@ -87,7 +91,7 @@ img{
 /* * * * * * * RESPONSIVE * * * * * * */
 /*** MEDIUM SCREEN ***/
 @media screen and (max-width:800px){
-	#one, #two, #three {
+	#one, #two, #three, #four, #five {
 		display:block;
   		flex-direction:column;
   		transition:1s ease-in-out;
@@ -103,4 +107,6 @@ img{
 		width:100%;
 		transition:1s ease-in-out;
 	}
+
+	
 }
