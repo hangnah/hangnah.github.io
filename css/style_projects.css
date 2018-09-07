@@ -131,6 +131,23 @@ img{
 	width:100%;
 }
 
+/* * * * * * * * VENMO  * * * * * * * */
+#lowfi{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1em;
+}
+
+#design h2{
+	font-size:1.25em;
+}
+
+#home, #add, #activity{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1em;
+}
+
 /* * * * * * * * CTA * * * * * * * */
 #cta button{
 	width:75%;
@@ -193,6 +210,11 @@ img{
 	.low-fidelity img {
 		width:100%;
 		transition:0.5s ease-in;
+	}
+
+	/* VENMO : IMG */
+	#lowfi, #home, #add, #activity {
+		display:block;
 	}
 }
 
