@@ -1,112 +1,198 @@
-@viewport{
+@viewport {
     zoom: 1.0;
     width: device-width;
 }
-
-* { 
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-     box-sizing: border-box; 
+/* ///// Fonts ///// */
+@font-face {
+    font-family: Andale Mono;
+    src: url('../fonts/Andale Mono.ttf');
 }
 
-html, body {
-    min-height: 100%;
-	max-height:100%;
-	max-width:100%;
-    text-align:center;
+@font-face {
+    font-family: Athelas Regular;
+    src: url('../fonts/Athelas-Regular.ttf');
 }
 
-h2 {
-	font-size:1.5em;
+@font-face {
+    font-family: Athelas Bold;
+    font-weight: bold;
+    src: url('../Athelas-Bold.ttf');
 }
 
-/* * * * * * * * BUTTONS * * * * * * */
+#project-info h3 {
+    font-size:1em;
+}
+#project-info p{
+    font-size:.9em;
+    line-height:.6em;
+}
 
-button {
-	cursor:pointer;
-	width:175px;
-	border:none;
-	background:#2F5E53;
-	padding:8px;
+#container {
+    width:100%;
+}
+body, html {
+    width:100%;
+}
 
-	font-family: 'Nunito', serif;
-	font-weight:700;
-	font-size:.75em;
-	letter-spacing:.2em;
-	color:white;
-
-	-webkit-transition-duration: 0.5s;
+/* ///// Button ///// */
+#project button {
+    cursor: pointer;
+    width: 150px;
+    border: none;
+    background: rgb(70, 148, 131);
+    padding: 8px;
+    margin:2em;
+    font-family: 'Andale Mono', serif;
+    font-size: .75em;
+    letter-spacing: .2em;
+    color: white;
+    -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
 }
 
-button:hover {
-	background-color:#21433B;
-	color:#EEECE9;
+#project button:hover {
+    background-color: #21433B;
+    color: rgb(151, 150, 148);
 }
 
-button:active {
-	box-shadow: inset 0 0 3px white;
+#project button:active {
+    box-shadow: inset 0 0 3px white;
 }
 
-/* * * * * * * * order of flex * * * * * * */
-#one {
-	display:flex;
-  	align-items: center;
-	flex-direction:row-reverse;
-}
-#two {
-	display:flex;
-  	align-items: center;
-}
-#three {
-	display:flex;
-  	align-items: center;
-	flex-direction:row-reverse;
-}
-#four {
-	display:flex;
-  	align-items: center;
-}
-#five {
-	display:flex;
-  	align-items: center;
-  	flex-direction:row-reverse;
+/* ///// Header ///// */
+#project{
+    padding-top:65px;
+    width:100%;
 }
 
-
-/* * * * * FORMAT * * * */
-.text {
-	width:50%;
-	text-align:center;
+#project-header{
+    width:100%;
+    text-align:center;
+    display:flex;
 }
 
-.projects img {
-	width:100%;
+#project-header h3{
+    font-size:1.25em;
 }
 
-.text {
-	padding:5em;
+#header-text{
+    margin:auto;
+    text-align:center;
 }
 
-/* * * * * * * RESPONSIVE * * * * * * */
-/*** MEDIUM SCREEN ***/
-@media screen and (max-width:800px){
-	#one, #two, #three, #four, #five {
-		display:block;
-  		flex-direction:column;
-  		transition:1s ease-in-out;
-	}
-	.text{
-		width:100%;
-		margin-bottom:2em;
-		padding:2em;
-		display:inline-block;
-		transition:1s ease-in-out;
-	}
-	.img{
-		width:100%;
-		transition:1s ease-in-out;
-	}
+#project-container{
+    padding:0 25%;
+}
 
-	
+/* ///// Info ///// */
+#project-info{
+    padding: 2em 0;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+
+.small-text{
+    font-size:.9em;
+}
+
+/* ///// Content ///// */
+#project-container h1{
+    font-size:1.5em;
+}
+
+/* ///// Images ///// */
+#project img{
+    cursor:pointer;
+    width:100%;
+
+    display: block;
+    margin: 1em auto;
+}
+/* click */
+#lightbox {
+    position:fixed; /* keeps the lightbox window in the current viewport */
+    top:0; 
+    left:0;
+    padding:1em; 
+    width:100vw; 
+    height:100vh; 
+    background:rgb(0,0,0,0.5); 
+    text-align:center;
+    display:none;
+
+    overflow-y:scroll !important;
+}
+
+#lightbox img {
+    max-width:90%;
+    
+}
+
+#lightbox p {
+    text-align:right; 
+    color:#fff; 
+    margin-right:20px; 
+    font-size:12px; 
+}
+/* half size images */
+.projects-img-small{
+    width:50% !important;
+}
+
+/* ///// CTA ///// */
+#cta {
+    text-align:center;
+}
+
+/* ///// Next - Previous ///// */
+#project-next{
+    width: 100vw;
+    bottom: 0;
+    padding-top: 1em;
+    padding-bottom: .75em;
+    padding-left:4em;
+    padding-right:4em;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: rgb(255, 255, 255, .5);
+}
+#project-next a {
+    font-size:.75em;
+    position: relative;
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+}
+#project-next a:hover {
+    color: rgb(126, 126, 126);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+#project-next h1 {
+    font-size: 1.5em;
+}
+
+#project-next a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(126, 126, 126);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#project-next a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }

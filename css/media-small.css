@@ -1,0 +1,68 @@
+/* smaller screen */
+
+@viewport {
+    zoom: 1.0;
+    width: device-width;
+}
+
+/* ///// Fonts ///// */
+
+@font-face {
+    font-family: Andale Mono;
+    src: url('../fonts/Andale Mono.ttf');
+}
+
+@font-face {
+    font-family: Athelas Regular;
+    src: url('../fonts/Athelas-Regular.ttf');
+}
+
+@font-face {
+    font-family: Athelas Bold;
+    font-weight: bold;
+    src: url('../fonts/Athelas-Bold.ttf');
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1em !important;
+    }
+    /* hide side bar */
+    #nav-side-buttons {
+        display: none;
+    }
+    /* home funky */
+    #funky-1 {
+        width: 150px;
+        height: auto;
+    }
+    #funky-2 {
+        width: 260px;
+    }
+    #funky-3 {
+        width: 200px;
+        bottom:25%;
+    }
+    /* home projects */
+    #project-2 img {
+        height: 350px;
+    }
+    /* about */
+    #about img {
+        width: 100%;
+    }
+    #about {
+        padding: 0 2em;
+    }
+    /* project */
+    #project-info {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        justify-items: center;
+        grid-gap: 5px;
+    }
+}
