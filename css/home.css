@@ -235,7 +235,7 @@ ul {
 #contact {
     text-align: center;
     width: 100%;
-    height: 95vh;
+    height:75%;
     display: grid;
 }
 
@@ -269,6 +269,7 @@ ul {
 
 #contact-form {
     width: 100%;
+    height:50%;
 }
 
 fieldset {
