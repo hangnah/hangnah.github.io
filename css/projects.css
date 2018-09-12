@@ -22,9 +22,14 @@
 #project-info h3 {
     font-size:1em;
 }
+
 #project-info p{
     font-size:.9em;
     line-height:.6em;
+}
+
+#project h2{
+    font-size:1.25em;
 }
 
 #container {
