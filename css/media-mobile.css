@@ -8,6 +8,9 @@
     #header-title, #header-pages{
         padding:3em;
     }
+    #projects p, #contact p{
+        font-size:1em;
+    }
 
     /* project */
     #project-container{
