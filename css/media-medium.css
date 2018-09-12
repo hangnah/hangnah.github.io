@@ -52,11 +52,17 @@
         transform: scaleX(1);
     }
     /* projects */
+    #project-header{
+        padding:0 1em;
+    }
     .project-snippet-content {
         width: 100%;
     }
     #projects img {
         width: 60%;
+    }
+    #project-next{
+        padding:3em 1em;
     }
     /* contact */
     .contact-content {
