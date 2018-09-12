@@ -19,6 +19,9 @@ $(document).ready(function () {
     });
 
     /* show funky images when hover */
+    $('#funky-header-text').hover(function(){
+        $('#funky-baby').fadeToggle();
+    });
     $('#funky-text-1').hover(function() {
         $('#funky-1').fadeToggle();
     });

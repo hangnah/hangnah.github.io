@@ -78,6 +78,7 @@ ul {
 }
 
 #header-container a {
+    cursor:pointer;
     position: relative;
     text-decoration: none;
     color: rgb(172, 172, 172);
@@ -143,24 +144,31 @@ ul {
     position:absolute;
 }
 
+#funky-baby{
+    left:10%;
+    top:15%;
+    width:40%;
+    display:none;
+}
+
 #funky-1{
     width:18%;
     right:15%;
     top:25%;
-    /* display:none;*/
+    display:none;
 }
 
 #funky-2{
     width:33%;
     left:10%;
     top:25%;
-    /*display:none;*/
+    display:none;
 }
 #funky-3{
     width:25%;
     left: 40%;
     bottom:25%;
-    /*display:none;*/
+    display:none;
 }
 
 /* ///// Projects ///// */

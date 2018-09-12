@@ -35,6 +35,9 @@
         display: none;
     }
     /* home funky */
+    #funky-baby{
+        width:265px;
+    }
     #funky-1 {
         width: 150px;
         height: auto;
