@@ -51,6 +51,11 @@
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
     }
+    /* funky */
+    #funky-3{
+        width:40%;
+        bottom:30%;
+    }
     /* projects */
     #project-header{
         padding:0 1em;

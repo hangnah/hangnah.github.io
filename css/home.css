@@ -144,23 +144,23 @@ ul {
 }
 
 #funky-1{
-    width:20%;
+    width:18%;
     right:15%;
-    top:20%;
-    display:none;
+    top:25%;
+    /* display:none;*/
 }
 
 #funky-2{
-    width:30%;
+    width:33%;
     left:10%;
-    top:20%;
-    display:none;
+    top:25%;
+    /*display:none;*/
 }
 #funky-3{
     width:25%;
-    left: 25%;
-    bottom:18%;
-    display:none;
+    left: 40%;
+    bottom:25%;
+    /*display:none;*/
 }
 
 /* ///// Projects ///// */

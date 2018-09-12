@@ -11,6 +11,10 @@
     #projects p, #contact p{
         font-size:1em;
     }
+    /* funky */
+    #funky-3{
+        bottom:33%;
+    }
 
     /* project */
     #project-container{
