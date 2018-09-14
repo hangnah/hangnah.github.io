@@ -124,6 +124,10 @@ ul {
     background:rbg(255,255,255,0.3);
 }
 
+#header-text-small{
+    font-size:.7em;
+}
+
 #header-pages {
     text-align: right;
     align-self: end;
