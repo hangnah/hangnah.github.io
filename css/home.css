@@ -149,8 +149,8 @@ ul {
 }
 
 #funky-baby{
-    left:10%;
-    top:15%;
+    left:20%;
+    top:25%;
     width:40%;
     display:none;
 }
@@ -164,15 +164,29 @@ ul {
 
 #funky-2{
     width:33%;
-    left:10%;
-    top:25%;
-    display:none;
-}
-#funky-3{
-    width:25%;
     left: 40%;
     bottom:25%;
     display:none;
+}
+
+/* ///// Good Design ///// */
+#good-design{
+    height:75vh;
+    width: 100%;
+
+    /* center */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+
+    background-color:rgb(241, 241, 241);
+}
+
+#good-design-text{
+    padding:1em 0;
+    width:45%;
 }
 
 /* ///// Projects ///// */

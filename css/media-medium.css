@@ -52,9 +52,14 @@
         transform: scaleX(1);
     }
     /* funky */
-    #funky-3{
+    #funky-2{
         width:40%;
         bottom:30%;
+    }
+
+    /* good design */
+    #good-design-text{
+        width:80%;
     }
     /* projects */
     #project-header{
