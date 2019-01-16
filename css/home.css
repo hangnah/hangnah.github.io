@@ -221,15 +221,15 @@ ul {
     width:50%;
 }
 
-#project-0, #project-1, #project-2, #project-3, #project-4, #project-5  {
+#project-1, #project-2, #project-3, #project-4, #project-5  {
     display: grid;
 }
 
-#project-0, #project-2, #project-4{
+#project-1, #project-3, #project-5{
     background: rgb(224, 224, 224);
 }
 
-#project-1, #project-3, #project-5{
+#project-2, #project-4{
     background: rgb(240, 240, 240);
 }
 

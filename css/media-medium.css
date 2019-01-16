@@ -57,6 +57,13 @@
         bottom:30%;
     }
 
+    /* hide side bar */
+    #nav-side-buttons {
+        display: none;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
     /* good design */
     #good-design-text{
         width:80%;
