@@ -169,10 +169,24 @@ ul {
     display:none;
 }
 
+/* remove text link */
+#funky-text-3 a{
+    text-decoration: none !important;
+    color:rgb(49, 97, 86);
+}
+#funky-text-3 a:hover{
+    color:rgb(70, 148, 131);
+}
+#funky-text-3 a:hover:before {
+    visibility: hidden;
+}
+
 /* ///// Good Design ///// */
 #good-design{
     height:75vh;
     width: 100%;
+
+    line-height: 1.6;
 
     /* center */
     display: flex;
