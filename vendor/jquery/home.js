@@ -58,6 +58,7 @@ $(document).ready(function () {
         });
       });
 
+
     /* change button colors */
     $(window).scroll(function () {
 

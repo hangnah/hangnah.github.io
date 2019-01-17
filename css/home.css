@@ -182,6 +182,7 @@ ul {
 }
 
 /* ///// Good Design ///// */
+
 #good-design{
     height:75vh;
     width: 100%;
@@ -203,28 +204,60 @@ ul {
     width:45%;
 }
 
-/* ///// Projects ///// */
+/* ///// Projects : ENCASING ///// */
 
 #projects {
-    width: 100%;
-    overflow: hidden;
+    max-width: 100%;
+    overflow:hidden;
 }
 
-/* iphone img 
-#project-2 img{
-    height:50%;
-    width:auto !important;
+.showcase-title{
+    text-align:center;
+    padding:3em 3em;
+    height:25vh;
 }
-*/
 
-#projects img{
-    width:50%;
+.showcase{
+    height:75vh;
+    text-align:center;
+    width:100%;
+
+    overflow-x: auto !important; /* allow scroll */
+    overflow-y: hidden !important;
+    margin:0 !important; /* remove padding on lfet and right */
 }
+
+/* remove scrollbar */
+.showcase::-webkit-scrollbar{
+    display: none;
+}
+#showcase-1{
+    background-color:rgb(230, 228, 228);;
+}
+/* project carousel */
+.projects-slide{
+    display: flex;
+    min-width:100%;
+}
+
+
+/* project cards */
+.project-snippet-content {
+    margin: auto;
+    min-width:100%;
+    padding: 1.5em;
+}
+
+
+/* projects themselves */
+
+
+/* ///// Projects ///// */
 
 #project-1, #project-2, #project-3, #project-4, #project-5  {
     display: grid;
 }
-
+/*
 #project-1, #project-3, #project-5{
     background: rgb(224, 224, 224);
 }
@@ -232,21 +265,10 @@ ul {
 #project-2, #project-4{
     background: rgb(240, 240, 240);
 }
+*/
 
-.project-snippet {
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    padding: 0 10%;
-    /*
-    background: linear-gradient(to top, rgb(194, 194, 194) 50%, white 0%);
-    */
-}
-
-.project-snippet-content {
-    margin: auto;
-    width: 70%;
-    padding: 2em;
+#projects img{
+    width:50%;
 }
 
 #projects button {
