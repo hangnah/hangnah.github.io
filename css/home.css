@@ -214,25 +214,36 @@ ul {
 .showcase-title{
     text-align:center;
     padding:3em 3em;
-    height:25vh;
+    height:20vh;
 }
 
 .showcase{
-    height:75vh;
+    height:70vh;
     text-align:center;
     width:100%;
 
     overflow-x: auto !important; /* allow scroll */
     overflow-y: hidden !important;
     margin:0 !important; /* remove padding on lfet and right */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* remove scrollbar */
 .showcase::-webkit-scrollbar{
     display: none;
 }
-#showcase-1{
-    background-color:rgb(230, 228, 228);;
+#showcase-1, #showcase-2{
+    background-color:rgb(230, 228, 228);
+    height:100vh;
+    
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+
 }
 /* project carousel */
 .projects-slide{
@@ -268,7 +279,7 @@ ul {
 */
 
 #projects img{
-    width:50%;
+    width:40%;
 }
 
 #projects button {
