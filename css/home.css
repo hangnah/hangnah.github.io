@@ -21,6 +21,7 @@
     src: url('../Athelas-Bold.ttf');
 }
 
+
 /* ///// Nav Buttons ///// */
 
 .btn-active {
@@ -210,54 +211,43 @@ ul {
     width: 45%;
 }
 
+
+/* ///// CAROUSEL ///// */
+#carousel-1{
+    max-width:100%;
+    height:100vh;
+    background:rgb(236, 236, 236);;
+}
+#carousel-2{
+    max-width:100%;
+    height:100vh;
+    background:rgb(173, 173, 173);;
+}
+
+/* centered */
+.carousel-overall {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.carousel-indicators{
+    position:relative !important;
+    bottom: 0 !important;
+}
+
 /* ///// Projects : ENCASING ///// */
 
 #projects {
     max-width: 100%;
     overflow: hidden;
+    text-align:center;
 }
 
 .showcase-title {
     text-align: center;
     padding: 3em 3em;
     height: 20vh;
-}
-
-.showcase {
-    height: 70vh;
-    text-align: center;
-    width: 100%;
-    overflow-x: auto !important;
-    /* allow scroll */
-    overflow-y: hidden !important;
-    margin: 0 !important;
-    /* remove padding on lfet and right */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* remove scrollbar */
-.showcase::-webkit-scrollbar {
-    display: none;
-}
-
-#showcase-1{
-    background-color: rgb(230, 228, 228);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#showcase-2{
-    background-color: red;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 /* project carousel */
@@ -273,13 +263,6 @@ ul {
     padding: 1.5em;
 }
 
-/* project buttons */
-.showcase-btns{
-    font-size:2em;
-    height:10vh;
-    color:blue;
-}
-
 /* ///// Projects ///// */
 
 #project-1, #project-2, #project-3, #project-4, #project-5 {
@@ -288,6 +271,9 @@ ul {
 
 #projects img {
     width: 40%;
+}
+#projects h1{
+    font-size:1.5em;
 }
 
 #projects button {

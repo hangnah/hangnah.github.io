@@ -58,13 +58,6 @@ $(document).ready(function () {
         });
       });
 
-
-      /* FLICKITY */
-      $('.projects-slide').flickity({
-        // options
-        cellAlign: 'left',
-        contain: true
-      });
     /* change button colors */
     $(window).scroll(function () {
 
