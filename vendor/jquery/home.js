@@ -40,7 +40,7 @@ $(document).ready(function () {
           // Make sure this.hash has a value before overriding default behavior
           if (this.hash !== "") {
             // Prevent default anchor click behavior
-            event.preventDefault();
+           // event.preventDefault();
       
             // Store hash
             var hash = this.hash;
@@ -52,11 +52,12 @@ $(document).ready(function () {
             }, 800, function(){
       
               // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
+              //window.location.hash = hash;
             });
           } // End if
         });
       });
+    
 
     /* change button colors */
     $(window).scroll(function () {
