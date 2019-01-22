@@ -36,7 +36,14 @@ $(document).ready(function () {
     $(document).ready(function(){
         // Add smooth scrolling to all links
         $("a").on('click', function(event) {
-      
+            // Store hash
+            var hash = this.hash;
+            
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                /*
           // Make sure this.hash has a value before overriding default behavior
           if (this.hash !== "") {
             // Prevent default anchor click behavior
@@ -55,8 +62,11 @@ $(document).ready(function () {
               //window.location.hash = hash;
             });
           } // End if
+          */
+          
         });
       });
+    });
     
 
     /* change button colors */
