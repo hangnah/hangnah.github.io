@@ -60,7 +60,7 @@
     /* showcase title */
     .showcase-title h1{
         width:80% !important;
-        font-size:1em !important;
+        font-size:1.2em !important;
     }
 
 
@@ -76,7 +76,7 @@
         width: 100%;
     }
     #projects img {
-        width: 60%;
+        width: 40%;
     }
     #project-next{
         padding:3em 1em;

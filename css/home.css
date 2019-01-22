@@ -256,13 +256,13 @@ ul {
     display:flex;
     justify-content:center;
     width:100%;
-    padding: 3em 3em;
+    padding: 1em 3em;
     height: 20vh;
 
     font-size:1.5em !important;
 }
 .showcase-title h1{
-    width:50% !important;
+    width:75% !important;
 }
 
 /* project carousel */
