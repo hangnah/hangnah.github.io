@@ -19,6 +19,23 @@
     #funky-2{
         bottom:33%;
     }
+    /* good design */
+    #good-design-header{
+        padding: 0 2em;
+    }
+
+    /* carousel */
+    .showcase-title {
+        text-align: center;
+        padding: 1.3em 1.3em;
+        height: 20vh;
+    }
+
+    .showcase-title h1{
+        
+        font-size:1em !important;
+    }
+
      /* projects */
     #project-container{
         padding: 0 2em;
