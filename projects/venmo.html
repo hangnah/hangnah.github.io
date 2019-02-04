@@ -66,7 +66,7 @@
         <div id="project-info">
           <div id="role">
             <h3>ROLE</h3>
-            <p>UX Designer</p>
+            <p>UX Designer and Researcher</p>
           </div>
           <div id="skills">
             <h3>SKILLS</h3>
@@ -86,78 +86,41 @@
         <div id="project-content">
           <div id="overview">
             <h1>Overview</h1>
-            <p>In Spring 2018, I challenged myself to a design project that would help me to fully explore each part of
-              the UX design process. I considered various applications that exist on my mobile phone, but decided to
-              tackle Venmo – a mobile payment service that makes transactions with friends seamless. I gave myself one
-              month to complete the project.</p>
+            <p>In Spring 2018, I challenged myself to a design project that would help me to fully explore each part of the UX design process. I decided to tackle Venmo – a mobile payment service that makes payments between friends seamless. I gave myself one month to complete the project.</p>
           </div>
           <div id="problem">
             <h1>Problem</h1>
-            <p>As a college student, I have used Venmo on a weekly basis to pay or request money from friends. Venmo
-              has been the tool that me and many friends use when we go out for food, and sometimes Venmo is even used
-              to help split the cost of rent or housing-related bills. Although it serves its function as a mobile
-              payment service well, I was wary of the social aspect of the application. Venmo boasts itself as an
-              application with great integration of social and financial components, but are its users also placing
-              high value on the social aspect of the app? What qualms did people have with the app? The application
-              itself is also fairly basic; the visual design is neither outstanding nor terrible. With these questions
-              in mind, I set out to redesign Venmo.</p>
+            <p>As a college student, I frequently use Venmo to pay or request money from friends. Paying people back for food or housing-related bills is much easier than calculating change and paying with cash. Additionally, the social component of sharing descriptions of payments with other friends adds to the experience of using the mobile application.</p>
+            <p>I wanted to see if Venmo was being used as it was intended to, and if people had expectations for the application that weren’t being met. With this in mind, I started off my redesign with understanding Venmo’s business goals and asking various Venmo users about their experience with Venmo.</p>
           </div>
           <div id="research">
             <h1>Business and User Research</h1>
-            <p>Before I jumped into the user research and visual redesign of the application, I wanted to understand
-              the general business goals of Venmo and see if these goals were being met by the app. The three main
-              business goals of the application involved the following:</p>
-            <ol>
-              <li>Conducting quick and easy transactions</li>
-              <li>Connecting and sharing transactions with other people</li>
-              <li>Splitting purchases among friends</li>
-            </ol>
-            <p>It became apparent that one of the biggest goals of Venmo was to introduce a social component to
-              banking. Taking this into consideration, I designed an online user survey on Google Forms to see if
-              people actually considered this goal to be important to them.</p>
-            <p>I surveyed 17 college students between the ages 19-22, 52.9% of whom were female and 47.1% of whom were
-              male. (In retrospect, I should have expanded my pool of survey participants.) The survey consisted of
-              questions regarding the frequencies that they used the app, features in the application that were
-              important to them, and situational questions.</p>
-            <img src="../images/projects/venmo/research1.png" alt="Research" class="lightbox_trigger">
-            <img src="../images/projects/venmo/research2.png" alt="Research" class="lightbox_trigger">
-            <img src="../images/projects/venmo/research3.png" alt="Research" class="lightbox_trigger">
-            <p>I discovered that outside of using the application to pay or request money from someone, people
-              generally did not use the application. The situations that most people would use the application included
-              splitting the food bill, paying housing-related items, and other miscellaneous transactions. One
-              surprising find was that many of the survey participants did not frequently transfer the money they
-              receive from Venmo payments back to their bank account. This raised a lot of questions about whether
-              Venmo’s main goal of being a social platform was one that was actually important to its users.</p>
-            <p>In the data I collected from the survey, I noticed a few common threads:</p>
+            <p>The primary goal of Venmo is to make payments between people seamless and efficient. Beyond this, Venmo is aiming to expand its services beyond the application and allow users to use their Venmo balances to make purchases at participating vendors. The social component – the ability to interact with Venmo friends and their payments – contributes to the overall experience with the application, but is not the primary function of the application. Despite this, the landing page of the application still remains the global feed of payments between people across the world.</p>
+          
+            <p>Taking these goals into consideration, I created an online survey using Google Forms to see if the user goals aligned with the business goals.</p>
+            <p>I surveyed 17 college students between the ages 19-22, 52.9% of whom were female and 47.1% of whom were male. (In retrospect, I should have expanded my pool of survey participants.) The survey consisted of questions regarding the frequencies that they used the app, features in the application that were important to them, and situational questions.</p>
+            <img src="../images/projects/venmo/research.png" alt="Research" class="lightbox_trigger">
+            <p>Among the three features of banking apps, users commented more on the payment splitting and financial organization features than on the social component of the application. Many survey participants did not see the social component of the application as a necessary feature, as they only used the application for requesting and paying money. One surprising find was that many of the survey participants did not frequently transfer their Venmo balances to their bank accounts, and the payments that were being made were done in smaller sums.
+              </p>
+            <p>From the data I collected from the survey, I noticed a few common threads:</p>
             <ul>
-              <li>Many users described their frustrations with Venmo’s lack of a convenient bill-splitting feature.
-                Users would have to resort to outside applications, such as their calculators, to solve payments with
-                other people.</li>
-              <li>Users described that their main purpose of using Venmo was to pay and request payments from others,
-                especially with important reoccurring transactions such as house-related bills. However, Venmo does not
-                currently offer an option to organize their transactions.</li>
-              <li>The social feature is an added bonus, but users did not report a high use of the social feed on the
-                application</li>
+              <li>Although the landing page of the application is the global feed of transactions, users did not report a high use or interaction with the social feeds.</li>
+              <li>Many users described their frustrations with Venmo’s lack of a convenient bill-splitting feature. Users would have to resort to outside applications, such as their calculators, to resolve payments with other people. Additionally, users who request different amounts of money from people for the same bill have to make different requests for the same transaction.</li>
+              <li>Given that over half of the surveyed users keep their money in their Venmo accounts, some expressed interest in a finance tracker or summary of their spending within Venmo.</li>
             </ul>
-            <p>Taking these survey results into consideration, I decided to focus on the following aspects on my
-              redesign of the application:</p>
+            <p>Taking these survey results into consideration, I decided to focus on the following aspects on my redesign of the application:</p>
             <ul>
-              <li>A new finance tracking section that categorizes and organizes past payments</li>
-              <li>A “groups” feature that allows users to form groups with people they frequently pay</li>
-              <li>Narrowed focus on the categorization of new transactions, groups, category, or expenses</li>
+              <li>A revised landing page that allows users to quickly pay and request money from people for a particular bill</li>
+              <li>An improved payment process</li>
+              <li>A new finance tracking section that allows users to organize and “tag” past payments</li>
             </ul>
           </div>
           <div id="infoarch">
             <h1>Information Architecture</h1>
-            <p>Following the research, I analyzed the existing architecture of information in Venmo. What I found was a
-              cluttered wealth of pages and a handful of less important pages that would be better when combined with
-              others. </p>
-            <img src="../images/projects/venmo/info1.png" alt="Old Information Architecture" class="lightbox_trigger">
-            <p>Laying out the different pages in Venmo helped me to visualize a better information architecture for the
-              application. I decided to nest all the pages under four main ones: Home, Search, Notifications, and
-              Settings. Doing so would allow less confusion for users and would reduce the amount of steps users would
-              need to take in order to perform basic tasks.</p>
-            <img src="../images/projects/venmo/info2.png" alt="New Information Architecture" class="lightbox_trigger">
+            <p>Following the research, I analyzed the existing architecture of information in Venmo. What I found was a cluttered wealth of pages and a handful of less important pages that could be nested under a single page.</p>
+            <img src="../images/projects/venmo/existing.png" alt="Old Information Architecture" class="lightbox_trigger projects-img-small">
+            <p>Laying out the different pages in Venmo helped me to visualize a better information architecture for the application. I decided that the landing page would take users straight to the payment screen, and divided the rest of the pages into four sections: Social, Activity, Profile, and Settings.</p>
+            <img src="../images/projects/venmo/new.png" alt="New Information Architecture" class="lightbox_trigger projects-img-small">
           </div>
           <div id="design">
             <h1>Design</h1>
@@ -168,9 +131,6 @@
               in a hamburger menu on the side, users would be reminded of important notifications or other features
               that may influence their decision to continue using the application, such as a more refined search page
               or less-cluttered settings page.</p>
-            <div id="lowfi">
-              <img src="../images/projects/venmo/lowfi.png" alt="Low-Fi Wireframes" class="lightbox_trigger">
-            </div>
             <h2>Home</h2>
             <div id="home">
               <img src="../images/projects/venmo/designs/home.png" alt="Home" class="lightbox_trigger">

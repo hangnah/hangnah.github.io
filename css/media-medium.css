@@ -81,6 +81,10 @@
     #project-next{
         padding:3em 1em;
     }
+
+    #project-0 img{
+        width:20% !important;
+    }
     /* contact */
     .contact-content {
         width: 70%;
