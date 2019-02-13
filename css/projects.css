@@ -147,6 +147,10 @@ body, html {
     width:50% !important;
 }
 
+.projects-img-mobile{
+    width:25% !important;
+}
+
 /* ///// CTA ///// */
 #cta {
     text-align:center;
