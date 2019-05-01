@@ -1,6 +1,13 @@
 /* normal screen */
-/* 768? */
+
 @media only screen and (max-width: 768px) {
+    /* Fonts */
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1em;
+    }
     /* nav top */
     #nav-mobile {
         z-index: 999;
@@ -18,7 +25,7 @@
         background-color: rgb(255, 255, 255, .5);
     }
     #nav-mobile a {
-        font-size:.75em;
+        font-size: .75em;
         position: relative;
         text-decoration: none;
         color: rgb(172, 172, 172);
@@ -45,56 +52,64 @@
         -webkit-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s;
     }
-    
     #nav-mobile a:hover:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
     }
+    /* Home - Header */
+    #header-container {
+        align-items: center;
+    }
+    #header-pages {
+        float: none;
+        width: 100%;
+        padding: 0 10%;
+    }
+    #header-scroll {
+        margin-top: 2em;
+    }
+    #header-text {
+        width: 80%;
+    }
     /* funky */
-    #funky-2{
-        width:40%;
-        bottom:30%;
+    #funky-2 {
+        width: 40%;
+        bottom: 30%;
     }
-
-    /* showcase title */
-    .showcase-title h1{
-        width:80% !important;
-        font-size:1.2em !important;
+    /* Home - Projects */
+    .project-content {
+        grid-template-columns: none;
+        text-align: center;
+        padding: 5em 4em;
     }
-
-
-    /* good design */
-    #good-design-text{
-        width:80%;
+    .project-image {
+        transform: none !important;
     }
-    /* projects */
-    #project-header{
-        padding:0 1em;
+    #venmo .project-content {
+        grid-template-columns: none !important;
+        text-align: center;
+        padding: 5em 4em;
     }
-    .project-snippet-content {
+    #venmo .project-image {
+        text-align: center;
+        transform: none !important;
+        position: relative;
+    }
+    #venmo img {
+        max-width: 150px;
         width: 100%;
     }
-    #projects img {
-        width: 40%;
+    /* Home - Category */
+    #category ul {
+        font-size: 2.5em;
     }
-    #project-next{
-        padding:3em 1em;
-    }
-
-    #project-0 img{
-        width:20% !important;
-    }
-    /* contact */
-    .contact-content {
-        width: 70%;
-    }
-    /* about */
+    /* About */
     #about {
         text-align: center;
         width: 100%;
-        display: block;
-        padding:3em;
+        display: block !important;
+        padding: 3em;
     }
     #about-text {
         padding-top: 2em;
@@ -105,8 +120,60 @@
         width: 75%;
     }
 
-    /* projects */
-    #project-container{
-        padding: 0 15%;
-    }
+    /* Projects */
+
+        /* Header */
+        #project-header {
+            display:grid;
+            grid-template-columns:none;
+        }
+        #header-info-container {
+            text-align:center;
+        }
+        #header-info{
+            width:100%;
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+        }
+
+        /* Projects */
+        .content-padding-normal{
+            padding:0 2em;
+        }
+        .content-side{
+            padding:1em 2em;
+            grid-template-columns:none;
+        }
+        .content-side-flip{
+            grid-template-columns:none;
+            padding:0 2em;
+        }
+        .content-columns p{
+            display:list-item;
+            margin-left:2em;
+            text-align:left;
+        }
+
+            /* Venmo */
+            #infoarch{
+                grid-template-columns:none;
+            }
+            #research-features .content-columns, .content-columns {
+                display:inherit;
+            }
+            #research-features .content-columns{
+                padding:1em;
+            }
+            #design .content-columns{
+                padding:1em 2em;
+                margin:0;
+            }
+            #design .content-columns p{
+                display:inherit;
+                margin:1em 0;
+            }
+            #design .content-columns h4{
+                text-align:left;
+            }
+
 }

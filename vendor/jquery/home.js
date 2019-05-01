@@ -1,73 +1,90 @@
 $(document).ready(function () {
 
-    /* hide bar on load */
-    $('#nav-mobile').hide();
-
-    /* show nav bar when smol */
-    $(document).scroll(function () {
+    // Show Back To Top on scroll
+    $(window).scroll(function () {
         var y = $(this).scrollTop();
-
-        var winWidth = $(window).innerWidth();
-        var winHeight = $(window).innerHeight();
-
-        if (y > winHeight && winWidth <= 768 ) {
-
-            $('#nav-mobile').fadeIn(300);
+        var winHeight = $(this).innerHeight();
+        if (y >= winHeight) {
+            $('#back').fadeIn(700);
         } else {
-            $('#nav-mobile').fadeOut(300);
+            $('#back').fadeOut(700);
+        }
+    });
+
+    // Scroll Back To Top
+    $("#back").click(function (event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+    // Show Category on scroll
+    $(window).scroll(function () {
+        var y = $(this).scrollTop();
+        var winHeight = $(this).innerHeight();
+        if (y >= winHeight) {
+            $('#category').fadeIn(700);
+        } else {
+            $('#category').fadeOut(700);
         }
     });
 
     /* show funky images when hover */
-    $('#funky-header-text').hover(function(){
+    $('#funky-header-text').hover(function () {
         $('#funky-baby').fadeToggle();
     });
-    $('#funky-text-1').hover(function() {
+    $('#funky-text-1').hover(function () {
         $('#funky-1').fadeToggle();
     });
-    $('#funky-text-2').hover(function() {
+    $('#funky-text-2').hover(function () {
         $('#funky-2').fadeToggle();
     });
-    $('#funky-text-3').hover(function() {
+    $('#funky-text-3').hover(function () {
         $('#funky-3').fadeToggle();
     });
 
-    /* smooth scroll */
-    $(document).ready(function(){
+    // smooth scroll
+    $(document).ready(function () {
         // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
+        $("a").on('click', function (event) {
             // Store hash
             var hash = this.hash;
-            
+
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-              }, 800, function(){
+            }, 800, function () {
 
-                /*
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            // event.preventDefault();
-      
-            // Store hash
-            var hash = this.hash;
-      
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){
-      
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              //window.location.hash = hash;
+
+
             });
-          } // End if
-          */
-          
         });
-      });
     });
-    
+
+    // inview
+    $('#case-studies').on('inview', function (event, isInView) {
+        if (isInView) {
+            $('#cat_cs').addClass('active');
+            $('#cat_v').removeClass('active');
+            $('#cat_d').removeClass('active');
+        }
+    });
+
+    $('#visual').on('inview', function (event, isInView) {
+        if (isInView) {
+            $('#cat_cs').removeClass('active');
+            $('#cat_v').addClass('active');
+            $('#cat_d').removeClass('active');
+        }
+    });
+
+    $('#digital').on('inview', function (event, isInView) {
+        if (isInView) {
+            $('#cat_cs').removeClass('active');
+            $('#cat_v').removeClass('active');
+            $('#cat_d').addClass('active');
+        }
+    });
+
 
     /* change button colors */
     $(window).scroll(function () {
@@ -129,14 +146,14 @@ $(document).ready(function () {
     });
 
     /* images */
-    $('.lightbox_trigger').click(function(e) {
-		
-		//prevent default action (hyperlink)
-		e.preventDefault();
-		
-		//Get clicked link href
+    $('.lightbox_trigger').click(function (e) {
+
+        //prevent default action (hyperlink)
+        e.preventDefault();
+
+        //Get clicked link href
         var image_src = $(this).attr("src");
-		
+
 		/* 	
 		If the lightbox window HTML already exists in document, 
 		change the img src to to match the href of whatever link was clicked
@@ -144,25 +161,25 @@ $(document).ready(function () {
 		If the lightbox window HTML doesn't exists, create it and insert it.
 		(This will only happen the first time around)
 		*/
-		
-		if ($('#lightbox').length > 0) { // #lightbox exists
-			
-			//place href as img src value
-			$('#content').html('<img src="' + image_src + '" />');
-		   	
-			//show lightbox window - you could use .show('fast') for a transition
+
+        if ($('#lightbox').length > 0) { // #lightbox exists
+
+            //place href as img src value
+            $('#content').html('<img src="' + image_src + '" />');
+
+            //show lightbox window - you could use .show('fast') for a transition
             $('#lightbox').show();
-            
+
             // center
-            $('#lightbox').css("display","grid");
-            $('#lightbox').css("align-items","center");
-		}
-		
-	});
-	
+            $('#lightbox').css("display", "grid");
+            $('#lightbox').css("align-items", "center");
+        }
+
+    });
+
     //Click anywhere on the page to get rid of lightbox window
-    $(document).on("click", "#lightbox",function() { 
-		$('#lightbox').hide();
-	});
+    $(document).on("click", "#lightbox", function () {
+        $('#lightbox').hide();
+    });
 
 });
