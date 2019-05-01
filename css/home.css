@@ -130,7 +130,7 @@ html, body {
 #header-text {
     width: 60%;
     padding: 5%;
-    background: rgb(255, 255, 255, 0.3);
+    /* background: rgb(255, 255, 255, 0.3); */
 }
 
 #header-title {
