@@ -1,14 +1,9 @@
 /* normal screen */
 @media only screen and (max-width : 480px) {
-    /* header text */
-    #header-title h2, #header-pages h2{
-        text-align:center;
+    #projects p, #contact p{
         font-size:1em;
     }
-    #header-title, #header-pages{
-        padding:3.5em;
-    }
-    #projects p, #contact p{
+    #nav-top h2{
         font-size:1em;
     }
     /* funky */
@@ -19,25 +14,24 @@
     #funky-2{
         bottom:33%;
     }
-    /* good design */
-    #good-design-header{
-        padding: 0 2em;
-    }
-
-    /* carousel */
-    .showcase-title {
-        text-align: center;
-        padding: 1.3em 1.3em;
-        height: 20vh;
-    }
-
-    .showcase-title h1{
-        
-        font-size:1em !important;
-    }
-
+    
      /* projects */
-    #project-container{
-        padding: 0 2em;
+     #project-container{
+        padding: 0 1em;
+    }
+    #project p, ul{
+        font-size:.8em;
+    }
+    #project h1{
+        font-size:1.5em;
+    }
+    #project h2{
+        font-size:1.1em;
+    }
+    #project h3{
+        font-size:.8em;
+    }
+    #project h4{
+        font-size:.8em;
     }
 }
