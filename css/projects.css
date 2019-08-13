@@ -97,6 +97,24 @@ p {
     padding: 1em 2em 0 2em;
 }
 
+/* TABLE OF CONTENTS */
+#toc {
+    text-align:center;
+}
+#toc ul{
+    list-style-type:none;
+    font-family: Avenir Next;
+    font-weight:600;
+    font-size:.95em;
+    letter-spacing:.1em;
+    padding:1em 0 .9em 0;
+}
+
+#toc li{
+    display:inline;
+    margin:0 .3em;
+}
+
 /* Project Content */
 
 #project-container {
@@ -149,7 +167,7 @@ p {
     /* padding */
     .content-padding-normal{
         /* text-align:center; */
-        padding:0 15em;
+        padding:.5em 15em;
     }
 
     /* images shadow */

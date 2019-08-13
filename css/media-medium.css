@@ -176,4 +176,12 @@
                 text-align:left;
             }
 
+            /* Uber */
+            #infra-inv{
+                grid-template-columns:none;
+            }
+            #infra-inv, #design h3{
+                font-size:1em;
+            }
+
 }
