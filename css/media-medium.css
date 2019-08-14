@@ -73,9 +73,15 @@
         width: 80%;
     }
     /* funky */
+    #funky-1 {
+        width: 20%;
+        right: 10%;
+        top: 10%;
+    }
     #funky-2 {
-        width: 40%;
-        bottom: 30%;
+        width: 30%;
+        left: 20%;
+        bottom: 15%;
     }
     /* Home - Projects */
     .project-content .project-snippet {

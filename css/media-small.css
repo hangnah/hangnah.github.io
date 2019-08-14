@@ -22,16 +22,13 @@
         display:none;
     }
     /* home funky */
-    #funky-baby{
-        width:280px;
-    }
     #funky-1 {
         width: 150px;
         height: auto;
     }
     #funky-2 {
-        width: 260px;
-        bottom:25%;
+        width: 200px;
+        bottom: 15%;
     }
 
     #back{
