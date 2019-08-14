@@ -28,6 +28,9 @@ html, body {
     position: relative;
 }
 
+h2 {
+    color:#909090;
+}
 /* ///// Header ///// */
 
 #header-container-wrapper {
