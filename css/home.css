@@ -285,10 +285,7 @@ html, body {
 
 .project-content .project-snippet{
     padding:2em;
-}
-
-.project-snippet{
-    margin-right:5%;
+    width:80%;
 }
 
 .project-snippet-bg{
@@ -301,26 +298,7 @@ html, body {
     z-index: -1;
 }
 
-/* VENMO */
-
-/*
-#venmo {
-    overflow:hidden;
-}
-
-#venmo .project-content {
-    grid-template-columns: 65% 35% !important;
-
-    height: 100vh !important;
-}
-
-#venmo .project-image {
-    text-align: center;
-    transform: translateX(0) translateY(30vh) !important;
-    position:relative;
-
-}
-*/
+/* mobile projects */
 .mobileproject img {
     max-width:200px;
     width:100%;

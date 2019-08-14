@@ -11,11 +11,15 @@
         padding:3em .5em;
     }
     #header-text{
-        width:90%;
+        width:100%;
+        margin-left:0;
+        padding:4em;
     }
-
     #header-scroll{
         margin-top:1.5em;
+    }
+    #header-line{
+        display:none;
     }
     /* home funky */
     #funky-baby{

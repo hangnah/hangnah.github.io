@@ -15,6 +15,16 @@
         bottom:33%;
     }
     
+    /* home - projects */
+    .project-content .project-snippet{
+        padding:0;
+        justify-self:end;
+        align-self:start;
+    }
+    .project-content .project-image{
+        align-self:end;
+        padding:2em 0;
+    }
      /* projects */
      #project-container{
         padding: 0 1em;

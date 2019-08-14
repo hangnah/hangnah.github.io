@@ -78,6 +78,17 @@
         bottom: 30%;
     }
     /* Home - Projects */
+    .project-content .project-snippet {
+        margin-right: 0;
+        width: 100%;
+    }
+    .project-snippet-bg {
+        width: 40% !important;
+        height: 80vh !important;
+        right: 0;
+        margin-top: 0;
+        left: 30%;
+    }
     .project-content {
         grid-template-columns: none;
         text-align: center;
@@ -86,17 +97,19 @@
     .project-image {
         transform: none !important;
     }
-    #venmo .project-content {
+    .mobileproject .project-content {
         grid-template-columns: none !important;
         text-align: center;
         padding: 5em 4em;
     }
-    #venmo .project-image {
+    .mobileproject .project-image {
         text-align: center;
         transform: none !important;
         position: relative;
+        margin: 0;
+        justify-self: center;
     }
-    #venmo img {
+    .mobileproject img {
         max-width: 150px;
         width: 100%;
     }
@@ -119,69 +132,63 @@
         margin: auto;
         width: 75%;
     }
-
     /* Projects */
-
-        /* Header */
-        #project-header {
-            display:grid;
-            grid-template-columns:none;
-        }
-        #header-info-container {
-            text-align:center;
-        }
-        #header-info{
-            width:100%;
-            display:grid;
-            grid-template-columns:1fr 1fr 1fr 1fr;
-        }
-
-        /* Projects */
-        .content-padding-normal{
-            padding:0 2em;
-        }
-        .content-side{
-            padding:1em 2em;
-            grid-template-columns:none;
-        }
-        .content-side-flip{
-            grid-template-columns:none;
-            padding:0 2em;
-        }
-        .content-columns p{
-            display:list-item;
-            margin-left:2em;
-            text-align:left;
-        }
-
-            /* Venmo */
-            #infoarch{
-                grid-template-columns:none;
-            }
-            #research-features .content-columns, .content-columns {
-                display:inherit;
-            }
-            #research-features .content-columns{
-                padding:1em;
-            }
-            #design .content-columns{
-                padding:1em 2em;
-                margin:0;
-            }
-            #design .content-columns p{
-                display:inherit;
-                margin:1em 0;
-            }
-            #design .content-columns h4{
-                text-align:left;
-            }
-
-            /* Uber */
-            #infra-inv{
-                grid-template-columns:none;
-            }
-            #infra-inv, #design h3{
-                font-size:1em;
-            }
-
+    /* Header */
+    #project-header {
+        display: grid;
+        grid-template-columns: none;
+    }
+    #header-info-container {
+        text-align: center;
+    }
+    #header-info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    /* Projects */
+    .content-padding-normal {
+        padding: 0 2em;
+    }
+    .content-side {
+        padding: 1em 2em;
+        grid-template-columns: none;
+    }
+    .content-side-flip {
+        grid-template-columns: none;
+        padding: 0 2em;
+    }
+    .content-columns p {
+        display: list-item;
+        margin-left: 2em;
+        text-align: left;
+    }
+    /* Venmo */
+    #infoarch {
+        grid-template-columns: none;
+    }
+    #research-features .content-columns, .content-columns {
+        display: inherit;
+    }
+    #research-features .content-columns {
+        padding: 1em;
+    }
+    #design .content-columns {
+        padding: 1em 2em;
+        margin: 0;
+    }
+    #design .content-columns p {
+        display: inherit;
+        margin: 1em 0;
+    }
+    #design .content-columns h4 {
+        text-align: left;
+    }
+    /* Uber */
+    #infra-inv {
+        grid-template-columns: none;
+    }
+    #infra-inv, #design h3 {
+        font-size: 1em;
+    }
 }
