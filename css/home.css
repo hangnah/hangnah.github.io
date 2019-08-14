@@ -194,7 +194,7 @@ h2 {
     position: fixed;
     display: none;
     width:100px;
-    right:0;
+    left0;
     /* background:rgb(255, 255, 255, 0.25); */
 }
 
@@ -223,24 +223,25 @@ h2 {
     width:100%;
 }
 #category ul {
-    text-align: center;
+    float:right;
+    margin-right:1em;
+    text-align: right;
     padding: .9em 0em;
     list-style-type: none;
-    font-family: Playfair Display;
-    font-weight: 400;
-    font-size: 3em;
-    height: 15vh;
+    font-family: Avenir Next;
+    font-weight: 500;
+    line-height:1.25em;
+    font-size: 2em;
 }
 
 #category li {
-    display: inline;
     opacity: 0.3;
 }
 
 #category .active {
-    -webkit-transition: all 1s ease-in-out 0s;
-
+    -webkit-transition: all .5s ease-in-out .5s;
     opacity: 1;
+    font-size:1.5em;
 }
 
 #category a{
