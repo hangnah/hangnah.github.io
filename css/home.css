@@ -221,6 +221,7 @@ h2 {
     z-index:999;
     top:0;
     width:100%;
+
 }
 #category ul {
     float:right;
@@ -243,10 +244,8 @@ h2 {
 }
 
 #category .active {
-
     font-size:1.5em;
     opacity: 1;
-    
     transition: all .5s ease-in-out .5s;
     -webkit-transition: all .5s ease-in-out .5s;
 
