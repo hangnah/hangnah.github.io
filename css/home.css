@@ -265,19 +265,17 @@ html, body {
 
 .project-content {
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 50% 50%;
     height: 100vh;
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding-right:2em;
+    padding:2em;
 }
 
 .project-content .project-image {
     align-items: center;
-    justify-content: end;
-    width: 100%;
-    transform: translateX(-20vh);
+    justify-self: center;
     padding:1em;
 }
 
@@ -286,11 +284,26 @@ html, body {
 }
 
 .project-content .project-snippet{
-    padding-right:1em;
+    padding:2em;
+}
+
+.project-snippet{
+    margin-right:5%;
+}
+
+.project-snippet-bg{
+    background-color: #F9F9F3;
+    width: 70%;
+    height: 70%;
+    right: 5%;
+    margin-top: 6.5%;
+    position: absolute;
+    z-index: -1;
 }
 
 /* VENMO */
 
+/*
 #venmo {
     overflow:hidden;
 }
@@ -307,8 +320,8 @@ html, body {
     position:relative;
 
 }
-
+*/
 #venmo img {
-    max-width:400px;
+    max-width:200px;
     width:100%;
 }
