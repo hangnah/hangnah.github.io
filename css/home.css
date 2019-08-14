@@ -22,9 +22,6 @@
 }
 
 html, body {
-    /* height: 100%;
- overflow-x:hidden;
- */
     position: relative;
 }
 
@@ -55,6 +52,37 @@ h2 {
     justify-content: center;
 }
 
+/* Circles */
+#header-circles{
+    position:absolute;
+}
+#circle1{
+    position:absolute;
+    height: 30vh;
+    width: 30vh;
+    background-color: rgba(160,219,56,.80);
+    border-radius: 50%;
+    margin-left: 35vw;
+    margin-top: 15vh;
+}
+#circle2{
+    position:absolute;
+    height: 15vh;
+    width: 15vh;
+    background-color: rgba(255,91,38,.80);
+    border-radius: 50%;
+    margin-left: 30vw;
+    margin-top: 70vh;
+}
+#circle3{
+    position:absolute;
+    height: 5vh;
+    width: 5vh;
+    background-color: rgba(255,188,69,.80);
+    border-radius: 50%;
+    margin-left: 20vw;
+    margin-top: 30vh;
+}
 /* Pages */
 
 #header-pages {
@@ -182,7 +210,7 @@ h2 {
     width: 6px;
     height: 80vh;
     position: absolute;
-    background-color: rgba(255, 174, 0);
+    background-color: rgb(228, 228, 221);
     margin-top: -40vh;
     left: 15%;
     z-index: 99;
@@ -193,7 +221,7 @@ h2 {
     width: 50px;
     height: 50px;
     position: absolute;
-    background: rgba(255, 174, 0);
+    background: rgb(228, 228, 221);
     right: 0;
     left: -380%;
     margin: 0 auto;
@@ -266,11 +294,13 @@ h2 {
 
 #category a {
     color: #929292;
+    transition: all .15s ease-in-out .15s;
+
 }
 
 #category a:hover {
     color: #5e5e5e;
-    transition-duration: 0.5s;
+    transition: all .15s ease-in-out .15s;
 }
 
 /* ///// PROJECTS ///// */
