@@ -235,25 +235,30 @@ h2 {
     overflow: hidden;
     z-index: 99999;
     position: fixed;
-    display: none;
-    width: 100px;
+  /*  display: none; */
     left: 0;
-    /* background:rgb(255, 255, 255, 0.25); */
+    padding:2.5em;
 }
 
-#back h4 {
-    padding: .5em;
-    text-align: right;
-    font-weight: 700;
+#back img{
+    width:75px;
 }
 
 #back a {
-    color: #FDB42B;
+    width:290px;
+    display:grid;
+    grid-template-columns:.3fr .7fr;
+    align-items:center;
+    transition-duration: 0.5s;
     cursor: pointer;
 }
 
+#back h2{
+    margin-bottom:0;
+}
+
 #back a:hover {
-    color: #D69C2F;
+    opacity:0.5;
     transition-duration: 0.5s;
 }
 
