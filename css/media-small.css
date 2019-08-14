@@ -11,23 +11,24 @@
         padding:3em .5em;
     }
     #header-text{
-        width:90%;
+        width:100%;
+        margin-left:0;
+        padding:4em;
     }
-
     #header-scroll{
         margin-top:1.5em;
     }
-    /* home funky */
-    #funky-baby{
-        width:280px;
+    #header-line{
+        display:none;
     }
+    /* home funky */
     #funky-1 {
         width: 150px;
         height: auto;
     }
     #funky-2 {
-        width: 260px;
-        bottom:25%;
+        width: 200px;
+        bottom: 15%;
     }
 
     #back{

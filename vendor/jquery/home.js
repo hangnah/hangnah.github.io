@@ -145,41 +145,4 @@ $(document).ready(function () {
         });
     });
 
-    /* images */
-    $('.lightbox_trigger').click(function (e) {
-
-        //prevent default action (hyperlink)
-        e.preventDefault();
-
-        //Get clicked link href
-        var image_src = $(this).attr("src");
-
-		/* 	
-		If the lightbox window HTML already exists in document, 
-		change the img src to to match the href of whatever link was clicked
-		
-		If the lightbox window HTML doesn't exists, create it and insert it.
-		(This will only happen the first time around)
-		*/
-
-        if ($('#lightbox').length > 0) { // #lightbox exists
-
-            //place href as img src value
-            $('#content').html('<img src="' + image_src + '" />');
-
-            //show lightbox window - you could use .show('fast') for a transition
-            $('#lightbox').show();
-
-            // center
-            $('#lightbox').css("display", "grid");
-            $('#lightbox').css("align-items", "center");
-        }
-
-    });
-
-    //Click anywhere on the page to get rid of lightbox window
-    $(document).on("click", "#lightbox", function () {
-        $('#lightbox').hide();
-    });
-
 });

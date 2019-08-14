@@ -28,6 +28,9 @@ html, body {
     position: relative;
 }
 
+h2 {
+    color:#909090;
+}
 /* ///// Header ///// */
 
 #header-container-wrapper {
@@ -36,34 +39,7 @@ html, body {
     overflow: hidden;
 }
 
-#header-container-wrapper:after, #header-container-wrapper:before{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    content:"";
-    z-index:-1;
-  }
-  
-  #header-container-wrapper:after{
-    background:radial-gradient(circle,rgb(175, 157, 122),transparent);
-    background-size:400%;
-    animation:colorSpin 30s linear infinite;
-  }
-  
-  #header-container-wrapper:before{
-    background-color:rgb(255, 255, 255);
-  }
-  
-  @keyframes colorSpin{
-    25%{background-position:0 100%;color:rgb(255,255,255)}
-    75%{background-position:100% 0;color:rgb(215, 181, 116)}
-    100%{filter:hue-rotate(-30deg)}
-  }
-
 #header-container {
-    margin-top: 1px;
     padding: 3em;
     height: 100vh;
 }
@@ -82,9 +58,6 @@ html, body {
 /* Pages */
 
 #header-pages {
-    width: 200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     text-align: center;
     float: right;
 }
@@ -128,9 +101,9 @@ html, body {
 /* Text */
 
 #header-text {
-    width: 60%;
+    width: 55%;
     padding: 5%;
-    /* background: rgb(255, 255, 255, 0.3); */
+    margin-left:40%;
 }
 
 #header-title {
@@ -160,11 +133,11 @@ html, body {
 /* funky */
 
 .funky {
-    color: #FDB42B;
+    color: #FFAF00;
 }
 
 .funky:hover {
-    color: #D69C2F;
+    color: #FFBC45;
     cursor: pointer;
     transition-duration: 0.5s;
 }
@@ -174,18 +147,44 @@ html, body {
 }
 
 #funky-1 {
-    width: 18%;
-    right: 15%;
-    top: 25%;
+    width: 15%;
+    right: 10%;
+    top: 15%;
     display: none;
 }
 
 #funky-2 {
-    width: 33%;
-    left: 40%;
-    bottom: 25%;
+    width: 20%;
+    left: 20%;
+    bottom: 15%;
     display: none;
 }
+
+/* line */
+#header-line{
+    width: 6px;
+    height: 80vh;
+    position: absolute;
+    background-color: rgba(255, 174, 0);
+
+    margin-top: -40vh;
+    left: 15%;
+    z-index: 99;
+}
+
+#header-circle{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: rgba(255, 174, 0);
+    right: 0;
+    left:-380%;
+    margin: 0 auto;
+    border-radius: 100%;
+    top: 36.8vh;
+}
+
 
 /* ///// Back To Home ///// */
 
@@ -195,7 +194,7 @@ html, body {
     position: fixed;
     display: none;
     width:100px;
-    right:0;
+    left:0;
     /* background:rgb(255, 255, 255, 0.25); */
 }
 
@@ -224,24 +223,33 @@ html, body {
     width:100%;
 }
 #category ul {
-    text-align: center;
+    float:right;
+    margin-right:1em;
+    text-align: right;
     padding: .9em 0em;
     list-style-type: none;
-    font-family: Playfair Display;
-    font-weight: 400;
-    font-size: 3em;
-    height: 15vh;
+    font-family: Avenir Next;
+    font-weight: 500;
+    line-height:1.25em;
+    font-size: 2em;
+
+    transition: all .5s ease-in-out .5s;
 }
 
 #category li {
-    display: inline;
     opacity: 0.3;
+
+    transition: all .5s ease-in-out .5s;
 }
 
 #category .active {
-    -webkit-transition: all 1s ease-in-out 0s;
 
+    font-size:1.5em;
     opacity: 1;
+    
+    transition: all .5s ease-in-out .5s;
+    -webkit-transition: all .5s ease-in-out .5s;
+
 }
 
 #category a{
@@ -269,19 +277,17 @@ html, body {
 
 .project-content {
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 50% 50%;
     height: 100vh;
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding-right:2em;
+    padding:2em;
 }
 
 .project-content .project-image {
     align-items: center;
-    justify-content: end;
-    width: 100%;
-    transform: translateX(-20vh);
+    justify-self: center;
     padding:1em;
 }
 
@@ -290,29 +296,30 @@ html, body {
 }
 
 .project-content .project-snippet{
-    padding-right:1em;
+    padding:2em;
+    width:80%;
 }
 
-/* VENMO */
-
-#venmo {
-    overflow:hidden;
+.project-snippet-bg{
+    background-color: #F9F9F3;
+    width: 70%;
+    height: 70%;
+    right: 5%;
+    margin-top: 6.5%;
+    position: absolute;
+    z-index: -1;
 }
 
-#venmo .project-content {
-    grid-template-columns: 65% 35% !important;
-
-    height: 100vh !important;
-}
-
-#venmo .project-image {
-    text-align: center;
-    transform: translateX(0) translateY(30vh) !important;
-    position:relative;
-
-}
-
-#venmo img {
-    max-width:400px;
+/* mobile projects */
+.mobileproject img {
+    max-width:200px;
     width:100%;
+}
+.mobileproject .project-snippet-bg{
+    width: 60%;
+    height: 70%;
+}
+.mobileproject .project-image{
+    justify-self:end;
+    margin-right:10%;
 }

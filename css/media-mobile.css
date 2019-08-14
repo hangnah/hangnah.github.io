@@ -7,14 +7,20 @@
         font-size:1em;
     }
     /* funky */
-    #funky-baby{
-        top:20%;
-        left:23%;
-    }
     #funky-2{
-        bottom:33%;
+        bottom:10%;
     }
     
+    /* home - projects */
+    .project-content .project-snippet{
+        padding:0;
+        justify-self:end;
+        align-self:start;
+    }
+    .project-content .project-image{
+        align-self:end;
+        padding:2em 0;
+    }
      /* projects */
      #project-container{
         padding: 0 1em;
