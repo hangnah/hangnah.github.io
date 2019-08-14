@@ -239,9 +239,12 @@ h2 {
 }
 
 #category .active {
-    -webkit-transition: all .5s ease-in-out .5s;
-    opacity: 1;
+
     font-size:1.5em;
+    opacity: 1;
+    
+    -webkit-transition: all .5s ease-in-out .5s;
+
 }
 
 #category a{
