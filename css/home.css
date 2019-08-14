@@ -90,15 +90,6 @@ h2 {
     float: right;
 }
 
-/* Links */
-
-#header-pages a {
-    cursor: pointer;
-    position: relative;
-    text-decoration: none;
-    color: rgb(172, 172, 172);
-}
-
 #header-pages a:hover {
     color: rgb(126, 126, 126);
     -webkit-transition: all 0.3s ease-in-out 0s;
@@ -125,6 +116,41 @@ h2 {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+/* Links */
+
+#header-pages a {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+}
+
+/* Header H */
+#header-icon {
+    overflow: hidden;
+    z-index: 99999;
+    position: absolute;
+    top:0;
+    left: 0;
+    padding:2.5em;
+    width:380px;
+    display:grid;
+    grid-template-columns:.3fr .7fr;
+    align-items:center;
+}
+
+#header-icon img{
+    width:75px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#header-h-text{
+    display:none;
+    margin-bottom:0;
+}
+
 
 /* Text */
 
@@ -235,8 +261,10 @@ h2 {
     overflow: hidden;
     z-index: 99999;
     position: fixed;
-  /*  display: none; */
+    display: none;
+    width: 155px;
     left: 0;
+
     padding:2.5em;
 }
 
@@ -245,16 +273,8 @@ h2 {
 }
 
 #back a {
-    width:290px;
-    display:grid;
-    grid-template-columns:.3fr .7fr;
-    align-items:center;
     transition-duration: 0.5s;
     cursor: pointer;
-}
-
-#back h2{
-    margin-bottom:0;
 }
 
 #back a:hover {

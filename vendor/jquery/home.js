@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    // Show "DD" on hover
+    $('#header-h').hover(function () {
+        $('#header-h-text').fadeToggle();
+    });
 
     // Show Back To Top on scroll
     $(window).scroll(function () {
