@@ -10,6 +10,24 @@
     #funky-2{
         bottom:10%;
     }
+    /* home - circles */
+    #circle1{
+        width:20vh;
+        height:20vh;
+    }
+    #circle2{
+        width:7vh;
+        height:7vh;
+    }
+    #circle3{
+        width:5vh;
+        height:5vh;
+    }
+
+    /* home - back */
+    #back {
+        display:none !important;
+    }
     
     /* home - projects */
     .project-content .project-snippet{

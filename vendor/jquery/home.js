@@ -10,6 +10,7 @@ $(document).ready(function () {
         var winHeight = $(this).innerHeight();
         if (y >= winHeight) {
             $('#back').fadeIn(700);
+            console.log('heyyy')
         } else {
             $('#back').fadeOut(700);
         }
