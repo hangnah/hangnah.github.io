@@ -61,16 +61,20 @@
     #header-container {
         align-items: center;
     }
-    #header-pages {
-        float: none;
-        width: 100%;
-        padding: 0 10%;
-    }
     #header-scroll {
         margin-top: 2em;
     }
     #header-text {
         width: 80%;
+    }
+    /* Home - Circles */
+    #circle1{
+        width:25vh;
+        height:25vh;
+    }
+    #circle2{
+        width:10vh;
+        height:10vh;
     }
     /* funky */
     #funky-1 {

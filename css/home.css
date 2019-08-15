@@ -337,6 +337,7 @@ h2 {
 
 #projects-container {
     width: 100%;
+    overflow-x:hidden;
 }
 
 /* PROJECT CONTENT */

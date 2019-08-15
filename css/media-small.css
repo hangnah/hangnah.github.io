@@ -7,19 +7,28 @@
 
 @media only screen and (max-width: 600px) {
     /* Home - Header */
-    #header-container{
-        padding:3em .5em;
+    #header-container {
+        padding: 3em .5em;
     }
-    #header-text{
-        width:100%;
-        margin-left:0;
-        padding:4em;
+    #header-text {
+        width: 100%;
+        margin-left: 0;
+        padding: 3em;
     }
-    #header-scroll{
-        margin-top:1.5em;
+    #header-icon {
+        width: 330px;
     }
-    #header-line{
-        display:none;
+    #header-icon img {
+        width: 50px;
+    }
+    #header-pages {
+        padding-right: 2em;
+    }
+    #header-scroll {
+        margin-top: 1.5em;
+    }
+    #header-line {
+        display: none;
     }
     /* home funky */
     #funky-1 {
@@ -30,18 +39,19 @@
         width: 200px;
         bottom: 15%;
     }
-
-    #back{
-        display:none !important;
+    #back {
+        width: 330px;
     }
-    
+    #back img {
+        width: 50px;
+    }
     /* Home - Category */
-    #category ul{
-        font-size:1.5em;
-        padding-top:2em;
+    #category ul {
+        font-size: 1.5em;
+        padding-top: 2em;
     }
-    #category li{
-        line-height:1em;
+    #category li {
+        line-height: 1em;
     }
     /* about */
     #about img {
@@ -49,26 +59,23 @@
     }
     #about {
         padding: 3em 1em;
-        margin:0 !important;
+        margin: 0 !important;
     }
-    #about-text{
-        padding:3em;
+    #about-text {
+        padding: 3em;
     }
-
-
     /* Project */
-    .summary{
-        padding:3em 2em;
+    .summary {
+        padding: 3em 2em;
     }
-    .summary p{
-        text-align:left;
+    .summary p {
+        text-align: left;
     }
-        /* Venmo */
-        #infoarch-img{
-            grid-template-columns:none;
-        }
-        #infoarch img{
-            padding:2em 4em;
-        }
-
+    /* Venmo */
+    #infoarch-img {
+        grid-template-columns: none;
+    }
+    #infoarch img {
+        padding: 2em 4em;
+    }
 }
