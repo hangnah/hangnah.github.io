@@ -186,14 +186,6 @@ button:hover{
     transform: scaleX(1);
 }
 
-/*
-#nav-mobile-title a{
-    color: #FDB42B !important;
-}
-#nav-mobile-title a:hover{
-    color: #D69C2F !important;
-}
-*/
 .left-align{
     text-align:left;
 }
@@ -225,6 +217,7 @@ footer h2{
 footer p{
     color:white !important;
     letter-spacing:.05em;
+    font-size:.9em;
 }
 footer a{
     color:white !important;
