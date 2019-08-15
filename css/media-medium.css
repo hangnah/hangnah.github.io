@@ -87,6 +87,9 @@
         left: 20%;
         bottom: 15%;
     }
+    #funky-3 {
+        width: 30%;
+    }
     /* Home - Projects */
     .project-content .project-snippet {
         margin-right: 0;
