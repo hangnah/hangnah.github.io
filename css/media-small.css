@@ -39,6 +39,11 @@
         width: 200px;
         bottom: 15%;
     }
+    #funky-3 {
+        width: 210px;
+        bottom:7%;
+        left:40%;
+    }
     #back {
         width: 330px;
     }
@@ -54,16 +59,6 @@
         line-height: 1em;
     }
     /* about */
-    #about img {
-        width: 70%;
-    }
-    #about {
-        padding: 3em 1em;
-        margin: 0 !important;
-    }
-    #about-text {
-        padding: 3em;
-    }
     /* Project */
     .summary {
         padding: 3em 2em;

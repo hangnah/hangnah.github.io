@@ -5,12 +5,11 @@
 
 #about h1{
     font-family:Playfair Display;
-    font-size:3em;
+    font-size:2em;
 }
 #about {
-    padding:1em 7em;
+    padding:1em 18em;
     display:grid;
-    grid-template-columns:50% 50%;
     width:100%;
 }
 
@@ -20,10 +19,10 @@
 }
 #about-img img{
     width:100%;
-    padding:0 2em;
+    padding:1em 0;
 }
 
-#about-text{
+#about-content{
     padding:0 2em;
     width:100%;
     margin:auto;
@@ -32,17 +31,13 @@
 @media only screen and (max-width: 1085px) {
     /* about */
     #about {
-        text-align: center;
-        width: 100%;
-        display: block !important;
-        padding:3em;
+        padding:1em 14em;
     }
-    #about-text {
-        padding: 3em 6em;
-        text-align: left;
-    }
-    #about img {
-        margin: auto;
-        width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+    /* about */
+    #about {
+        padding:1em 10em;
     }
 }
