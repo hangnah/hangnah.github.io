@@ -39,6 +39,13 @@
         align-self:end;
         padding:2em 0;
     }
+
+    /* footer */
+    #footer-cols{
+        grid-template-columns:none;
+        grid-template-rows:auto;
+        text-align:center;
+    }
      /* projects */
      #project-container{
         padding: 0 1em;

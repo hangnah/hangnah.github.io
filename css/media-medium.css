@@ -127,6 +127,11 @@
     #category ul {
         font-size: 2.5em;
     }
+
+    /* Footer */
+    #footer-cols{
+        grid-template-columns: .5fr .25fr .25fr;
+    }
     /* About */
     #about {
         text-align: center;

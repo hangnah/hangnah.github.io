@@ -85,7 +85,7 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #FFAF00;
+    color: #FFAF00 !important;
 }
 
 a:hover {
@@ -200,6 +200,42 @@ button:hover{
 /* ///// Footer ///// */
 
 footer {
+    background-color: #FF5B26;
+    text-align: center;
+    padding:2em 2em .5em 2em;
+}
+
+#footer-proj{
+    background-color: rgb(46, 46, 46) !important;
+}
+
+footer h2{
+    font-family: Avenir Next;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: .1em;
+    color:white !important;
+}
+
+footer p{
+    color:white !important;
+    letter-spacing:.05em;
+}
+footer a{
+    color:white !important;
+}
+
+footer a:hover{
+    color:rgb(223, 223, 223) !important;
+}
+
+#footer-cols{
+    display:grid;
+    grid-template-columns: .7fr .15fr .15fr;
+    text-align:left;
+}
+/*
+footer {
     height: 20px;
     text-align: center;
     color: rgb(107, 107, 107);
@@ -225,3 +261,4 @@ footer a:hover {
     color: black;
     text-decoration: none;
 }
+*/
