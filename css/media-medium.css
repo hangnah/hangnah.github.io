@@ -8,7 +8,7 @@
     h2 {
         font-size: 1em;
     }
-    /* nav top */
+    /* nav top 
     #nav-mobile {
         z-index: 999;
         width: 100vw;
@@ -57,6 +57,7 @@
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
     }
+    */
     /* Home - Header */
     #header-container {
         align-items: center;
@@ -139,17 +140,12 @@
     #about {
         text-align: center;
         width: 100%;
-        display: block !important;
-        padding: 3em;
+        padding: 2em;
     }
     #about-text {
-        padding-top: 2em;
         text-align: left;
     }
-    #about img {
-        margin: auto;
-        width: 75%;
-    }
+
     /* Projects */
     /* Header */
     #project-header {

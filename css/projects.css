@@ -171,7 +171,7 @@ p {
     }
 
     /* images shadow */
-    img{
+    #project img{
         margin:1em 0;
         max-width:100%;
         -webkit-filter: drop-shadow(-3px 5px 16px rgba(0, 0, 0, .5));
