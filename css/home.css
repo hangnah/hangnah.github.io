@@ -30,7 +30,6 @@ h2 {
 }
 
 /* ///// Header ///// */
-
 #header-container-wrapper {
     position: relative;
     height: 100vh;
@@ -85,7 +84,14 @@ h2 {
 }
 /* Pages */
 
-/* Links */
+#header-pages {
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 0;
+    padding:2.5em;
+    z-index:99999;
+}
 
 #header-pages a {
     cursor: pointer;
@@ -94,10 +100,6 @@ h2 {
     color: rgb(172, 172, 172) !important;
 }
 
-#header-pages {
-    text-align: center;
-    float: right;
-}
 
 #header-pages a:hover {
     opacity:0.5;
@@ -132,9 +134,9 @@ h2 {
 #header-icon {
     overflow: hidden;
     z-index: 99999;
-    position: absolute;
     top:0;
     left: 0;
+    position:absolute;
     padding:2.5em;
     width:380px;
     display:grid;
