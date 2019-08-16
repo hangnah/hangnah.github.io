@@ -41,6 +41,9 @@
     }
 
     /* footer */
+    footer h2{
+        text-align:center;
+    }
     #footer-cols{
         grid-template-columns:none;
         grid-template-rows:auto;
