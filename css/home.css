@@ -91,6 +91,10 @@ h2 {
     top: 0;
     padding:2.5em;
     z-index:99999;
+
+    height: 155px;
+    display: grid;
+    align-items: center;
 }
 
 #header-pages a {

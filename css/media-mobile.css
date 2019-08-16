@@ -3,8 +3,9 @@
     #projects p, #contact p{
         font-size:1em;
     }
-    #nav-top h2{
-        font-size:1em;
+
+    #nav-top {
+        padding:2em;
     }
     /* funky */
     #funky-2{

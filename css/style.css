@@ -127,7 +127,7 @@ button:hover{
     z-index: 999;
     width: 100vw;
     top: 0;
-    padding:2em;
+    padding:2.5em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
