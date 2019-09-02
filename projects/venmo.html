@@ -40,13 +40,13 @@
 <body>
   <!-- Nav Top -->
   <div id="nav-top">
-      <div id="nav-title">
-        <a href="../"><img src="../images/home/H.png"></a>
-      </div>
-      <div id="nav-pages">
-        <h2><a href="../about">ABOUT</a></h2>
-      </div>
+    <div id="nav-title">
+      <a href="../"><img src="../images/home/H.png"></a>
     </div>
+    <div id="nav-pages">
+      <h2><a href="../about">ABOUT</a></h2>
+    </div>
+  </div>
 
   <!-- Project -->
   <div id="container">
@@ -198,25 +198,45 @@
 
           </div>
           <div id="infoarch">
-            <div id="infoarch-text">
-              <h2>Information Architecture</h2>
-              <h4>EXISTING ARCHITECTURE</h4>
-              <p>Following the research, I analyzed the existing architecture of information in Venmo. What I found was
-                a cluttered wealth of pages and a handful of less important pages that could be nested under a single
-                page.</p>
-              <h4>PROPOSED ARCHITECTURE</h4>
-              <p>Laying out the different pages in Venmo helped me to visualize a better information architecture for
-                the application. I decided that the landing page would take users straight to the payment screen, and
-                divided the rest of the pages into four sections: Social, Activity, Profile, and Settings.</p>
+            <div id="infoarch-breakdown">
+              <div id="infoarch-text">
+                <h2>Information Architecture</h2>
+                <h4>EXISTING ARCHITECTURE</h4>
+                <p>Following the research, I analyzed the existing architecture of information in Venmo. What I found
+                  was
+                  a cluttered wealth of pages and a handful of less important pages that could be nested under a single
+                  page.</p>
+                <h4>PROPOSED ARCHITECTURE</h4>
+                <p>Laying out the different pages in Venmo helped me to visualize a better information architecture for
+                  the application. I decided that the landing page would take users straight to the payment screen, and
+                  divided the rest of the pages into four sections: Social, Activity, Profile, and Settings.</p>
+              </div>
+              <div id="infoarch-img">
+                <img src="../images/projects/venmo/infoarch.png" alt="Information Architecture">
+              </div>
+
             </div>
-            <div id="infoarch-img">
-            <div>
-              <img src="../images/projects/venmo/existing.png" alt="Existing Information Architecture">
+            <div class="content-padding-normal">
+                <p>I decided to focus on three of the main pages listed in the revised architecture of the
+                  application:
+                  the landing/social, payment, and notifications pages. The following screenshots are what these pages
+                  in the application looked like in August 2019.</p>
+              </div>
+            <div id="infoarch-screenshots">
+              <div>
+                <img src="../images/projects/venmo/screenshots/feed.png" alt="Landing Page/Social Feed">
+                <h4 class="img-caption">LANDING PAGE / SOCIAL FEED</h4>
+              </div>
+              <div>
+                <img src="../images/projects/venmo/screenshots/notifications.png" alt="Notifications Page">
+                <h4 class="img-caption">NOTIFICATIONS PAGE</h4>
+              </div>
+              <div>
+                  <img src="../images/projects/venmo/screenshots/payment.png" alt="Payment Page">
+                  <h4 class="img-caption">PAYMENT PAGE</h4>
+                </div>
+
             </div>
-            <div>
-              <img src="../images/projects/venmo/new.png" alt="New Information Architecture">
-            </div>
-          </div>
           </div>
 
 
@@ -242,57 +262,58 @@
               </div>
               <div>
                 <img src="../images/projects/venmo/designs/payment-single.png" alt="Payment Single">
-                  <h4 class="img-caption">EMPHASIZED AMOUNT AND ADDED CATEGORIES</h4>
+                <h4 class="img-caption">EMPHASIZED AMOUNT AND ADDED CATEGORIES</h4>
               </div>
             </div>
             <div class="content-side-flip">
               <div>
-              <img src="../images/projects/venmo/designs/payment-multiple.png" alt="Payment Multiple">
+                <img src="../images/projects/venmo/designs/payment-multiple.png" alt="Payment Multiple">
                 <h4 class="img-caption">UNEVEN PAYMENT SPLIT BETWEEN MULTIPLE PEOPLE</h4>
               </div>
               <div>
-              <p>The split payment feature would help users refine their transactions when requesting money from
-                multiple people, allowing them to enter different amounts of money for the same transaction. This would
-                reduce the amount of transactions on the social feed and profile page, and help the user better
-                organize their finances.</p>
+                <p>The split payment feature would help users refine their transactions when requesting money from
+                  multiple people, allowing them to enter different amounts of money for the same transaction. This
+                  would
+                  reduce the amount of transactions on the social feed and profile page, and help the user better
+                  organize their finances.</p>
               </div>
             </div>
           </div>
           <div class="content-side">
             <div>
-                <h4>SOCIAL</h4>
-                <p>Many users I surveyed did not use Venmo as a social application, so I removed the global feed and kept
-                    the friends feed to keep aspects of the social component of the application. I also moved the search
-                    bar to this page, which would allow users to search for their friends and pay or request money from
-                    them from their profile pages.</p>
+              <h4>SOCIAL</h4>
+              <p>Many users I surveyed did not use Venmo as a social application, so I removed the global feed and kept
+                the friends feed to keep aspects of the social component of the application. I also moved the search
+                bar to this page, which would allow users to search for their friends and pay or request money from
+                them from their profile pages.</p>
             </div>
             <div>
-               <img src="../images/projects/venmo/designs/social.png" alt="Social">
+              <img src="../images/projects/venmo/designs/social.png" alt="Social">
               <h4 class="img-caption">REMOVED GLOBAL FEED</h4>
             </div>
           </div>
-          
+
           <div class="content-columns">
             <div>
-          <h4>ACTIVITY</h4>
-          <p>This page would serve as a notifications page, where users could keep track of their recently
-            completed transactions or view incomplete transactions requested by or from friends. Additionally, this
-            page would also include a brief summary of the user’s spending history and a breakdown of their
-            expenses given their self-categorization of their spending.</p>
+              <h4>ACTIVITY</h4>
+              <p>This page would serve as a notifications page, where users could keep track of their recently
+                completed transactions or view incomplete transactions requested by or from friends. Additionally, this
+                page would also include a brief summary of the user’s spending history and a breakdown of their
+                expenses given their self-categorization of their spending.</p>
+            </div>
+            <div>
+              <h4>PROFILE</h4>
+              <p>The profile page would be similar to the existing profile page, giving the users the option of viewing
+                their transactions in a manner similar to viewing the transactions of their friends.</p>
+            </div>
+            <div>
+              <h4>SETTINGS</h4>
+              <p>Many of the existing standalone pages on the Venmo application can be nested under a single settings
+                page. This page would lead users to a separate page with their privacy and notification settings, and
+                would also allow users to transfer their Venmo balances to their bank accounts.</p>
+            </div>
           </div>
-          <div>
-            <h4>PROFILE</h4>
-          <p>The profile page would be similar to the existing profile page, giving the users the option of viewing
-            their transactions in a manner similar to viewing the transactions of their friends.</p>
-          </div>
-          <div>
-            <h4>SETTINGS</h4>
-          <p>Many of the existing standalone pages on the Venmo application can be nested under a single settings
-            page. This page would lead users to a separate page with their privacy and notification settings, and
-            would also allow users to transfer their Venmo balances to their bank accounts.</p>
-          </div>
-          </div>
-      </div>
+        </div>
         <div class="summary">
           <h2>Summary</h2>
           <p>Given the short window of time I gave myself to complete this project, I recognized the importance of
@@ -309,35 +330,35 @@
       <h4><a href="../#venmo">&#8592; BACK TO PROJECTS</a></h4>
     </div>
     <footer id="footer-proj">
-        <div id="footer-cols">
-          <div class="footer-col">
-            <div class="footer-title">
-              <h2>HANNAH PHAM</h2>
-            </div>
-            <div class="footer-text">
-              <p>Digital Designer</p>
-            </div>
+      <div id="footer-cols">
+        <div class="footer-col">
+          <div class="footer-title">
+            <h2>HANNAH PHAM</h2>
           </div>
-          <div class="footer-col">
-              <div class="footer-title">
-                <h2>WORK</h2>
-              </div>
-              <div class="footer-text">
-                <p><a href="../#projects">Projects</a><br />
-                <a href="https://www.behance.net/hannahhp" target="_blank">Behance</a></p>
-              </div>
-            </div>
-            <div class="footer-col">
-                <div class="footer-title">
-                  <h2>CONTACT</h2>
-                </div>
-                <div class="footer-text">
-                  <p><a href="https://www.linkedin.com/in/hannahhp/" target="_blank">LinkedIn</a><br />
-                    <a href="mailto:hannah.pham@gmail.com">Email</a></p>
-                </div>
-              </div>
+          <div class="footer-text">
+            <p>Digital Designer</p>
+          </div>
         </div>
-      </footer>
+        <div class="footer-col">
+          <div class="footer-title">
+            <h2>WORK</h2>
+          </div>
+          <div class="footer-text">
+            <p><a href="../#projects">Projects</a><br />
+              <a href="https://www.behance.net/hannahhp" target="_blank">Behance</a></p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">
+            <h2>CONTACT</h2>
+          </div>
+          <div class="footer-text">
+            <p><a href="https://www.linkedin.com/in/hannahhp/" target="_blank">LinkedIn</a><br />
+              <a href="mailto:hannah.pham@gmail.com">Email</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 
   <!-- Bootstrap core JavaScript -->

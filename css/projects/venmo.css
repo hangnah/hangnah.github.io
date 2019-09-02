@@ -27,7 +27,7 @@
 }
 
 /* info arch */
-#infoarch{
+#infoarch-breakdown{
     display:grid;
     grid-column-gap:5em;
     grid-template-columns:.4fr .6fr;
@@ -36,18 +36,26 @@
     justify-content: center;
     align-items: center;
 }
-#infoarch-img{
+#infoarch-img{/*
     display:grid;
     grid-column-gap:2em;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 }
 #infoarch h4{
-    color:#B5B5B5;
+    color:#3D95CE;
 }
-#infoarch img{
+#infoarch-breakdown img{
     max-width:100%;
+}
+
+#infoarch-screenshots{
+    text-align:center;
+}
+#infoarch-screenshots img{
+    height:400px;
+    max-width:100% !important;
 }
 
 /* design */
