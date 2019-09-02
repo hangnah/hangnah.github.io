@@ -54,8 +54,9 @@
     text-align:center;
 }
 #infoarch-screenshots img{
-    height:400px;
-    max-width:100% !important;
+    max-height: 400px;
+    height: auto !important;
+    width: auto !important;
 }
 
 /* design */

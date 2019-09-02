@@ -128,7 +128,7 @@
         text-align: left;
     }
     /* Venmo */
-    #infoarch {
+    #infoarch-breakdown {
         grid-template-columns: none;
     }
     #research-features .content-columns, .content-columns {
