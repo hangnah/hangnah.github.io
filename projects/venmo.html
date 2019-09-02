@@ -217,11 +217,11 @@
 
             </div>
             <div class="content-padding-normal">
-                <p>I decided to focus on three of the main pages listed in the revised architecture of the
-                  application:
-                  the landing/social, payment, and notifications pages. The following screenshots are what these pages
-                  in the application looked like in August 2019.</p>
-              </div>
+              <p>I decided to focus on three of the main pages listed in the revised architecture of the
+                application:
+                the landing/social, payment, and notifications pages. The following screenshots are what these pages
+                in the application looked like in August 2019.</p>
+            </div>
             <div id="infoarch-screenshots">
               <div>
                 <img src="../images/projects/venmo/screenshots/feed.png" alt="Landing Page/Social Feed">
@@ -232,14 +232,11 @@
                 <h4 class="img-caption">NOTIFICATIONS PAGE</h4>
               </div>
               <div>
-                  <img src="../images/projects/venmo/screenshots/payment.png" alt="Payment Page">
-                  <h4 class="img-caption">PAYMENT PAGE</h4>
-                </div>
-
+                <img src="../images/projects/venmo/screenshots/payment.png" alt="Payment Page">
+                <h4 class="img-caption">PAYMENT PAGE</h4>
+              </div>
             </div>
           </div>
-
-
         </div>
         <div id="design">
           <div class="content-padding-normal">
@@ -250,69 +247,85 @@
               the application and possible notifications. Additionally, the payment page became the landing page of the
               application.</p>
           </div>
-          <div id="payment">
-
-            <div class="content-side">
+          <div id="design-low" class="content-padding-normal">
+            <h2>Low-Fidelity</h2>
+            <div id="payment">
+              <h4>PAYMENT</h4>
+              <p>I redesigned the payment page to emphasize the amount of money being paid or requested by users. In
+                doing so, I added a couple new features to the payment process: categories and split payments and
+                categories. Given my intent to add a financial organization feature, I added the categories section to
+                the payment page to allow users to later organize their spending.</p>
+              <p>The split payment feature would help users refine their transactions when requesting money from
+                multiple people, allowing them to enter different amounts of money for the same transaction. This would
+                reduce the amount of transactions on the social feed and profile page, and help the user better organize
+                their finances.</p>
               <div>
-                <h4>PAYMENT</h4>
-                <p>I redesigned the payment page to emphasize the amount of money being paid or requested by users. In
-                  doing so, I added a couple new features to the payment process: categories and split payments and
-                  categories. Given my intent to add a financial organization feature, I added the categories section to
-                  the payment page to allow users to later organize their spending.</p>
+                <img src="../images/projects/venmo/designs/payment.png" alt="Payment">
               </div>
               <div>
-                <img src="../images/projects/venmo/designs/payment-single.png" alt="Payment Single">
-                <h4 class="img-caption">EMPHASIZED AMOUNT AND ADDED CATEGORIES</h4>
+                <ol>
+                  <li>Emphasized amount of money being paid or requested to reduce mistakes in typing payment
+                    amount.</li>
+                  <li>Added option to scan code of other Venmo users.</li>
+                  <li>Reduced size of description box.</li>
+                  <li>Added categories feature.</li>
+                  <li>Added confirmation page.</li>
+                  <li>Displayed “SPLIT” button after adding multiple recipients.</li>
+                  <li>Allowed users to split payment unequally amount recipients.</li>
+                </ol>
               </div>
             </div>
-            <div class="content-side-flip">
-              <div>
-                <img src="../images/projects/venmo/designs/payment-multiple.png" alt="Payment Multiple">
-                <h4 class="img-caption">UNEVEN PAYMENT SPLIT BETWEEN MULTIPLE PEOPLE</h4>
-              </div>
-              <div>
-                <p>The split payment feature would help users refine their transactions when requesting money from
-                  multiple people, allowing them to enter different amounts of money for the same transaction. This
-                  would
-                  reduce the amount of transactions on the social feed and profile page, and help the user better
-                  organize their finances.</p>
-              </div>
-            </div>
-          </div>
-          <div class="content-side">
-            <div>
+            <div id="social">
               <h4>SOCIAL</h4>
               <p>Many users I surveyed did not use Venmo as a social application, so I removed the global feed and kept
-                the friends feed to keep aspects of the social component of the application. I also moved the search
-                bar to this page, which would allow users to search for their friends and pay or request money from
-                them from their profile pages.</p>
+                the friends feed to keep aspects of the social component of the application. I also moved the search bar
+                to this page, which would allow users to search for their friends and pay or request money from them
+                from their profile pages.</p>
+              <div>
+                <img src="../images/projects/venmo/designs/social.png" alt="Social">
+              </div>
+              <div>
+                <ol>
+                  <li>Moved search bar to social page.</li>
+                  <li>Added QR code scanner to search function.</li>
+                </ol>
+              </div>
             </div>
-            <div>
-              <img src="../images/projects/venmo/designs/social.png" alt="Social">
-              <h4 class="img-caption">REMOVED GLOBAL FEED</h4>
-            </div>
-          </div>
-
-          <div class="content-columns">
-            <div>
+            <div id="activity">
               <h4>ACTIVITY</h4>
-              <p>This page would serve as a notifications page, where users could keep track of their recently
-                completed transactions or view incomplete transactions requested by or from friends. Additionally, this
-                page would also include a brief summary of the user’s spending history and a breakdown of their
-                expenses given their self-categorization of their spending.</p>
+              <p>This page would serve as a notifications page, where users could keep track of their recently completed
+                transactions, accept or reject friend requests, or view incomplete transactions requested by or from
+                friends. Additionally, this page would also include a brief summary of the user’s spending history and a
+                breakdown of their expenses given their self-categorization of their spending.</p>
+              <div>
+                <img src="../images/projects/venmo/designs/activity.png" alt="Activity">
+              </div>
+              <div>
+                <ol>
+                  <li>Categorized notifications to “New,” “Incomplete Requests,” “Friend Requests,” and “Recent
+                    Activity.”</li>
+                  <li>Added “Finance Tracker” icon in upper right hand corner.</li>
+                  <li>Gave option to pay or decline payments from activity page.</li>
+                  <li>Added “Activity” icon in upper right hand corner.</li>
+                  <li>Gave overview of money spent and received for current month.</li>
+                  <li>Showed breakdown of categories and subsequent number of transactions for each category.</li>
+                  <li>Added dropdown of transactions for each respective category.</li>
+                </ol>
+              </div>
+
             </div>
-            <div>
+            <div id="other">
               <h4>PROFILE</h4>
               <p>The profile page would be similar to the existing profile page, giving the users the option of viewing
                 their transactions in a manner similar to viewing the transactions of their friends.</p>
-            </div>
-            <div>
               <h4>SETTINGS</h4>
               <p>Many of the existing standalone pages on the Venmo application can be nested under a single settings
                 page. This page would lead users to a separate page with their privacy and notification settings, and
                 would also allow users to transfer their Venmo balances to their bank accounts.</p>
             </div>
           </div>
+
+  
         </div>
         <div class="summary">
           <h2>Summary</h2>

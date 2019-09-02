@@ -70,7 +70,4 @@
     #infoarch-img {
         grid-template-columns: none;
     }
-    #infoarch img {
-        padding: 2em;
-    }
 }

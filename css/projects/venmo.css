@@ -57,6 +57,7 @@
     max-height: 400px;
     height: auto !important;
     width: auto !important;
+    padding:0 2em;
 }
 
 /* design */
@@ -64,7 +65,9 @@
     text-align:center;
 }
 #design h4{
+    text-align:center;
     color:#3D95CE;
+    margin-top:1.5em;
 }
 
 #design .content-side, #design .content-side-flip{
@@ -74,6 +77,10 @@
 
 #design .content-columns{
     text-align:center;
+}
+
+#design ol{
+    padding-left:1.5em !important;
 }
 
 .summary{
