@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // Show "DD" on hover
+    // Show "Digital Designer" on hover
     $('#header-h').hover(function () {
         $('#header-h-text').fadeToggle();
     });
