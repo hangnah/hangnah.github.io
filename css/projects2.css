@@ -168,13 +168,6 @@ p {
         filter: drop-shadow(-3px 5px 16px rgba(0, 0, 0, .5));*/
     }
 
-    /* summary */
-    .summary{
-        width:100%;
-        text-align:left;
-        padding:3em 15em;
-    }
-    
 #backtoprojects{
     text-align:center;
     padding:2em;
