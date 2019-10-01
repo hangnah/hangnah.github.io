@@ -97,6 +97,9 @@
     }
 
     /* Projects */
+    #project-container{
+        padding:0;
+    }
     /* Header */
     #project-header {
         display: grid;
