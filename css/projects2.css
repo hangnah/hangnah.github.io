@@ -99,6 +99,7 @@ p {
     grid-template-columns:1fr 1fr;
     grid-template-rows:1fr 1fr;
     padding:2em;
+    grid-column-gap:2em;
 }
 
 /* Project Overview */
@@ -171,5 +172,5 @@ p {
 
 #backtoprojects{
     text-align:center;
-    padding:2em;
+    padding:1em;
 }

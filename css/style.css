@@ -90,7 +90,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #FFBC45;
+    color: rgb(148, 105, 30) !important;
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
