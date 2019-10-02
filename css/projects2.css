@@ -48,6 +48,15 @@ h4 { /* Large paragraph */
     line-height:1.5em;
 }
 
+h5 { /* Subheadings of Subheadings */
+    font-family: Avenir Next;
+    font-size: 1em;
+    letter-spacing:.1em;
+    font-weight:600;
+
+    text-transform:uppercase;
+}
+
 #project-content h2{ /* Project Content Titles */
     color: #0A8651;
 }
@@ -131,6 +140,11 @@ p {
     padding:2em;
     margin:1em 0;
     box-shadow:10px 10px rgba(0, 0, 0, .5);
+    width:100%;
+}
+
+.tabCarousel img{
+    width:100%;
 }
 
 .tabCarousel .nav-pills > li > a{

@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    //remove link reload on carousels
+
+
     // fulcrum labs
     $('#design1 .tabCarousel a').click(function (event) {
         event.preventDefault();
