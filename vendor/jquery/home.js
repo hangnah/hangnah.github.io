@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // Show "Digital Designer" on hover
-    $('#header-h').hover(function () {
-        $('#header-h-text').fadeToggle();
+    $('#nav-title img').hover(function () {
+        $('#nav-title-text').fadeToggle();
     });
 
     // Show Back To Top on scroll
