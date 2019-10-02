@@ -1,0 +1,9 @@
+/* large screen */
+
+@media only screen and (max-width: 1440px) {
+    .project-content-item{
+        padding:5em 0;
+        width:80%;
+        margin:auto;
+    }
+}
