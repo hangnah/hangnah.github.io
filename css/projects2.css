@@ -91,12 +91,14 @@ p {
     align-items:center;
 
     grid-column-gap:2em;
+    margin:2em 0;
 }
 
 #header-img{
     grid-column:2;
     grid-row:1 / span 2;
 }
+
 
 #header-title{
     padding:2em;
@@ -111,12 +113,21 @@ p {
     grid-column-gap:2em;
 }
 
+/* Project Header - Mobile */
+.project-header-mobile {
+    margin:auto;
+}
+.header-img-mobile img{
+    max-height:50vh;
+}
+
 /* Project Overview */
 #overview{
     display:grid;
     grid-template-columns:70% 30%;
     grid-column-gap:2em;
     width:100%;
+    margin:1em 0;
 }
 
 /* Project Content */
