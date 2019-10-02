@@ -61,7 +61,7 @@
     }
      #project-container{
     }
-    
+
     #project p, ul{
         font-size:1em;
     }
@@ -72,9 +72,6 @@
         font-size:1.1em;
     }
     #project h3{
-        font-size:.8em;
-    }
-    #project h4{
         font-size:.8em;
     }
 }
