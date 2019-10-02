@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Show "Digital Designer" on hover
-    $('#header-h').hover(function () {
+    $('#nav-title').hover(function () {
         $('#header-h-text').fadeToggle();
     });
 

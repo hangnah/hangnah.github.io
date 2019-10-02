@@ -126,6 +126,7 @@ button:hover{
 
 /* ///// Nav Top ///// */
 #nav-top {
+    height:10vh;
     z-index: 999;
     width: 100vw;
     top: 0;
@@ -143,6 +144,10 @@ button:hover{
 }
 #nav-pages {
     text-align:right;
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-column-gap:2em;
+    margin:0 0 0 auto;
 }
 #nav-title img{
     width:35px;
