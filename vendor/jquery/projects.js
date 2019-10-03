@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    //remove link reload on carousels
 
 
     // fulcrum labs
@@ -21,15 +20,4 @@ $(document).ready(function () {
         $(this).addClass('tabActive');
     });
 
-    // Add smooth scrolling to all links
-    $("#overview-nav a").on('click', function (event) {
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        $('html,body').animate({
-            scrollTop: $(hash).offset().top
-        });
-    });
 });
