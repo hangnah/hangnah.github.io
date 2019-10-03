@@ -45,6 +45,8 @@
     #project {
         max-width: 90%;
     }
+
+
     .project-content-item{
         padding:3em 0;
         width:80%;
@@ -122,6 +124,19 @@
         #project-header img{
             width:100%;
         }
+
+        /* Header - Mobile Projects */
+        .header-img-mobile{
+            margin:auto;
+            text-align:center;
+        }
+        .header-img-mobile img{
+            width:50% !important;
+        }
+        .header-img-mobile img{
+            max-height:100%;
+        }
+
         #header-title{
             text-align:center;
         }

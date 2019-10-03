@@ -1,97 +1,62 @@
-#why h2{
-    text-align:center;
+#project-content h2{
+    color:#3D95CE;
 }
-
-#research h2{
-    text-align:center;
-}
-
-#header-text-container {
-    background-color: #3D95CE;
-    color: white;
-}
-
-#header-info-container {
-    background-color: #FBFBFB;
-}
-
-/* colored bg */
-.content-coloredbg {
-    background-color: #16415E;
-    color: white;
-}
-
-/* columns */
-#research-features .content-columns {
-    background-color:rgba(32, 32, 32, 0.5);
+#project-content h5{
+    color:rgb(31, 92, 133);
 }
 
 /* info arch */
-#infoarch-breakdown{
+#infoarch-container{
     display:grid;
     grid-column-gap:5em;
     grid-template-columns:.4fr .6fr;
-    padding:3em 2em;
 
     justify-content: center;
     align-items: center;
 }
-#infoarch-img{/*
-    display:grid;
-    grid-column-gap:2em;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;*/
-}
-#infoarch h4{
-    color:#3D95CE;
-}
-#infoarch-breakdown img{
+
+#infoarch-container img{
     max-width:100%;
+    padding:2em 0;
 }
 
-#infoarch-screenshots{
-    text-align:center;
-}
-#infoarch-screenshots img{
-    max-height: 400px;
-    height: auto !important;
-    width: auto !important;
-    padding:0 2em;
+/* screenshots */
+#carousel-screenshots2 img{
+    max-height:50vh;
+    width:auto;
 }
 
-/* design */
-#design h2{
-    text-align:center;
-}
-#design h4{
-    text-align:center;
-    color:#3D95CE;
-    margin-top:1.5em;
+/* high fidelity */
+#prototype img{
+    max-width:30%;
+    margin-top:2em;
+
 }
 
-#design .content-side, #design .content-side-flip{
-    justify-content: center;
-    align-items: center;
-}
-
-#design .content-columns{
-    text-align:center;
-}
-
-#design ol{
-    padding-left:1.5em !important;
-}
-
-.summary{
-    background-color:#3D95CE;
-    color:white;
+/* Project Content Backgrounds */
+#research, #lowfidelity, #reflection{
+    background-color:#F9F9F9;
 }
 
 /* Media Queries */
+@media only screen and (max-width: 1100px) {
+    #infoarch-container{
+        grid-template-columns: .6fr .4fr;
+    }
+}
 @media only screen and (max-width: 1000px) {
-    #infoarch{
-        grid-column-gap:2em;
-        grid-template-columns:.5fr .5fr;
+    #infoarch-container{
+        grid-template-columns:none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #carousel-screenshots2 img{
+        max-height:100%;
+        width:100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #prototype img{
+        max-width:50%;
     }
 }

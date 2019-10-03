@@ -25,12 +25,13 @@
 
   <!-- Custom styles for this template -->
   <link href="../css/style.css" rel="stylesheet">
-  <link href="../css/projects.css" rel="stylesheet">
+  <link href="../css/projects2.css" rel="stylesheet">
   <link href="../css/projects/venmo.css" rel="stylesheet">
 
   <!-- Media Queries -->
-  <link rel="stylesheet" href="../css/media-medium.css" media="(max-width: 768px)">
-  <link rel="stylesheet" href="../css/media-small.css" media="(max-width: 600px)">
+  <link rel="stylesheet" href="../css/media-large.css" media="(max-width: 1440px)">
+  <link rel="stylesheet" href="../css/media-normal2.css" media="(max-width: 768px)">
+  <link rel="stylesheet" href="../css/media-medium.css" media="(max-width: 600px)">
   <link rel="stylesheet" href="../css/media-mobile.css" media="(max-width: 480px)">
 
   <!-- Favicon -->
@@ -44,9 +45,9 @@
       <a href="../"><img src="../images/home/H.png"></a>
     </div>
     <div id="nav-pages">
-        <h2><a href="../#projects">PROJECTS</a></h2>
-        <h2><a href="../about">ABOUT</a></h2>
-      </div>
+      <h2><a href="../#projects">PROJECTS</a></h2>
+      <h2><a href="../about">ABOUT</a></h2>
+    </div>
   </div>
 
   <!-- Project -->
@@ -54,46 +55,66 @@
 
     <!-- Project Header -->
     <div id="project">
-      <div id="project-header">
-        <div id="header-text-container">
-          <div id="header-text">
-            <h1>Venmo Concept</h1>
-            <p>In Spring 2018, I challenged myself to a design project that would help me to fully explore each part of
-              the UX design process. I decided to tackle Venmo – a mobile payment service that makes payments between
-              friends seamless. I gave myself one month to complete the project.</p>
-          </div>
+      <div id="project-header" class="project-header-mobile">
+        <div id="header-img" class="header-img-mobile">
+          <img src="../images/projects/venmo/venmo.gif" alt="Venmo">
         </div>
-        <div id="header-info-container">
-          <div id="header-info">
-
-            <div id="duration">
-              <h3>Duration</h3>
-              <p>May - June 2018</p>
-            </div>
-            <div id="role">
-              <h3>Role</h3>
-              <p>UX Designer</p>
-            </div>
-            <div id="tools">
-              <h3>Tools</h3>
-              <p>Sketch</p>
-            </div>
-            <div id="skills">
-              <h3>Skills</h3>
-              <p>Research<br />
-                Wireframing<br />
-                Prototyping</p>
-            </div>
+        <div id="header-title">
+          <h1>Venmo Concept</h1>
+          <h2>UX Research & Design</h2>
+        </div>
+        <div id="header-info">
+          <div id="duration">
+            <h3>Duration</h3>
+            <p>Spring 2018<br />
+              (4 weeks)</p>
+          </div>
+          <div id="role">
+            <h3>Role</h3>
+            <p>UX Researcher<br />
+              UX Designer</p>
+          </div>
+          <div id="tools">
+            <h3>Tools</h3>
+            <p>Sketch</p>
+          </div>
+          <div id="skills">
+            <h3>Skills</h3>
+            <p>Research<br />
+              Wireframing<br />
+              Prototyping</p>
           </div>
         </div>
       </div>
       <div id="project-container">
+
+        <!-- Project Overview -->
+        <div id="overview">
+          <div id="overview-text">
+            <h4>In Spring 2018, I challenged myself to a design project that would help me to fully explore each part of
+              the UX design process. I decided to tackle Venmo – a mobile payment service that makes payments between
+              friends seamless. I gave myself one month to complete the project.</h4>
+          </div>
+          <div id="overview-nav">
+            <h2>In this project:</h2>
+            <h2><a href="#why">Why Venmo?</a></h2>
+            <h2><a href="#research">Business & User Research</a></h2>
+            <h2><a href="#infoarch">Information Architecture</a></h2>
+            <h2><a href="#lowfidelity">Low Fidelity Design</a></h2>
+            <h2><a href="#highfidelity">High Fidelity Design</a></h2>
+            <h2><a href="#reflection">Reflection</a></h2>
+
+          </div>
+        </div>
+
+        <!-- Project Content -->
         <div id="project-content">
-          <div id="why" class="content-side">
-            <div class="content-side-title">
+
+          <!-- Why -->
+          <div id="why">
+            <div class="project-content-item">
               <h2>Why Venmo?</h2>
-            </div>
-            <div class="content-side-text">
+              <h4>Venmo is a great product, but can it be improved?</h4>
               <p>As a college student, I frequently use Venmo to pay or request money from friends. Paying people back
                 for
                 food or housing-related bills is much easier than calculating change and paying with cash. Additionally,
@@ -104,239 +125,334 @@
                 Venmo’s business goals and asking various Venmo users about their experience with Venmo.</p>
             </div>
           </div>
-          <div id="research" class="content-coloredbg">
-            <div class="content-padding-normal">
-              <h2>Business & User Research</h2>
-              <p>The primary goal of Venmo is to make payments between people seamless and efficient. Beyond this, Venmo
-                is aiming to expand its services beyond the application and allow users to use their Venmo balances to
-                make purchases at participating vendors. The social component – the ability to interact with Venmo
-                friends
-                and their payments – contributes to the overall experience with the application, but is not the primary
-                function of the application. Despite this, the landing page of the application still remains the global
-                feed of payments between people across the world.
-              </p>
-              <p>Taking these goals into consideration, I created an online survey using Google Forms to see if the user
-                goals aligned with the business goals.
-              </p>
-              <p>I surveyed 17 college students between the ages 19-22, 52.9% of whom were female and 47.1% of whom were
-                male. (In retrospect, I should have expanded my pool of survey participants.) The survey consisted of
-                questions regarding the frequencies that they used the app, features in the application that were
-                important to them, and situational questions.</p>
-            </div>
-            <div id="research-features">
-              <div class="content-columns">
-                <div class="content-columns-title">
-                  <h2>Dissecting Venmo Features</h2>
-                </div>
-                <div class="content-columns-items">
-                  <h4>Social Networking</h4>
-                  <p>
-                    82.4% of participants only open Venmo when they need to pay or request money.
-                  </p>
-                  <p>
-                    The survey participants did not have a preference on their default privacy setting of their
-                    transactions.
-                  </p>
-                </div>
-                <div class="content-columns-items">
-                  <h4>Payment Splitting</h4>
-                  <p>
-                    94.1% of participants use Venmo to split food bills, and 52.9% of participants use Venmo to pay
-                    larger amounts of money.
-                  </p>
-                  <p>82.4% of participants resort to other applications to calculate how to split the bill.</p>
-                </div>
-                <div class="content-columns-items">
-                  <h4>Finance Tracking</h4>
-                  <p>
-                    70.6% of participants use Venmo 1-2 times a week.
-                  </p>
-                  <p>
-                    58.8% of participants never transfer their Venmo balances to their bank accounts.
-                  </p>
+
+          <!-- Business & User Research -->
+          <div id="research">
+            <div class="project-content-item">
+              <div class="content-padding-normal">
+                <h2>Business & User Research</h2>
+                <p>The primary goal of Venmo is to make payments between people seamless and efficient. Beyond this,
+                  Venmo
+                  is aiming to expand its services beyond the application and allow users to use their Venmo balances to
+                  make purchases at participating vendors. The social component – the ability to interact with Venmo
+                  friends
+                  and their payments – contributes to the overall experience with the application, but is not the
+                  primary
+                  function of the application. Despite this, the landing page of the application still remains the
+                  global
+                  feed of payments between people across the world.
+                </p>
+                <p>Taking these goals into consideration, I created an online survey using Google Forms to see if the
+                  user
+                  goals aligned with the business goals.
+                </p>
+                <p>I surveyed 17 college students between the ages 19-22, 52.9% of whom were female and 47.1% of whom
+                  were
+                  male. (In retrospect, I should have expanded my pool of survey participants.) The survey consisted of
+                  questions regarding the frequencies that they used the app, features in the application that were
+                  important to them, and situational questions.</p>
+              </div>
+
+              <!-- User Survey Results -->
+              <div id="survey-results">
+                <h5>User Survey Results</h5>
+
+                <!-- Tab Carousel -->
+                <div class="tabCarousel">
+
+                  <ul class="nav nav-pills">
+                    <li>
+                      <a href="#carousel-survey1" data-toggle="tab" class="tabActive">Social Networking</a>
+                    </li>
+                    <li>
+                      <a href="#carousel-survey2" data-toggle="tab">Payment Splitting</a>
+                    </li>
+                    <li>
+                      <a href="#carousel-survey3" data-toggle="tab">Finance Tracking</a>
+                    </li>
+                  </ul>
+                  <!-- Social Networking -->
+                  <div class="tab-content clearfix">
+                    <div id="carousel-survey1" class="tab-pane active">
+                      <p>
+                        82.4% of participants only open Venmo when they need to pay or request money.
+                      </p>
+                      <p>
+                        The survey participants did not have a preference on their default privacy setting of their
+                        transactions.
+                      </p>
+                    </div>
+                    <!-- Payment Splitting -->
+                    <div id="carousel-survey2" class="tab-pane">
+                      <p>
+                        94.1% of participants use Venmo to split food bills, and 52.9% of participants use Venmo to pay
+                        larger amounts of money.
+                      </p>
+                      <p>82.4% of participants resort to other applications to calculate how to split the bill.</p>
+                    </div>
+                    <!-- Finance Tracking -->
+                    <div id="carousel-survey3" class="tab-pane">
+                      <p>
+                        70.6% of participants use Venmo 1-2 times a week.
+                      </p>
+                      <p>
+                        58.8% of participants never transfer their Venmo balances to their bank accounts.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-            </div>
-            <div class="content-padding-normal">
-              <p>Among the three features of banking apps, users commented more on the payment splitting and financial
-                organization features than on the social component of the application. Many survey participants did not
-                see the social component of the application as a necessary feature, as they only used the application
-                for
-                requesting and paying money. One surprising find was that many of the survey participants did not
-                frequently transfer their Venmo balances to their bank accounts, and the payments that were being made
-                were done in smaller sums.
-              </p>
-            </div>
-            <div class="content-columns">
-              <div class="content-columns-title">
-                <h2>Common Threads from User Surveys:</h2>
+              <!-- Common Threads -->
+              <div id="commonthreads">
+                <p>Among the three features of banking apps, users commented more on the payment splitting and financial
+                  organization features than on the social component of the application. Many survey participants did
+                  not
+                  see the social component of the application as a necessary feature, as they only used the application
+                  for
+                  requesting and paying money. One surprising find was that many of the survey participants did not
+                  frequently transfer their Venmo balances to their bank accounts, and the payments that were being made
+                  were done in smaller sums.
+                </p>
+
+                <h5>Common Threads From Surveys</h5>
+
+                <!-- Tab Carousel / Text Carousel -->
+                <div class="tabCarousel">
+                  <div id="commonthreadscarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#commonthreadscarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#commonthreadscarousel" data-slide-to="1"></li>
+                      <li data-target="#commonthreadscarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Common Thread 1 -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <p>Many users described their frustrations with Venmo’s lack of a convenient bill-splitting
+                          feature.
+                          Users would have to resort to outside applications, such as their calculators, to resolve
+                          payments
+                          with other people.</p>
+                      </div>
+                      <!-- Common Thread 2 -->
+                      <div class="carousel-item">
+                        <p>Although the landing page of the application is the global feed of transactions, users did
+                          not
+                          report
+                          a high use or interaction with the social feeds.</p>
+                      </div>
+                      <!-- Common Thread 3 -->
+                      <div class="carousel-item">
+                        <p>Given that over half of the surveyed users keep their money in their Venmo accounts, some
+                          expressed
+                          interest in a finance tracker or summary of their spending within Venmo.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <p>Taking these survey results into consideration, I decided to focus on the following aspects on my
+                  redesign of the application:</p>
+                <ul>
+                  <li>A revised landing page that allows users to quickly pay and request money from people for a
+                    particular bill</li>
+                  <li>An improved payment process</li>
+                  <li>A new finance tracking section that allows users to organize and “tag” past payments</li>
+                </ul>
               </div>
-              <div class="content-columns-items">
-                <p>Many users described their frustrations with Venmo’s lack of a convenient bill-splitting feature.
-                  Users would have to resort to outside applications, such as their calculators, to resolve payments
-                  with other people.</p>
-              </div>
-              <div class="content-columns-items">
-                <p>Although the landing page of the application is the global feed of transactions, users did not report
-                  a high use or interaction with the social feeds.</p>
-              </div>
-              <div class="content-columns-items">
-                <p>Given that over half of the surveyed users keep their money in their Venmo accounts, some expressed
-                  interest in a finance tracker or summary of their spending within Venmo.</p>
-              </div>
-            </div>
-            <div class="content-padding-normal">
-              <p>Taking these survey results into consideration, I decided to focus on the following aspects on my
-                redesign of the application:</p>
-              <ul>
-                <li>A revised landing page that allows users to quickly pay and request money from people for a
-                  particular bill</li>
-                <li>An improved payment process</li>
-                <li>A new finance tracking section that allows users to organize and “tag” past payments</li>
-              </ul>
             </div>
 
           </div>
-          <div id="infoarch">
-            <div id="infoarch-breakdown">
-              <div id="infoarch-text">
-                <h2>Information Architecture</h2>
-                <h4>EXISTING ARCHITECTURE</h4>
-                <p>Following the research, I analyzed the existing architecture of information in Venmo. What I found
-                  was
-                  a cluttered wealth of pages and a handful of less important pages that could be nested under a single
-                  page.</p>
-                <h4>PROPOSED ARCHITECTURE</h4>
-                <p>Laying out the different pages in Venmo helped me to visualize a better information architecture for
-                  the application. I decided that the landing page would take users straight to the payment screen, and
-                  divided the rest of the pages into four sections: Social, Activity, Profile, and Settings.</p>
-              </div>
-              <div id="infoarch-img">
-                <img src="../images/projects/venmo/infoarch.png" alt="Information Architecture">
-              </div>
 
-            </div>
-            <div class="content-padding-normal">
+          <!-- Information Architecture -->
+          <div id="infoarch">
+            <div class="project-content-item">
+              <!-- Breakdown -->
+
+              <h2>Information Architecture</h2>
+              <div id="infoarch-container">
+
+
+                <div id="infoarch-text">
+                  <h5>EXISTING ARCHITECTURE</h4>
+                    <p>Following the research, I analyzed the existing architecture of information in Venmo. What I
+                      found
+                      was
+                      a cluttered wealth of pages and a handful of less important pages that could be nested under a
+                      single
+                      page.</p>
+                    <h5>PROPOSED ARCHITECTURE</h5>
+                    <p>Laying out the different pages in Venmo helped me to visualize a better information architecture
+                      for
+                      the application. I decided that the landing page would take users straight to the payment screen,
+                      and
+                      divided the rest of the pages into four sections: Social, Activity, Profile, and Settings.</p>
+                </div>
+                <div id="infoarch-img">
+
+                  <img src="../images/projects/venmo/infoarch.png" alt="Information Architecture">
+                </div>
+              </div>
               <p>I decided to focus on three of the main pages listed in the revised architecture of the
                 application:
                 the landing/social, payment, and notifications pages. The following screenshots are what these pages
                 in the application looked like in August 2019.</p>
-            </div>
-            <div id="infoarch-screenshots">
-              <div>
-                <img src="../images/projects/venmo/screenshots/feed.png" alt="Landing Page/Social Feed">
-                <h4 class="img-caption">LANDING PAGE / SOCIAL FEED</h4>
-              </div>
-              <div>
-                <img src="../images/projects/venmo/screenshots/notifications.png" alt="Notifications Page">
-                <h4 class="img-caption">NOTIFICATIONS PAGE</h4>
-              </div>
-              <div>
-                <img src="../images/projects/venmo/screenshots/payment.png" alt="Payment Page">
-                <h4 class="img-caption">PAYMENT PAGE</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="design">
-          <div class="content-padding-normal">
-            <h2>Design</h2>
-            <p>I began with sketching the layouts of each main page and experimenting with the layout of the navigation
-              bar in order to make the main pages more accessible. By having a fixed navigation bar on the footer of
-              the application instead of a side hamburger menu, users would be reminded by the different functions of
-              the application and possible notifications. Additionally, the payment page became the landing page of the
-              application.</p>
-          </div>
-          <div id="design-low" class="content-padding-normal">
-            <h2>Low-Fidelity</h2>
-            <div id="payment">
-              <h4>PAYMENT</h4>
-              <p>I redesigned the payment page to emphasize the amount of money being paid or requested by users. In
-                doing so, I added a couple new features to the payment process: categories and split payments and
-                categories. Given my intent to add a financial organization feature, I added the categories section to
-                the payment page to allow users to later organize their spending.</p>
-              <p>The split payment feature would help users refine their transactions when requesting money from
-                multiple people, allowing them to enter different amounts of money for the same transaction. This would
-                reduce the amount of transactions on the social feed and profile page, and help the user better organize
-                their finances.</p>
-              <div>
-                <img src="../images/projects/venmo/designs/payment.png" alt="Payment">
-              </div>
-              <div>
-                <ol>
-                  <li>Emphasized amount of money being paid or requested to reduce mistakes in typing payment
-                    amount.</li>
-                  <li>Added option to scan code of other Venmo users.</li>
-                  <li>Reduced size of description box.</li>
-                  <li>Added categories feature.</li>
-                  <li>Added confirmation page.</li>
-                  <li>Displayed “SPLIT” button after adding multiple recipients.</li>
-                  <li>Allowed users to split payment unequally amount recipients.</li>
-                </ol>
+              <!-- Screenshots -->
+                <div id="screenshots">
+              <!-- Tab Carousel -->
+              <div class="tabCarousel">
+                <ul class="nav nav-pills">
+                  <li>
+                    <a href="#carousel-screenshots1" data-toggle="tab" class="tabActive">Social Feed</a>
+                  </li>
+                  <li>
+                    <a href="#carousel-screenshots2" data-toggle="tab">Notifications</a>
+                  </li>
+                  <li>
+                    <a href="#carousel-screenshots3" data-toggle="tab">Payment</a>
+                  </li>
+                </ul>
+                <!-- Social Feed -->
+                <div class="tab-content clearfix">
+                  <div id="carousel-screenshots1" class="tab-pane active">
+                    <img src="../images/projects/venmo/screenshots/feed.png" alt="Landing Page/Social Feed">
+                  </div>
+                  <!-- Notifications -->
+                  <div id="carousel-screenshots2" class="tab-pane center-align">
+                    <img src="../images/projects/venmo/screenshots/notifications.png" alt="Notifications Page">
+                  </div>
+                  <!-- Payment -->
+                  <div id="carousel-screenshots3" class="tab-pane">
+                    <img src="../images/projects/venmo/screenshots/payment.png" alt="Payment Page">
+                  </div>
+                </div>
               </div>
             </div>
-            <div id="social">
-              <h4>SOCIAL</h4>
-              <p>Many users I surveyed did not use Venmo as a social application, so I removed the global feed and kept
-                the friends feed to keep aspects of the social component of the application. I also moved the search bar
-                to this page, which would allow users to search for their friends and pay or request money from them
-                from their profile pages.</p>
-              <div>
-                <img src="../images/projects/venmo/designs/social.png" alt="Social">
-              </div>
-              <div>
-                <ol>
-                  <li>Moved search bar to social page.</li>
-                  <li>Added QR code scanner to search function.</li>
-                </ol>
-              </div>
-            </div>
-            <div id="activity">
-              <h4>ACTIVITY</h4>
-              <p>This page would serve as a notifications page, where users could keep track of their recently completed
-                transactions, accept or reject friend requests, or view incomplete transactions requested by or from
-                friends. Additionally, this page would also include a brief summary of the user’s spending history and a
-                breakdown of their expenses given their self-categorization of their spending.</p>
-              <div>
-                <img src="../images/projects/venmo/designs/activity.png" alt="Activity">
-              </div>
-              <div>
-                <ol>
-                  <li>Categorized notifications to “New,” “Incomplete Requests,” “Friend Requests,” and “Recent
-                    Activity.”</li>
-                  <li>Added “Finance Tracker” icon in upper right hand corner.</li>
-                  <li>Gave option to pay or decline payments from activity page.</li>
-                  <li>Added “Activity” icon in upper right hand corner.</li>
-                  <li>Gave overview of money spent and received for current month.</li>
-                  <li>Showed breakdown of categories and subsequent number of transactions for each category.</li>
-                  <li>Added dropdown of transactions for each respective category.</li>
-                </ol>
-              </div>
-
-            </div>
-            <div id="other">
-              <h4>PROFILE</h4>
-              <p>The profile page would be similar to the existing profile page, giving the users the option of viewing
-                their transactions in a manner similar to viewing the transactions of their friends.</p>
-              <h4>SETTINGS</h4>
-              <p>Many of the existing standalone pages on the Venmo application can be nested under a single settings
-                page. This page would lead users to a separate page with their privacy and notification settings, and
-                would also allow users to transfer their Venmo balances to their bank accounts.</p>
             </div>
           </div>
 
-          <div id="design-hi" class="content-padding-normal">
-            <h2>High-Fidelity</h2>
-            <p>I decided to experiment with Adobe XD to design the final wireframes. The software was pretty intuitive,
-              and the prototyping feature was simple to use. You can <a
-              href="https://xd.adobe.com/view/b8689401-074f-4fcd-5919-6e1997814142-ce59/?fullscreen"
-              target="_blank">view the prototype here</a>.</p>
-            <div id="prototype" class="center-align">
-              <img src="../images/projects/venmo/venmo-high.gif" alt="Venmo Concept Prototype">
+          <!-- Low Fidelity -->
+          <div id="lowfidelity">
+            <div class="project-content-item">
+              <h2>Low Fidelity Designs</h2>
+              <p>I began with sketching the layouts of each main page and experimenting with the layout of the
+                navigation
+                bar in order to make the main pages more accessible. By having a fixed navigation bar on the footer of
+                the application instead of a side hamburger menu, users would be reminded by the different functions of
+                the application and possible notifications. Additionally, the payment page became the landing page of
+                the application.</p>
+
+              <!-- Tab Carousel -->
+              <div class="tabCarousel">
+                <ul class="nav nav-pills">
+                  <li>
+                    <a href="#carousel-designPayment" data-toggle="tab" class="tabActive">Payment</a>
+                  </li>
+                  <li>
+                    <a href="#carousel-designSocial" data-toggle="tab">Social</a>
+                  </li>
+                  <li>
+                    <a href="#carousel-designActivity" data-toggle="tab">Activity</a>
+                  </li>
+
+                </ul>
+
+                <div class="tab-content clearfix">
+                  <!-- Payment : Image Carousel-->
+                  <div id="carousel-designPayment" class="tab-pane active">
+                    <p>I redesigned the payment page to emphasize the amount of money being paid or requested by users.
+                      In
+                      doing so, I added a couple new features to the payment process: categories and split payments and
+                      categories. Given my intent to add a financial organization feature, I added the categories
+                      section
+                      to
+                      the payment page to allow users to later organize their spending.</p>
+                    <p>The split payment feature would help users refine their transactions when requesting money from
+                      multiple people, allowing them to enter different amounts of money for the same transaction. This
+                      would
+                      reduce the amount of transactions on the social feed and profile page, and help the user better
+                      organize
+                      their finances.</p>
+                    <img src="../images/projects/venmo/designs/payment.png" alt="Payment">
+                    <ol>
+                      <li>Emphasized amount of money being paid or requested to reduce mistakes in typing payment
+                        amount.</li>
+                      <li>Added option to scan code of other Venmo users.</li>
+                      <li>Reduced size of description box.</li>
+                      <li>Added categories feature.</li>
+                      <li>Added confirmation page.</li>
+                      <li>Displayed “SPLIT” button after adding multiple recipients.</li>
+                      <li>Allowed users to split payment unequally amount recipients.</li>
+                    </ol>
+
+                  </div>
+
+                  <!-- Social -->
+                  <div id="carousel-designSocial" class="tab-pane">
+                    <p>Many users I surveyed did not use Venmo as a social application, so I removed the global feed and
+                      kept
+                      the friends feed to keep aspects of the social component of the application. I also moved the
+                      search
+                      bar
+                      to this page, which would allow users to search for their friends and pay or request money from
+                      them
+                      from their profile pages.</p>
+                    <img src="../images/projects/venmo/designs/social.png" alt="Social">
+                    <ol>
+                      <li>Moved search bar to social page.</li>
+                      <li>Added QR code scanner to search function.</li>
+                    </ol>
+                  </div>
+                  <!-- Activity -->
+                  <div id="carousel-designActivity" class="tab-pane">
+                    <p>This page would serve as a notifications page, where users could keep track of their recently
+                      completed
+                      transactions, accept or reject friend requests, or view incomplete transactions requested by or
+                      from
+                      friends. Additionally, this page would also include a brief summary of the user’s spending history
+                      and a
+                      breakdown of their expenses given their self-categorization of their spending.</p>
+                    <img src="../images/projects/venmo/designs/activity.png" alt="Activity">
+                    <ol>
+                      <li>Categorized notifications to “New,” “Incomplete Requests,” “Friend Requests,” and “Recent
+                        Activity.”</li>
+                      <li>Added “Finance Tracker” icon in upper right hand corner.</li>
+                      <li>Gave option to pay or decline payments from activity page.</li>
+                      <li>Added “Activity” icon in upper right hand corner.</li>
+                      <li>Gave overview of money spent and received for current month.</li>
+                      <li>Showed breakdown of categories and subsequent number of transactions for each category.</li>
+                      <li>Added dropdown of transactions for each respective category.</li>
+                    </ol>
+                  </div>
+                </div>
+
+              </div>
             </div>
-            <div class="summary">
-              <h2>Summary</h2>
+          </div>
+
+          <!-- High Fidelity -->
+          <div id="highfidelity">
+            <div class="project-content-item">
+              <h2>High-Fidelity</h2>
+              <p>I decided to experiment with Adobe XD to design the final wireframes. The software was pretty
+                intuitive,
+                and the prototyping feature was simple to use. You can <a
+                  href="https://xd.adobe.com/view/b8689401-074f-4fcd-5919-6e1997814142-ce59/?fullscreen"
+                  target="_blank">view
+                  the prototype here</a>.</p>
+              <div id="prototype" class="center-align">
+                <a href="https://xd.adobe.com/view/b8689401-074f-4fcd-5919-6e1997814142-ce59/?fullscreen"
+                  target="_blank"><img src="../images/projects/venmo/venmo-high.gif" alt="Venmo Concept Prototype"></a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div id="reflection">
+            <div class="project-content-item">
+              <h2>Reflection</h2>
               <p>Given the short window of time I gave myself to complete this project, I recognized the importance of
                 spending a majority of time on research to better understand the goals of both the product and the
                 users. The user research helped me to see areas that Venmo could improve upon, especially in the
@@ -346,49 +462,50 @@
           </div>
         </div>
 
-      </div>
-      <div id="backtoprojects">
-        <h4><a href="../#venmo">&#8592; BACK TO PROJECTS</a></h4>
-      </div>
-      <footer id="footer-proj">
-        <div id="footer-cols">
-          <div class="footer-col">
-            <div class="footer-title">
-              <h2>HANNAH PHAM</h2>
-            </div>
-            <div class="footer-text">
-              <p>Digital Designer</p>
-            </div>
-          </div>
-          <div class="footer-col">
-            <div class="footer-title">
-            <h2>WORK</h2>
-          </div>
-          <div class="footer-text">
-            <p><a href="../#projects">Projects</a><br />
-              <a href="https://www.behance.net/hannahhp" target="_blank">Behance</a><br />
-              <a href="https://www.dribbble.com/hannahhp" target="_blank">Dribbble</a>
-            </p>
-          </div>
-          </div>
-          <div class="footer-col">
-            <div class="footer-title">
-              <h2>CONTACT</h2>
-            </div>
-            <div class="footer-text">
-              <p><a href="https://www.linkedin.com/in/hannahhp/" target="_blank">LinkedIn</a><br />
-                <a href="mailto:hannah.pham@gmail.com">Email</a></p>
-            </div>
-          </div>
+</div>
+</div>
+        <div id="backtoprojects">
+          <h2><a href="../#venmo">&#8592; BACK TO PROJECTS</a></h2>
         </div>
-      </footer>
-    </div>
+        <footer id="footer-proj">
+          <div id="footer-cols">
+            <div class="footer-col">
+              <div class="footer-title">
+                <h2>HANNAH PHAM</h2>
+              </div>
+              <div class="footer-text">
+                <p>Digital Designer</p>
+              </div>
+            </div>
+            <div class="footer-col">
+              <div class="footer-title">
+                <h2>WORK</h2>
+              </div>
+              <div class="footer-text">
+                <p><a href="../#projects">Projects</a><br />
+                  <a href="https://www.behance.net/hannahhp" target="_blank">Behance</a><br />
+                  <a href="https://www.dribbble.com/hannahhp" target="_blank">Dribbble</a>
+                </p>
+              </div>
+            </div>
+            <div class="footer-col">
+              <div class="footer-title">
+                <h2>CONTACT</h2>
+              </div>
+              <div class="footer-text">
+                <p><a href="https://www.linkedin.com/in/hannahhp/" target="_blank">LinkedIn</a><br />
+                  <a href="mailto:hannah.pham@gmail.com">Email</a></p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../vendor/jquery/home.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script src="../vendor/jquery/jquery.min.js"></script>
+      <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="../vendor/jquery/projects/venmo.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </body>
 

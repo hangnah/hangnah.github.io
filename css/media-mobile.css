@@ -4,6 +4,7 @@
         font-size:1em;
     }
 
+
     #nav-top {
         padding:2em;
     }
@@ -54,12 +55,13 @@
      #project {
         max-width: 100%;
     }
+    #overview{
+        padding:0 3em;
+    }
     #header-info{
         grid-template-columns: auto auto;
         grid-template-rows:auto auto;
         text-align:center;
-    }
-     #project-container{
     }
 
     #project p, ul{
@@ -68,10 +70,15 @@
     #project h1{
         font-size:1.5em;
     }
-    #project h2{
-        font-size:1.1em;
-    }
     #project h3{
         font-size:.8em;
     }
+
+    #project h2{
+        font-size:.9em;
+    }
+    #project h5{
+        font-size:.9em;
+    }
+
 }
