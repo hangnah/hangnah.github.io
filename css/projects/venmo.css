@@ -15,12 +15,16 @@
     align-items: center;
 }
 
-
 #infoarch-container img{
     max-width:100%;
     padding:2em 0;
 }
 
+/* screenshots */
+#carousel-screenshots2 img{
+    max-height:50vh;
+    width:auto;
+}
 
 /* high fidelity */
 #prototype img{
@@ -43,6 +47,12 @@
 @media only screen and (max-width: 1000px) {
     #infoarch-container{
         grid-template-columns:none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #carousel-screenshots2 img{
+        max-height:100%;
+        width:100%;
     }
 }
 @media only screen and (max-width: 600px) {
