@@ -1,27 +1,12 @@
-/* Header */
-#header-text-container {
-    background-color: #648456;
-    color: white;
-}
 
-#header-info-container {
-    background-color: #FBFBFB;
-}
 
 
 /* design */
-#design h2{
-    text-align:center;
-}
-#design .content-side, #design .content-side-flip{
-    justify-content: center;
-    align-items: center;
-}
-#design .content-columns{
-    text-align:center;
+#project-content h2{
+
 }
 
-.summary{
-    background-color:#8D6154;
-    color:white;
+#project-content img{
+    padding:2em 0;
+    width: 100%;
 }
