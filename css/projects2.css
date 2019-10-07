@@ -17,6 +17,10 @@ body, html {
     max-width: 75%;
 }
 
+#project-content img{
+    max-width:100%;
+}
+
 /* Fonts */
 
 h1 { /* Title */
