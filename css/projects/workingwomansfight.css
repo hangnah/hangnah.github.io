@@ -1,78 +1,8 @@
-#overview h2{
-    text-align:center;
-}
-#problem h2{
-    text-align:center;
-}
-#research h2{
-    text-align:center;
-}
-
-/* Header */
-#project-header{
-    background-color: #9E392E;
-    color: white;
-    display: grid;
-    grid-template-columns:none;
-    width:100%;
-    padding:2em 4em;
-}
-#header-text-container {
-    text-align:center;
-}
-
-#header-info-container {
-    text-align:center;
-    display:flex;
-    width:100%;
-}
-
-#header-text {
-    padding: 2em;
-    width: 100%;
-}
-#header-info{
-    max-width:80%;
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-}
-
-/* colored bg */
-.content-coloredbg {
-    background-color: #BE861C;
-    color: white;
-}
-
-/* Design */
-#design{
+#project-content img{
     padding:2em 0;
+    width:100%;
 }
 
-#design h2{
-    text-align:center;
-}
-
-#design .content-side, #design .content-side-flip{
-    justify-content: center;
-    align-items: center;
-}
-
-#design .content-columns{
-    text-align:center;
-}
-
-.summary{
-    background-color:#585757;
-    color:white;
-}
-
-@media only screen and (max-width: 600px) {
-    #project-header{
-        padding:.5em;
-    }
-    #header-info{
-        max-width:100%;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr 1fr;
-    }
+#project-content h2{
+    color:#9b1111;
 }
