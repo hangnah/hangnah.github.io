@@ -198,6 +198,10 @@ p {
     text-decoration: underline;
 }
 
+.tab-content{
+    margin:auto;
+}
+
 /* Image Carousel */
 .tabCarousel img{
     margin-bottom:2em;
