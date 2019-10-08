@@ -1,12 +1,12 @@
 /* normal screen */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     /* Fonts */
-    h1 {
-        font-size: 1.5em;
+    h1 { /* Title */
+        font-size: 2em;
     }
-    h2 {
-        font-size: 1em;
+    h4 { /* Large paragraph */
+        font-size: 1.25em;
     }
     /* Home - Header */
     #header-container {
@@ -45,8 +45,10 @@
     #project {
         max-width: 90%;
     }
+
+
     .project-content-item{
-        padding:5em 0;
+        padding:3em 0;
         width:80%;
         margin:auto;
     }
@@ -108,36 +110,47 @@
     #project-container{
         padding:0;
     }
-    /* Header */
-    #project-header {
-        display: grid;
-        grid-template-columns: none;
-    }
-    #header-info-container {
-        text-align: center;
-    }
-    #header-info {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    /* Projects */
-    .content-padding-normal {
-        padding: 0 2em;
-    }
-    .content-side {
-        padding: 1em 2em;
-        grid-template-columns: none;
-    }
-    .content-side-flip {
-        grid-template-columns: none;
-        padding: 0 2em;
-    }
-    .content-columns p {
-        display: list-item;
-        margin-left: 2em;
-        text-align: left;
-    }
+
+        /* Header */
+        #project-header {
+            display:block;
+            margin:auto;
+        }
+        #header-img{
+            padding:2em;
+            max-width:80%;
+            margin:auto;
+        }
+        #project-header img{
+            width:100%;
+        }
+
+        /* Header - Mobile Projects */
+        .header-img-mobile{
+            margin:auto;
+            text-align:center;
+        }
+        .header-img-mobile img{
+            width:50% !important;
+        }
+        .header-img-mobile img{
+            max-height:100%;
+        }
+
+        #header-title{
+            text-align:center;
+        }
+        #header-info {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows:auto;
+        }
+        /* Projects - Overview */
+        #overview {
+            padding:1em;
+        }
+
     /* Venmo */
     #infoarch-breakdown {
         grid-template-columns: none;
