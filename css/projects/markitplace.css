@@ -1,41 +1,7 @@
-#why h2{
-    text-align:center;
+#project-content h2{
+    color:#5ecacd;
 }
 
-/* Header */
-#header-text-container {
-    background-color: #7BC7CA;
-    color: white;
-}
-
-#header-info-container {
-    background-color: #FBFBFB;
-}
-
-/* colored bg */
-.content-coloredbg {
-    background-color: #16415E;
-    color: white;
-}
-
-/* columns */
-#research-features .content-columns {
-    background-color:rgba(32, 32, 32, 0.5);
-}
-
-/* design */
-#design h2{
-    text-align:center;
-}
-#design .content-side, #design .content-side-flip{
-    justify-content: center;
-    align-items: center;
-}
-#design .content-columns{
-    text-align:center;
-}
-
-.summary{
-    background-color:#E18746;
-    color:white;
+#project-container img{
+    padding:2em 0;
 }

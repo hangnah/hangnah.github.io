@@ -17,6 +17,10 @@ body, html {
     max-width: 75%;
 }
 
+#project-content img{
+    max-width:100%;
+}
+
 /* Fonts */
 
 h1 { /* Title */
@@ -61,10 +65,6 @@ ol{
     padding-left: 2em;
 }
 
-#project-content h2{ /* Project Content Titles */
-    color: #0A8651;
-}
-
 p {
     font-size: 1em;
 }
@@ -73,14 +73,19 @@ p {
     font-size:.8em;
 }
 
+#cta{
+    text-align:center;
+}
+
 #cta button{
-    background-color:rgba(48, 48, 48, 0.5);
-    color:white !important;
+    background-color: rgb(255, 174, 0) !important;
+    color: white !important;
+    border: none;
+    text-align:center;
 }
 
 #cta button:hover{
-    background-color:rgba(255,255,255,0.5);
-    color:rgb(41, 41, 41) !important;
+    background-color:rgba(255, 174, 0, 0.5) !important;
 }
 
 /* Project Header */
@@ -151,6 +156,7 @@ p {
 #project-content img{
     -webkit-filter: drop-shadow(-3px 5px 16px rgba(0, 0, 0, .5));
     filter: drop-shadow(-3px 5px 16px rgba(0, 0, 0, .5));
+    width:100%;
 }
 
 /* Tab Carousel */
@@ -192,6 +198,10 @@ p {
     text-decoration: underline;
 }
 
+.tab-content{
+    margin:auto;
+}
+
 /* Image Carousel */
 .tabCarousel img{
     margin-bottom:2em;
@@ -216,11 +226,6 @@ p {
 .carousel-indicators .active {
     background-color: #333333;
 }
-
-/* Project Content Backgrounds */
-    #research, #usertesting{
-        background-color:#F9F9F9;
-    }
 
 #backtoprojects{
     text-align:center;
