@@ -7,20 +7,28 @@
 
 /* adding margin to bottom of image */
 #project-content img{
-    margin-bottom:1em !important;
+    margin-bottom:1.25em !important;
+    text-align:center;
+    display:block;
+    margin:auto;
 }
 
+/* solutions carousel */
+#solutions .tabCarousel img{
+    display:block;
+    width:auto;
+    margin:auto;
+}
 
-/* screenshots */
-#carousel-screenshots2 img{
-    max-height:50vh;
+/* gamification */
+#solutionscarousel-2 img{
+    max-height:70vh;
     width:auto;
 }
-
-/* high fidelity */
-#prototype img{
-    max-width:30%;
-    margin-top:2em;
+/* friends */
+#solutionscarousel-3 img{
+    max-height:70vh;
+    width:auto;
 }
 
 /* mobile designs */
@@ -28,9 +36,14 @@
     width:40% !important;
 }
 
+/* button */
+#cta{
+    margin-top:2em;
+}
+
 /* Project Content Backgrounds */
 #contextresearch, #personas, #designprocess, #takeaways{
-    background-color:#F9F9F9;
+    background-color:#EAF1F5;
 }
 
 /* Media Queries */
