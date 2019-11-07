@@ -32,6 +32,11 @@
     margin-top:2em;
 }
 
+/* mobile designs */
+.mobiledesign{
+    width:40% !important;
+}
+
 /* Project Content Backgrounds */
 #contextresearch, #personas, #designprocess, #takeaways{
     background-color:#F9F9F9;
