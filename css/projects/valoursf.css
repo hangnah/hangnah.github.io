@@ -5,20 +5,11 @@
     color:#3d7191;
 }
 
-/* info arch */
-#infoarch-container{
-    display:grid;
-    grid-column-gap:5em;
-    grid-template-columns:.4fr .6fr;
-
-    justify-content: center;
-    align-items: center;
+/* adding margin to bottom of image */
+#project-content img{
+    margin-bottom:1em !important;
 }
 
-#infoarch-container img{
-    max-width:100%;
-    padding:2em 0;
-}
 
 /* screenshots */
 #carousel-screenshots2 img{

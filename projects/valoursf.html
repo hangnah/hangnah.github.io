@@ -327,7 +327,8 @@
                   users</span> for taking
                 the first step to becoming a volunteer.
               </p>
-              <img src="../images/projects/valoursf/designs/onboarding-high.gif" alt="Onboarding" class="mobiledesign centeralign">
+              <img src="../images/projects/valoursf/designs/onboarding-high.gif" alt="Onboarding"
+                class="mobiledesign centeralign">
 
               <!-- Information Architecture -->
               <h5>Information Architecture</h5>
@@ -340,63 +341,69 @@
                 users to track their progress and view their friends’ progress.</p>
 
               <img src="../images/projects/valoursf/infoarch.png" alt="Information Architecture">
-              <!-- Page Breakdown / Tab Carousel / Text Carousel -->
-              <div class="tabCarousel">
-                <div id="infoarchcarousel" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#infoarchcarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#infoarchcarousel" data-slide-to="1"></li>
-                    <li data-target="#infoarchcarousel" data-slide-to="2"></li>
-                  </ol>
 
-                  <div class="carousel-inner">
-                    <!-- Page: Volunteer -->
-                    <div class="carousel-item active">
-                      <h5>Volunteer</h5>
-                      <ul>
-                        <li>Considering the profile of <span class="bold">Joe</span> (someone who is unsure on how to
-                          help), I added <span class="bold">an
-                            automatically generated task</span> for volunteers who are unsure of how to contribute to
-                          organizations.
-                        </li>
-                        <li><span class="bold">Breaking down three different ways</span> volunteers could donate or
-                          volunteer would promote the
-                          idea that volunteering can be easy.</li>
-                        <li>To encourage volunteer retention at the same organizations, I included a <span
-                            class="bold">carousel of
-                            organizations</span> for volunteers to keep track of places they’ve volunteered at or would
-                          like to
-                          volunteer with.</li>
-                      </ul>
-                    </div>
-                    <!-- Page: Friends -->
-                    <div class="carousel-item">
-                      <h5>Friends</h5>
-                      <ul>
-                        <li>Social users like <span class="bold">Maddie</span> would find extra incentives to volunteer
-                          with the <span class="bold">Friends</span> page, as
-                          volunteers would be able to view where and what their friends are volunteering.
-                        </li>
-                        <li>We decided to not include the option for users to like or comment on friend activities, as
-                          we wanted to steer away from romanticizing volunteering.</li>
-                      </ul>
-                    </div>
-                    <!-- Page: Profile -->
-                    <div class="carousel-item">
-                      <h5>Profile</h5>
-                      <ul>
-                        <li>A quick overview of a volunteer’s status and achievements would <span class="bold">encourage
-                            users to continue
-                            volunteering to gain more points</span> to level up and to <span class="bold">acquire more
-                            badges</span> to display on their
-                          profile.
-                        </li>
-                      </ul>
-                    </div>
+
+              <!-- Tab Carousel -->
+              <div class="tabCarousel">
+                <ul class="nav nav-pills">
+                  <li>
+                    <a href="#pagecarousel-1" data-toggle="tab" class="tabActive">Volunteer</a>
+                  </li>
+                  <li>
+                    <a href="#pagecarousel-2" data-toggle="tab">Friends</a>
+                  </li>
+                  <li>
+                    <a href="#pagecarousel-3" data-toggle="tab">Profile</a>
+                  </li>
+                </ul>
+
+                <div class="tab-content clearfix">
+
+                  <!-- Volunteer -->
+                  <div id="pagecarousel-1" class="tab-pane active">
+                    <ul>
+                      <li>Considering the profile of <span class="bold">Joe</span> (someone who is unsure on how to
+                        help), I added <span class="bold">an
+                          automatically generated task</span> for volunteers who are unsure of how to contribute to
+                        organizations.
+                      </li>
+                      <li><span class="bold">Breaking down three different ways</span> volunteers could donate or
+                        volunteer would promote the
+                        idea that volunteering can be easy.</li>
+                      <li>To encourage volunteer retention at the same organizations, I included a <span
+                          class="bold">carousel of
+                          organizations</span> for volunteers to keep track of places they’ve volunteered at or would
+                        like to
+                        volunteer with.</li>
+                    </ul>
+                  </div>
+
+                  <!-- Friends -->
+                  <div id="pagecarousel-2" class="tab-pane">
+                    <ul>
+                      <li>Social users like <span class="bold">Maddie</span> would find extra incentives to volunteer
+                        with the <span class="bold">Friends</span> page, as
+                        volunteers would be able to view where and what their friends are volunteering.
+                      </li>
+                      <li>We decided to not include the option for users to like or comment on friend activities, as
+                        we wanted to steer away from romanticizing volunteering.</li>
+                    </ul>
+                  </div>
+
+                  <!-- Profile -->
+                  <div id="pagecarousel-3" class="tab-pane">
+                    <ul>
+                      <li>A quick overview of a volunteer’s status and achievements would <span class="bold">encourage
+                          users to continue
+                          volunteering to gain more points</span> to level up and to <span class="bold">acquire more
+                          badges</span> to display on their
+                        profile.
+                      </li>
+                    </ul>
                   </div>
                 </div>
-
               </div>
+              <!-- End Tab Carousel -->
 
             </div>
           </div>
