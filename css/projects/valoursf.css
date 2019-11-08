@@ -41,6 +41,9 @@
     margin-top:2em;
 }
 
+#takeaways img{
+}
+
 /* Project Content Backgrounds */
 #contextresearch, #personas, #designprocess, #takeaways{
     background-color:#EAF1F5;
