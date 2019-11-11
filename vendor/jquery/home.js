@@ -87,4 +87,18 @@ $(document).ready(function () {
         }
     });
 
+    // About Image
+    var $img = $("#hover-img");
+    $img.hide();
+    
+    $('#about-img img').mousemove(function (e) {
+        $img.stop(1, 1).fadeIn();
+        $img.offset({
+            top: e.pageY + ($img.outerHeight() ),
+            left: e.pageX + ($img.outerWidth() / 14)
+        });
+    }).mouseleave(function () {
+        $img.fadeOut();
+    });
+
 });
