@@ -69,3 +69,12 @@
         padding:1em 10em;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    
+    #img-container{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+    }
+    
+}
