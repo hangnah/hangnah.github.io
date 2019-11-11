@@ -95,6 +95,10 @@ a:hover {
     transition: all 0.3s ease-in-out 0s;
 }
 
+.small-text{ /* Small text */
+    font-size:.8em;
+}
+
 .bold { /* Paragraph bold */
     font-weight:600;
 }
