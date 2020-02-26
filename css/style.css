@@ -38,6 +38,8 @@ p {
 }
 
 a {
+    font-weight:500;
+    font-size:.8em;
     text-decoration: none;
     color: #D24150 !important;
 
@@ -52,7 +54,7 @@ a:hover {
     transition: all 0.2s ease-in-out 0s;
 }
 
-#container{
+#container {
     width:100vw;
     height:100vh;
     padding:1em;
@@ -62,8 +64,12 @@ a:hover {
     text-align:center;
 }
 
+#main {
+    padding:1em;
+}
+
 /* Breakpoints */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 670px) {
     h1 {
         font-size:1.5em !important;
         -webkit-transition: all 0.25s ease-in;
