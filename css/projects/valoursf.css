@@ -1,0 +1,73 @@
+#project-content h2{
+    color:#136699;
+}
+#project-content h5{
+    color:#8E1A23
+}
+
+/* adding margin to bottom of image */
+#project-content img{
+    margin-bottom:1.25em !important;
+    text-align:center;
+    display:block;
+    margin:auto;
+}
+
+/* solutions carousel */
+#solutions .tabCarousel img{
+    display:block;
+    width:auto;
+    margin:auto;
+}
+
+/* gamification */
+#solutionscarousel-2 img{
+    max-height:70vh;
+    width:auto;
+}
+/* friends */
+#solutionscarousel-3 img{
+    max-height:70vh;
+    width:auto;
+}
+
+/* mobile designs */
+.mobiledesign{
+    width:40% !important;
+}
+
+/* button */
+#cta{
+    margin-top:2em;
+}
+
+#takeaways img{
+}
+
+/* Project Content Backgrounds */
+#contextresearch, #personas, #designprocess, #takeaways{
+    background-color:#EAF1F5;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1100px) {
+    #infoarch-container{
+        grid-template-columns: .6fr .4fr;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #infoarch-container{
+        grid-template-columns:none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #carousel-screenshots2 img{
+        max-height:100%;
+        width:100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #prototype img{
+        max-width:50%;
+    }
+}

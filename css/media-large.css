@@ -1,0 +1,11 @@
+/* large screen */
+@media only screen and (max-width: 1440px) {
+    #header-info{
+        width:75%;
+    }
+    .project-content-item{
+        padding:5em 0;
+        width:80%;
+        margin:auto;
+    }
+}

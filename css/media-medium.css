@@ -1,0 +1,78 @@
+/* medium screen */
+
+@viewport {
+    zoom: 1.0;
+    width: device-width;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Home - Header */
+    #header-container {
+        padding: 3em .5em;
+    }
+    #header-text {
+        width: 100%;
+        margin-left: 0;
+        padding: 3em;
+    }
+    #header-icon {
+        width: 330px;
+    }
+    #header-icon img {
+        width: 50px;
+    }
+    #header-pages {
+        height:130px;
+    }
+    #header-scroll {
+        margin-top: 1.5em;
+    }
+    #header-line {
+        display: none;
+    }
+    /* home funky */
+    #funky-1 {
+        width: 150px;
+        height: auto;
+    }
+    #funky-2 {
+        width: 200px;
+        bottom: 15%;
+    }
+    #funky-3 {
+        width: 210px;
+        bottom:7%;
+        left:40%;
+    }
+    #back {
+        width: 330px;
+    }
+    #back img {
+        width: 50px;
+    }
+    /* Home - Category */
+    #category ul {
+        font-size: 1.5em;
+        padding-top: 2em;
+    }
+    #category li {
+        line-height: 1em;
+    }
+    /* about */
+    /* Project */
+    #overview{
+        grid-template-columns:none;
+        grid-template-rows:auto auto;
+        grid-row-gap:1em;
+    }
+    .summary {
+        padding: 3em 2em;
+    }
+    .summary p {
+        text-align: left;
+    }
+    /* Venmo */
+    #infoarch-img {
+        grid-template-columns: none;
+    }
+}

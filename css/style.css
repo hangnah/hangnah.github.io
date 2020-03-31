@@ -1,20 +1,46 @@
-@viewport {
-    zoom: 1.0;
-    width: device-width;
-}
+/* fonts */
 
-/* Fonts */
+/* Playfair */
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
 /* Avenir Next */
+
 @font-face {
     font-family: Avenir Next;
     font-weight: 400;
     src: url('../fonts/AvenirNext/AvenirNext-Regular.ttf');
 }
+
 @font-face {
     font-family: Avenir Next;
     src: url('../fonts/AvenirNext/AvenirNext-Medium.ttf');
     font-weight: 500;
     /* Medium */
+}
+
+@font-face {
+    font-family: Avenir Next;
+    src: url('../fonts/AvenirNext/AvenirNext-DemiBold.ttf');
+    font-weight: 600;
+    /* Demi Bold */
+}
+
+@font-face {
+    font-family: Avenir Next;
+    src: url('../fonts/AvenirNext/AvenirNext-Bold.ttf');
+    font-weight: 700;
+    /* Bold */
+}
+
+@font-face {
+    font-family: Avenir Next;
+    font-style: italic;
+    src: url('../fonts/AvenirNext/AvenirNext-Italic.ttf');
+}
+
+@viewport {
+    zoom: 1.0;
+    width: device-width;
 }
 
 body{
@@ -25,61 +51,195 @@ h1 {
     font-family: Avenir Next;
     font-weight: 500;
     font-size: 2em;
-
-    -webkit-transition: all 0.25s ease-in;
-    transition: all 0.25s ease-in;
 }
 
-p {
+h2 {
+    font-family: Avenir Next;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: .1em;
+}
+
+h4 {
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size:2em;
+    font-size:2em;
+}
+
+p, ul, ol {
     font-family: Avenir Next;
     font-weight: 400;
     font-size: 1em;
     line-height: 2em;
 }
 
-a {
-    font-weight:500;
-    font-size:.8em;
-    text-decoration: none;
-    color: #D24150 !important;
+h3 {
+    font-family: Avenir Next;
+    font-weight: 400;
+}
 
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
+.row {
+    display: grid !important;
+}
+
+a {
+    text-decoration: none;
+    color: #FFAF00 !important;
 }
 
 a:hover {
     text-decoration: none;
-    color: rgb(167, 50, 62) !important;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
+    color: rgb(148, 105, 30) !important;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
+.small-text{ /* Small text */
+    font-size:.8em;
+}
+
+.bold { /* Paragraph bold */
+    font-weight:600;
+}
 #container {
-    width:100vw;
-    height:100vh;
-    padding:1em;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    max-width: 100%;
+    height: 100vh;
+}
+
+button {
+    padding:.9em 1em .7em 1em;
+    border:solid 2px;
+    border-color:#83B42D;
+    color:#83B42D;
+
+    background-color:rgba(0,0,0,0);
+    font-family:Avenir Next;
+    font-size:.8em;
+    font-weight:600;
+    letter-spacing:.1em;
+    cursor:pointer;
+}
+button:hover{
+    border-color:#83B42D;
+    background-color:#83B42D;
+    color:rgb(255, 255, 255,1) !important;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+/* ///// Nav Top ///// */
+#nav-top {
+    height:10vh;
+    z-index: 999;
+    width: 100vw;
+    top: 0;
+    padding:2.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: rgb(255, 255, 255, .5);
+}
+
+#nav-title {
+    text-align:left;
+}
+#nav-pages {
+    text-align:right;
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-column-gap:2em;
+    margin:0 0 0 auto;
+}
+#nav-title img{
+    width:35px;
+}
+
+#nav-top a {
+    font-size: .75em;
+    position: relative;
+    text-decoration: none;
+    color: rgb(172, 172, 172) !important;
+}
+
+#nav-top a:hover {
+    opacity:0.5;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#nav-top h2{
+    font-family:Avenir Next;
+    font-size:1.25em;
+}
+
+#nav-pages a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(172, 172, 172);
+    opacity:0.5;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#nav-pages a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.left-align{
+    text-align:left;
+}
+.center-align{
     text-align:center;
 }
 
-#main {
-    padding:1em;
+
+/* ///// Footer ///// */
+
+footer {
+    background-color: #FF5B26;
+    padding:2em 2em .5em 2em;
 }
 
-/* Breakpoints */
-@media only screen and (max-width: 670px) {
-    h1 {
-        font-size:1.5em !important;
-        -webkit-transition: all 0.25s ease-in;
-        transition: all 0.25s ease-in;
-    }
+#footer-proj{
+    background-color: rgb(46, 46, 46) !important;
 }
-@media only screen and (max-width: 400px) {
-    h1 {
-        font-size:1.25em !important;
-        -webkit-transition: all 0.25s ease-in;
-        transition: all 0.25s ease-in;
-    }
+
+footer h2{
+    text-align:left;
+    font-family: Avenir Next;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: .1em;
+    color:white !important;
+}
+
+footer p{
+    color:white !important;
+    letter-spacing:.05em;
+    font-size:.9em;
+}
+footer a{
+    color:white !important;
+}
+
+footer a:hover{
+    color:rgb(223, 223, 223) !important;
+}
+
+#footer-cols{
+    display:grid;
+    grid-template-columns: .7fr .15fr .15fr;
+    text-align:left;
 }

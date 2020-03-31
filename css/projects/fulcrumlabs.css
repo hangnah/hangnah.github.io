@@ -1,0 +1,9 @@
+
+#project-content h2{ /* Project Content Titles */
+    color: #0A8651;
+}
+
+/* Project Content Backgrounds */
+#research, #usertesting, #reflection{
+    background-color:#F9F9F9;
+}
