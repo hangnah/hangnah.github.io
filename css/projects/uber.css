@@ -2,6 +2,10 @@
     color:#5388BB;
 }
 
+#header-img img{
+    width:75%
+}
+
 /* Project Content Backgrounds */
 #research, #design, #reflection{
     background-color:#F9F9F9;
@@ -59,5 +63,14 @@
         padding:2em 0;
         width:60%;
         margin:auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #header-img img{
+        max-width:50%;
+    }
+    #header-img{
+        text-align:center;
     }
 }
