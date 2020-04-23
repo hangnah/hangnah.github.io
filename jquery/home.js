@@ -96,7 +96,8 @@ $(document).ready(function () {
 
         // Add Overflow behavior to projects
         var y = $(this).scrollTop();
-        var winHeight = $(this).innerHeight();
+        var winHeight = ("$hero").innerHeight();
+        //var winHeight = $(this).innerHeight();
 
         if (y >= winHeight) {
             $('#projects').css('overflow-y', 'scroll');
