@@ -2,188 +2,216 @@
 <html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99912030-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99912030-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-99912030-1');
-  </script>
+        gtag('config', 'UA-99912030-1');
+    </script>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hannah Pham – Product Designer">
+    <meta name="author" content="Hannah Pham">
+    <meta name="keywords" content="Hannah Pham, Hannah Pham Design, Product Designer, UX Designer, Hannah Pham UCLA">
+    <link href="https://www.hannahpham.co/projects/royalway" rel="canonical">
 
-  <meta name="description"
-    content="Royal Way • Designed 10+ high-fidelity wireframes for the Royal Way Spiritual Center, reflecting the branding of the peaceful identity of Royal Way.">
-  <meta name="keywords"
-    content="Hannah Pham, Hannah Pham UCLA, UX Design, Graphic Design, Royal Way Spiritual Center, Willa Creative Agency">
+    <title>Royal Way – Hannah Pham</title>
 
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <title>Royal Way Spiritual Center • Hannah Pham</title>
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet">
 
-  <!-- Bootstrap core CSS -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="../css/style.css" rel="stylesheet">
-  <link href="../css/projects.css" rel="stylesheet">
-  <link href="../css/projects/royalway.css" rel="stylesheet">
-
-
-  <!-- Media Queries -->
-  <link rel="stylesheet" href="../css/media-large.css" media="(max-width: 1440px)">
-  <link rel="stylesheet" href="../css/media-normal.css" media="(max-width: 768px)">
-  <link rel="stylesheet" href="../css/media-medium.css" media="(max-width: 600px)">
-  <link rel="stylesheet" href="../css/media-mobile.css" media="(max-width: 480px)">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 </head>
 
 <body>
-  <!-- Nav Top -->
-  <div id="nav-top">
-    <div id="nav-title">
-      <a href="../"><img src="../images/home/H.png"></a>
-    </div>
-    <div id="nav-pages">
-      <h2><a href="../#projects">PROJECTS</a></h2>
-      <h2><a href="../about">ABOUT</a></h2>
-    </div>
-  </div>
 
-  <!-- Project -->
-  <div id="container">
+    <!-- Image Modal -->
+    <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="Image Modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="imgModalTitle"></p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="" class="imagepreview" style="width: 100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="topProjectContainer" class="container-fluid">
+        <div id="topProjectHome" class="col">
+            <a href="../">
+                <h2>&larr; Back To Home</h2>
+            </a>
+        </div>
+        <div id="topProject" class="col">
+            <a href="#">
+                <h2 class="w-auto h-auto">Back To Top &uarr;</h2>
+            </a>
+        </div>
+    </div>
 
     <!-- Project Header -->
-    <div id="project">
-      <div id="project-header">
-        <div id="header-img">
-          <img src="../images/projects/royalway/royalway.png" alt="Royal Way">
-        </div>
-        <div id="header-title">
-          <h1>Royal Way <br />Spiritual Center</h1>
-          <h2>UI Design</h2>
-        </div>
-        <div id="header-info">
-          <div id="duration">
-            <h3>Duration</h3>
-            <p>Fall 2017<br />
-              (6 weeks)</p>
-          </div>
-          <div id="role">
-            <h3>Role</h3>
-            <p>Designer</p>
-          </div>
-          <div id="tools">
-            <h3>Tools</h3>
-            <p>Sketch</p>
-          </div>
-          <div id="skills">
-            <h3>Skills</h3>
-            <p>Wireframing<br />
-              Visual Design</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="project-container">
-        <!-- Project Overview -->
-        <div id="overview">
-          <div id="overview-text">
-            <h4>The Royal Way Spiritual Center is a ranch that houses groups interested in meditation. I redesigned the
-              website to reflect the peaceful nature of the organization, focusing on clean and sophisticated layouts to
-              attract younger people.</h4>
-            <p class="small-text">This project was part of my internship at Willa Creative Agency.
-          </div>
-          <div id="overview-nav">
-            <h2>In this project:</h2>
-            <h2><a href="#design">Design Process</a></h2>
-            <h2><a href="#deliverables">Deliverables</a></h2>
-
-          </div>
-        </div>
-
-        <!-- Project Content -->
-        <div id="project-content">
-          <div id="design">
-            <div class="project-content-item">
-              <h2>Design</h2>
-              <p>There were over 10 stages of wireframes. The first few stages were focused on
-                reorganizing the content
-                on the existing website and perfecting the home page layout.</p>
-              <img src="../images/projects/royalway/home-1.png" alt="Home v.1">
-              <p>The next set of wireframes included an updated navigation bar and new pages to highlight certain
-                amenities of the spiritual center. I wanted to reduce the amount of text on the home page in order to
-                convey the website as a rental website. I also designed a new "Inquire" page to streamline the process
-                of
-                requesting a visit to the center.</p>
-              <img src="../images/projects/royalway/inquire.jpg" alt="Inquire">
+    <div id="projectHeader" class="container-fluid remove-padding">
+        <div class="d-flex row remove-padding py-5 w-100 align-items-center">
+            <div class="col-xl-6 col-7 w-100 order-md-1 order-2">
+                <div id="projectTitle" class="row py-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-6 offset-xl-3 offset-lg-2 offset-md-1 w-100">
+                        <h1>Royal Way<br />
+                            Spiritual Center</h1>
+                        <h3>UI Design</h3>
+                    </div>
+                </div>
+                <div id="projectInfo" class="row py-3">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-10 offset-xl-3 offset-lg-2 offset-md-1 w-100">
+                        <div class="row">
+                            <div class="col">
+                                <h2>Duration</h2>
+                                <p>Oct - Dec 2017</p>
+                            </div>
+                            <div class="col">
+                                <h2>Role</h2>
+                                <p>UI Designer</p>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col">
+                                <h2>Tools</h2>
+                                <p>Sketch</p>
+                            </div>
+                            <div class="col">
+                                <h2>Methods</h2>
+                                <p>Information Architecture<br />
+                                    Wireframing<br />
+                                    Visual Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div id="deliverables">
-            <div class="project-content-item">
-            <h2>Deliverables</h2>
-            <p>After communicating with the client and team members in the office, the wireframes were sent to the
-              development team to build the website.</p>
-            <div id="cta">
-              <a href="http://royalwayspiritualcenter.org" target="_blank"><button>VIEW
-                  WEBSITE</button></a>
+            <div class="col-xl-6 col-md-5 col-8 w-100 remove-padding order-md-2 order-1">
+                <div id="projectHeaderDesktopImg" class="offset-xl-2 offset-lg-0 pb-3">
+                    <img class="" src="../images/projects/royalway/royalway.gif" alt="Royal Way">
+                </div>
             </div>
-          </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div id="backtoprojects">
-      <h5><a href="../#royalway">&#8592; BACK TO PROJECTS</a></h5>
     </div>
 
-    <footer id="footer-proj">
-      <div id="footer-cols">
-        <div class="footer-col">
-          <div class="footer-title">
-            <h2>HANNAH PHAM</h2>
-          </div>
-          <div class="footer-text">
-            <p>Digital Designer</p>
-          </div>
+    <div id="projectContent" class="container">
+        <!-- Project Context -->
+        <div id="projectContext">
+            <div class="row row px-md-5 px-3 py-5">
+                <div class="col-md-9 col-12 py-md-4 py-2">
+                    <h4>The Royal Way Spiritual Center is a ranch that houses groups interested in meditation. I
+                        redesigned and shipped the website to reflect the peaceful nature of the organization, focusing
+                        on clean and sophisticated layouts to attract younger people.</h4>
+                    <p>This project was completed at my fall internship with <a href="http://willaca.com/"
+                            target="_blank">Willa Creative Agency.</a></p>
+                </div>
+                <div class="projectTOC col-md-3 col-12 py-md-4 py-4">
+                    <h5>In this project:</h5>
+                    <h3><a href="#design">Design</a></h3>
+                    <h3><a href="#deliverables">Deliverables</a></h3>
+                </div>
+            </div>
         </div>
-        <div class="footer-col">
-          <div class="footer-title">
-            <h2>WORK</h2>
-          </div>
-          <div class="footer-text">
-            <p><a href="../#projects">Projects</a><br />
-              <a href="https://www.behance.net/hannahhp" target="_blank">Behance</a><br />
-              <a href="https://www.dribbble.com/hannahhp" target="_blank">Dribbble</a>
-            </p>
-          </div>
-        </div>
-        <div class="footer-col">
-          <div class="footer-title">
-            <h2>CONTACT</h2>
-          </div>
-          <div class="footer-text">
-            <p><a href="https://www.linkedin.com/in/hannahhp/" target="_blank">LinkedIn</a><br />
-              <a href="mailto:hannah.pham@gmail.com">Email</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="../vendor/jquery/projects.js"></script>
+        <div class="projectContentContainer">
+            <!-- Design -->
+            <div id="design" class="row px-3 py-5 justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
+                    <h5 class="mt-3">Design</h5>
+                    <h4>I designed over 10 iterations of wireframes.</h4>
+                    <p>I was in close communication with the representative of the spiritual center to address their
+                        needs for the new website, and frequently received feedback from my manager on my designs. The
+                        first set of wireframes addressed the information architecture and reorganization of the content
+                        on the existing website. I focused primarily on the home page layout to draw users to the
+                        spiritual center.</p>
+                    <p>I updated the next set of wireframes with a refreshed navigation bar and designed new pages to
+                        highlight the amenities at the spiritual center. Additionally, I created a new Inquire page to
+                        streamline the process of requesting a visit to the center.</p>
+
+
+                    <!-- Image -->
+                    <figure class=" figure">
+                        <img src="../images/projects/royalway/home.png" class="figure-img img-fluid rounded w-100"
+                            alt="Home">
+                        <figcaption class="figure-caption text-center">Home
+                        </figcaption>
+                    </figure>
+                    <!-- Image -->
+                    <figure class=" figure">
+                        <img src="../images/projects/royalway/inquire.jpg" class="figure-img img-fluid rounded w-100"
+                            alt="Inquire">
+                        <figcaption class="figure-caption text-center">Inquire Page
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <!-- Deliverables -->
+            <div id="deliverables" class="projectBackground row px-3 py-5 justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
+                    <h5 class="mt-3">Deliverables</h5>
+                    <p>After communicating my designs to my manager and the representative of the spiritual center, I
+                        shipped the wireframes to the development team to build the website.</p>
+                    <div class="col w-100 remove-padding text-center">
+                        <a href="https://royalwayspiritualcenter.org/" target="_blank"><button>View Website</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="projectFooter" class="container row">
+            <div class="col py-5 text-center">
+                <h5 class="mb-3">Take a peek into my other projects:</h5>
+                <h3>
+                    <a href="../projects/disney.">Disney Parks, Experiences, and Products</a>
+                </h3>
+                <h3>
+                    <a href="../projects/valoursf.">
+                        Valour SF
+                    </a>
+                </h3>
+                <h3>
+                    <a href="../projects/uber.">Ethical Surveillance Design Analysis – Uber</a>
+                </h3>
+                <h3>
+                    <a href="../projects/fulcrumlabs.">
+                        Fulcrum Labs Product Design Internship
+                    </a>
+                </h3>
+                <h3>
+                    <a href="../projects/workingwomansfight.">
+                        A Working Woman's Fight
+                </h3>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JQuery -->
+    <script src="../jquery/projects.js"></script>
+
 
 
 </body>
-
-
 
 </html>

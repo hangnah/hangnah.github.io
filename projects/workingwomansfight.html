@@ -2,213 +2,237 @@
 <html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99912030-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99912030-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-99912030-1');
-  </script>
+        gtag('config', 'UA-99912030-1');
+    </script>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hannah Pham – Product Designer">
+    <meta name="author" content="Hannah Pham">
+    <meta name="keywords" content="Hannah Pham, Hannah Pham Design, Product Designer, UX Designer, Hannah Pham UCLA">
+    <link href="https://www.hannahpham.co/projects/workingwomansfight" rel="canonical">
 
-  <meta name="description"
-    content="A Working Woman's Fight • Built and designed a website to shed light on women labor movements in Los Angeles.">
-  <meta name="keywords"
-    content="Hannah Pham, Hannah Pham UCLA, UX Design, Graphic Design, Digital Humanities, UCLA Digital Humanitites, UCLA DH, DH 199">
+    <title>A Working Woman's Fight – Hannah Pham</title>
 
-  <title>A Working Woman's Fight • Hannah Pham</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Bootstrap core CSS -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="../css/style.css" rel="stylesheet">
-  <link href="../css/projects.css" rel="stylesheet">
-  <link href="../css/projects/workingwomansfight.css" rel="stylesheet">
-
-
-  <!-- Media Queries -->
-  <link rel="stylesheet" href="../css/media-large.css" media="(max-width: 1440px)">
-  <link rel="stylesheet" href="../css/media-normal.css" media="(max-width: 768px)">
-  <link rel="stylesheet" href="../css/media-medium.css" media="(max-width: 600px)">
-  <link rel="stylesheet" href="../css/media-mobile.css" media="(max-width: 480px)">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 </head>
 
 <body>
-  <!-- Nav Top -->
-  <div id="nav-top">
-    <div id="nav-title">
-      <a href="../"><img src="../images/home/H.png"></a>
-    </div>
-    <div id="nav-pages">
-      <h2><a href="../#projects">PROJECTS</a></h2>
-      <h2><a href="../about">ABOUT</a></h2>
-    </div>
-  </div>
 
-  <!-- Project -->
-  <div id="container">
+    <!-- Image Modal -->
+    <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="Image Modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="imgModalTitle"></p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="" class="imagepreview" style="width: 100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="topProjectContainer" class="container-fluid">
+        <div id="topProjectHome" class="col">
+            <a href="../">
+                <h2>&larr; Back To Home</h2>
+            </a>
+        </div>
+        <div id="topProject" class="col">
+            <a href="#">
+                <h2 class="w-auto h-auto">Back To Top &uarr;</h2>
+            </a>
+        </div>
+    </div>
 
     <!-- Project Header -->
-    <div id="project">
-      <div id="project-header">
-        <div id="header-img">
-          <img src="../images/projects/workingwomansfight/workingwomansfight.gif" alt="Working Woman's Fight">
-        </div>
-        <div id="header-title">
-          <h1>A Working Woman's Fight</h1>
-          <h2>UI Design and Web Development</h2>
-        </div>
-        <div id="header-info">
-          <div id="duration">
-            <h3>Duration</h3>
-            <p>Spring 2018<br />
-              (10 weeks)</p>
-          </div>
-          <div id="role">
-            <h3>Role</h3>
-            <p>Designer<br />
-              Developer
-            </p>
-          </div>
-          <div id="tools">
-            <h3>Tools</h3>
-            <p>Sketch<br />
-              Github</p>
-          </div>
-          <div id="skills">
-            <h3>Skills</h3>
-            <p>Wireframing<br />
-              Visual Design<br />
-              HTML/CSS<br />
-              JQuery</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="project-container">
-        <!-- Project Overview -->
-
-        <div id="overview">
-          <div id="overview-text">
-            <h4>A Working Woman’s Fight is a digital humanities project that sheds light to the fight of female LA
-              garment workers, hotel workers, and janitors for better working conditions. My team of five other
-              undergraduate students received a plethora of data on LA workers ranging from digital media to intake
-              forms, and were tasked with telling a story with the information given.</h4>
-            <p>I was responsible for building and assisting in the design of the website.</p>
-            <p class="small-text">This project was part of a capstone class for the digital humanities program at
-              UCLA.
-              We completed the project within 10 weeks and presented our project to the program directors at the end
-              of
-              the spring quarter. </p>
-          </div>
-          <div id="overview-nav">
-            <h2>In this project:</h2>
-            <h2><a href="#design">Design Process</a></h2>
-            <h2><a href="#deliverables">Deliverables</a></h2>
-
-          </div>
-
-
-        </div>
-        <!-- Project Content -->
-        <div id="project-content">
-          <div id="design">
-            <div class="project-content-item">
-              <h2>Design Process</h2>
-              <p>Driven by the initial chaos that our team felt when we received the data and the subsequent
-                astonishment
-                we held after learning about the plight of these working women, the other designer and I wanted
-                visiting
-                users to feel a part of the movement of these women’s fights. We designed the website to reflect the
-                magnitude of the labor movements and highlighted the power of their protests through sound and
-                visuals.
-              </p>
-              <img src="../images/projects/workingwomansfight/home-1.png" alt="Home - Low Fi">
-              <img src="../images/projects/workingwomansfight/home-2.png" alt="Home - Draft">
-
-              <p>We decided to use the home page as a hub for movement. By including a variety of animations,
-                pictures,
-                and background noise, we wanted to engage users and allow them to feel empowered by the many campaigns
-                that women led and took part in.</p>
-              <p>Animations were used to maintain movement, and were juxtaposed with static images to
-                reflect the struggle
-                between the labor unions and the forces that tried to stop them. Hovering over some of the static images
-                revealed animations, which played in with our theme of making the invisible work force visible.
-                Additionally, the background noise was layered to convey the overwhelming nature of the protests.</p>
-              <img src="../images/projects/workingwomansfight/home-3.gif" alt="Home">
-
+    <div id="projectHeader" class="container-fluid remove-padding">
+        <div class="d-flex row remove-padding py-5 w-100 align-items-center">
+            <div class="col-xl-6 col-7 w-100 order-md-1 order-2">
+                <div id="projectTitle" class="row py-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-6 offset-xl-3 offset-lg-2 offset-md-1 w-100">
+                        <h1>A Working<br />
+                            Woman's Fight</h1>
+                        <h3>UI Design &amp; Web Development</h3>
+                    </div>
+                </div>
+                <div id="projectInfo" class="row py-3">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-10 offset-xl-3 offset-lg-2 offset-md-1 w-100">
+                        <div class="row">
+                            <div class="col">
+                                <h2>Duration</h2>
+                                <p>May 2018</p>
+                            </div>
+                            <div class="col">
+                                <h2>Role</h2>
+                                <p>Designer<br />
+                                    Developer
+                                </p>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col">
+                                <h2>Tools</h2>
+                                <p>Sketch<br />
+                                    Github</p>
+                            </div>
+                            <div class="col">
+                                <h2>Methods</h2>
+                                <p>Wireframing<br />
+                                    Visual Design<br />
+                                    HTML/CSS<br />
+                                    JQuery<br />
+                                    Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div id="deliverables">
-            <div class="project-content-item">
-              <h2>Deliverables</h2>
-              <p>I built the website using Bootstrap 3.</p>
-
-              <div id="cta">
-                <a href="https://workingwomansfight.github.io/" target="_blank"><button>VISIT WEBSITE</button></a>
-              </div>
+            <div class="col-xl-6 col-md-5 col-8 w-100 remove-padding order-md-2 order-1">
+                <div id="projectHeaderDesktopImg" class="offset-xl-2 offset-lg-0 pb-3">
+                    <img class="" src="../images/projects/workingwomansfight/workingwomansfight.gif"
+                        alt="A Working Woman's Fight">
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div id="backtoprojects">
-        <h5><a href="../#workingwomansfight">&#8592; BACK TO PROJECTS</a></h5>
-      </div>
     </div>
-    <footer id="footer-proj">
-      <div id="footer-cols">
-        <div class="footer-col">
-          <div class="footer-title">
-            <h2>HANNAH PHAM</h2>
-          </div>
-          <div class="footer-text">
-            <p>Digital Designer</p>
-          </div>
+
+    <div id="projectContent" class="container">
+        <!-- Project Context -->
+        <div id="projectContext">
+            <div class="row row px-md-5 px-3 py-5">
+                <div class="col-md-9 col-12 py-md-4 py-2">
+                    <h4>A Working Woman’s Fight is a digital humanities project that sheds light on the fight for better
+                        working conditions for female LA garment workers, hotel workers, and janitors. My team of five
+                        other undergraduate students were tasked with telling their stories using a plethora of data on
+                        LA workers ranging from digital media to intake forms.</h4>
+                    <p>I was responsible for building and designing the final website. This project was part of my
+                        capstone class for the digital humanities program at UCLA. We completed the project within 10
+                        weeks and presented our project to the program directors at the end of the quarter.</p>
+                </div>
+                <div class="projectTOC col-md-3 col-12 py-md-4 py-4">
+                    <h5>In this project:</h5>
+                    <h3><a href="#design">Design</a></h3>
+                    <h3><a href="#deliverables">Deliverables</a></h3>
+                </div>
+            </div>
         </div>
-        <div class="footer-col">
-          <div class="footer-title">
-            <h2>WORK</h2>
-          </div>
-          <div class="footer-text">
-            <p><a href="../#projects">Projects</a><br />
-              <a href="https://www.behance.net/hannahhp" target="_blank">Behance</a><br />
-              <a href="https://www.dribbble.com/hannahhp" target="_blank">Dribbble</a>
-            </p>
-          </div>
+
+        <div class="projectContentContainer">
+            <!-- Design -->
+            <div id="design" class="row px-3 py-5 justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
+                    <h5 class="mt-3">Design</h5>
+                    <h4>The designs were driven by our initial astonishment at the plight of these working women.</h4>
+                    <p>When my team received all the documents and intake forms, we were initially overwhelmed and
+                        unsure of where to start. The media coverages of protests and other labor movements were
+                        powerful, and we <strong>wanted to properly tell their stories and give credit to their
+                            perseverance.</strong> As the rest of my team compiled video footage and created data
+                        visualizations to help tell these stories, I worked with the other designer on my team to design
+                        an online website to house their work.</p>
+                    <!-- Image -->
+                    <figure class="projectContentImg figure">
+                        <img src="../images/projects/workingwomansfight/home1.png"
+                            class="figure-img img-fluid rounded w-100" alt="Home">
+                        <figcaption class="figure-caption text-center">Initial ideation on the home page
+                        </figcaption>
+                    </figure>
+                    <p>My teammate and I wanted the home page of the website to reflect the magnitude and power of these
+                        labor movements. <strong>We decided to use a combination of animations, static images, and
+                            sound</strong> to engage visiting users and convey the empowerment of these women in the
+                        many campaigns they led and took part in.</p>
+                    <!-- Image -->
+                    <figure class="projectContentImg figure">
+                        <img src="../images/projects/workingwomansfight/home2.png"
+                            class="figure-img img-fluid rounded w-100" alt="Home">
+                        <figcaption class="figure-caption text-center">Planning the layout of images and videos
+                        </figcaption>
+                    </figure>
+                    <p>Animations were used to maintain movement and were juxtaposed with static images to reflect the
+                        struggle between the labor unions and the forces that tried to stop them. Hovering over some of
+                        the static images revealed more animations, which played in with our theme of making the
+                        invisible work force visible. Additionally, I added overlapping background sounds of protests to
+                        convey the overwhelming nature of these movements.</p>
+                    <!-- Image -->
+                    <figure class="projectContentImg figure">
+                        <img src="../images/projects/workingwomansfight/home3.gif"
+                            class="figure-img img-fluid rounded w-100" alt="Home">
+                        <figcaption class="figure-caption text-center">Final layout and movement of the home page
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <!-- Deliverables -->
+            <div id="deliverables" class="projectBackground row px-3 py-5 justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
+                    <h5 class="mt-3">Deliverables</h5>
+                    <p>After my team put together the other elements for our project, including an infographic on the LA
+                        garment workers and map visualizations of protests and manufacturers, I built the website using
+                        Bootstrap 3. My team presented the final project to the Digital Humanities department at our
+                        end-of-the-year showcase.</p>
+                    <div class="col w-100 remove-padding text-center">
+                        <a href="https://workingwomansfight.github.io/" target="_blank"><button>View
+                                Website</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-col">
-          <div class="footer-title">
-            <h2>CONTACT</h2>
-          </div>
-          <div class="footer-text">
-            <p><a href="https://www.linkedin.com/in/hannahhp/" target="_blank">LinkedIn</a><br />
-              <a href="mailto:hannah.pham@gmail.com">Email</a></p>
-          </div>
+
+        <!-- Footer -->
+        <div id="projectFooter" class="container row">
+            <div class="col py-5 text-center">
+                <h5 class="mb-3">Take a peek into my other projects:</h5>
+                <h3>
+                    <a href="../projects/disney">Disney Parks, Experiences, and Products</a>
+                </h3>
+                <h3>
+                    <a href="../projects/valoursf">
+                        Valour SF
+                    </a>
+                </h3>
+                <h3>
+                    <a href="../projects/uber">Ethical Surveillance Design Analysis – Uber</a>
+                </h3>
+                <h3>
+                    <a href="../projects/fulcrumlabs">
+                        Fulcrum Labs Product Design Internship
+                    </a>
+                </h3>
+                <h3>
+                    <a href="../projects/royalway">
+                        Royal Way
+                    </a>
+                </h3>
+            </div>
         </div>
-      </div>
-    </footer>
-  </div>
+    </div>
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../vendor/jquery/home.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="../vendor/jquery/projects.js"></script>
+    <!-- Custom JQuery -->
+    <script src="../jquery/projects.js"></script>
 
 </body>
-
-
 
 </html>
