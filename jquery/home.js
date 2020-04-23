@@ -1,7 +1,11 @@
 $(document).ready(function () {
 
-    // Always start at top
-    $('html,body').scrollTop(0);
+
+    // // Always start at top
+    // $('html,body').scrollTop(0);
+
+    // Check if in viewport
+
 
     // Hero
     $('.heroDisclaimer a').click(function (e) {
@@ -61,10 +65,11 @@ $(document).ready(function () {
         // Store hash
         var hash = this.hash;
 
-        $('html, body').animate({
-            scrollTop: $("#projectTwo").offset().top
+        $('html,body').animate({
+            scrollTop: $(hash).offset().top
         }, "slow",
         );
+
 
     });
 
@@ -74,28 +79,28 @@ $(document).ready(function () {
         // Store hash
         var hash = this.hash;
 
-        $('html, body').animate({
-            scrollTop: $("#projectTwo").offset().top
+        $('html,body').animate({
+            scrollTop: $(hash).offset().top
         }, "slow",
         );
 
     });
 
-    $(document).scroll(function () {
+    $('body,html').scroll(function() {
 
         // Add Overflow behavior to projects
-        var y = $(window).scrollTop();
-        var winHeight = $(window).innerHeight();
+        var y = $(this).scrollTop();
+        var winHeight = $(this).innerHeight();
 
         if (y >= winHeight) {
             $('#projects').css('overflow-y', 'scroll');
-            $('#topHome').css('opacity', '1');
+            $('#topHomeContainer').css('opacity', '1');
         } else {
             $('#projects').css('overflow-y', 'hidden');
-            $('#topHome').css('opacity', '0');
+            $('#topHomeContainer').css('opacity', '0');
         }
-    });
 
+    });
 
 
 
