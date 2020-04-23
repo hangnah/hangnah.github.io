@@ -1,5 +1,6 @@
 html,body{
-    height: 100%; /* imp for scroll snap */
+    min-height: 100%; /* imp for scroll snap */
+    height: 100%;
     overflow-y:scroll;
 }
 
@@ -276,7 +277,8 @@ html,body{
 
 /* Projects */
 #homeContent{
-    height:100% !important;
+    min-height:100% !important;
+    height:100%;
 }
 #projects {
     position: relative;
