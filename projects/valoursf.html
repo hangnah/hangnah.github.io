@@ -2,603 +2,638 @@
 <html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99912030-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99912030-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-99912030-1');
-  </script>
+        gtag('config', 'UA-99912030-1');
+    </script>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hannah Pham – Product Designer">
+    <meta name="author" content="Hannah Pham">
+    <meta name="keywords" content="Hannah Pham, Hannah Pham Design, Product Designer, UX Designer, Hannah Pham UCLA">
+    <link href="https://www.hannahpham.co/projects/valoursf" rel="canonical">
 
-  <meta name="description" content="Valour SF • Designed a mobile application to encourage volunteerism in 24 hours.">
-  <meta name="keywords" content="Hannah Pham, Hannah Pham UCLA, UX Design, Graphic Design, Valour SF, Product Design">
+    <title>Valour SF – Hannah Pham</title>
 
-  <title>Valour SF • Hannah Pham</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Bootstrap core CSS -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="../css/style.css" rel="stylesheet">
-  <link href="../css/projects.css" rel="stylesheet">
-  <link href="../css/projects/valoursf.css" rel="stylesheet">
-
-  <!-- Media Queries -->
-  <link rel="stylesheet" href="../css/media-large.css" media="(max-width: 1440px)">
-  <link rel="stylesheet" href="../css/media-normal.css" media="(max-width: 768px)">
-  <link rel="stylesheet" href="../css/media-medium.css" media="(max-width: 600px)">
-  <link rel="stylesheet" href="../css/media-mobile.css" media="(max-width: 480px)">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 </head>
 
 <body>
-  <!-- Nav Top -->
-  <div id="nav-top">
-    <div id="nav-title">
-      <a href="../"><img src="../images/home/H.png"></a>
-    </div>
-    <div id="nav-pages">
-      <h2><a href="../#projects">PROJECTS</a></h2>
-      <h2><a href="../about">ABOUT</a></h2>
-    </div>
-  </div>
 
-  <!-- Project -->
-  <div id="container">
+    <!-- Image Modal -->
+    <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="Image Modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="imgModalTitle"></p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="" class="imagepreview" style="width: 100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="topProjectContainer" class="container-fluid">
+
+        <div id="topProjectHome" class="col">
+            <a href="../">
+                <h2>&larr; Back To Home</h2>
+            </a>
+        </div>
+        <div id="topProject" class="col">
+            <a href="#">
+                <h2 class="w-auto h-auto">Back To Top &uarr;</h2>
+            </a>
+        </div>
+    </div>
 
     <!-- Project Header -->
-    <div id="project">
-      <div id="project-header" class="project-header-mobile">
-        <div id="header-img" class="header-img-mobile">
-          <img src="../images/projects/valoursf/valoursf.gif" alt="Valour SF">
-        </div>
-        <div id="header-title">
-          <h1>Valour SF</h1>
-          <h2>UX Design</h2>
-        </div>
-        <div id="header-info">
-          <div id="duration">
-            <h3>Duration</h3>
-            <p>Fall 2019<br />
-              (24 hours)</p>
-          </div>
-          <div id="role">
-            <h3>Role</h3>
-            <p>UX Designer</p>
-          </div>
-          <div id="tools">
-            <h3>Tools</h3>
-            <p>Adobe XD</p>
-          </div>
-          <div id="skills">
-            <h3>Skills</h3>
-            <p>Personas<br />
-              Wireframing<br />
-              Prototyping</p>
-          </div>
-        </div>
-      </div>
-      <div id="project-container">
-
-        <!-- Project Overview -->
-        <div id="overview">
-          <div id="overview-text">
-            <h4>Valour SF is a mobile application that encourages people to volunteer at local homeless organizations in
-              San Francisco. By gamifying the experience and providing an option to connect with friends, this
-              application aimed to be a stepping stone for people to begin their volunteerism journey.</h4>
-            <p class="small-text">This project was completed at a hackathon in November 2019 (Hacking for Humanity with
-              Girls in Tech SF) and received an honorable mention from the judges. I worked in a team with four other
-              people, and took ownership over the designs.
-            </p>
-          </div>
-          <div id="overview-nav">
-            <h2>In this project:</h2>
-            <h2><a href="#challenge">The Challenge</a></h2>
-            <h2><a href="#contextresearch">Context & Research</a></h2>
-            <h2><a href="#ideation">Ideation</a></h2>
-            <h2><a href="#personas">User Personas</a></h2>
-            <h2><a href="#reframing">Reframing</a></h2>
-            <h2><a href="#designprocess">Design Process</a></h2>
-            <h2><a href="#solutions">Solutions</a></h2>
-            <h2><a href="#takeaways">Takeaways</a></h2>
-
-          </div>
-        </div>
-
-        <!-- Project Content -->
-        <div id="project-content">
-
-          <!-- Challenge -->
-          <div id="challenge">
-            <div class="project-content-item">
-              <h2>The Challenge</h2>
-              <h4>Hack for humanity.</h4>
-              <p>The topic of the hackathon was <span class="bold">social and civic issues in the San Francisco
-                  community.</span> Our goal was to
-                address one issue in San Francisco and design a solution for it. In order to provide more context for
-                potential projects, a couple of representatives from different community organizations were invited to
-                speak about their organizations' respective missions.</p>
-            </div>
-          </div>
-
-          <!-- Context & Research -->
-          <div id="contextresearch">
-            <div class="project-content-item">
-              <div class="content-padding-normal">
-                <h2>Context & User Research</h2>
-                <h4>Homelessness is a big issue – we decided to focus our users on people who have the capacity to help.
-                </h4>
-                <p>One organization in particular stood out to my team – <span class="bold">the St. Anthony Foundation,
-                    an organization
-                    that provides free services to the homeless community in San Francisco.</span> We were drawn to the
-                  services
-                  that this organization provided for the community: a dining room that serves over 2,000 meals per day,
-                  a free technology center that allows homeless individuals access to computers, and many other
-                  programs.
-                </p>
-                <p>My team wanted to explore the issue of <span class="bold">homelessness</span> even further. With over
-                  800,000 residents and
-                  8,000 homeless individuals in San Francisco, we knew we needed to <span class="bold">incorporate human
-                    compassion</span> into
-                  our project solution.
-                </p>
-                <p>We identified three groups involved in this problem space:</p>
-                <ul>
-                  <li>Homeless individuals</li>
-                  <li>Non-profit organizations</li>
-                  <li>Volunteers</li>
-                </ul>
-                <p>My team preliminarily discussed several project ideas, including an Airbnb-type service to connect
-                  the homeless with willing hosts, or a way to simplify the eviction process for individuals before they
-                  become homeless. While these ideas would create a direct impact for the homeless community, we were
-                  concerned about the technology they would need to access these services. Because of this, we <span
-                    class="bold">shifted
-                    our focus from homeless individuals</span> to people who have the resources to contribute to the
-                  homeless
-                  community.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Ideation -->
-          <div id="ideation">
-            <div class="project-content-item">
-              <h2>Ideation</h2>
-              <h4>Compassion was a core value that we defined, so we considered several project ideas aligned with
-                compassion for the homeless community. </h4>
-              <p><span class="bold">The idea of fostering a relationship with homeless individuals</span> became a
-                recurring topic because it
-                would allow people to directly show compassion to the homeless community. We considered the idea of an
-                independent sponsorship program to bridge these relationships, but ran into the problem of finding
-                willing individuals to participate in the program. </p>
-              <p>Thinking back to the St. Anthony Foundation, we <span class="bold">decided to leverage organizations
-                  like St. Anthony’s to
-                  form the foundation of these relationships.</span> My team began considering ways to encourage people
-                to
-                volunteer at these organizations with the end goal of fostering relationships with the people they would
-                be interacting with.</p>
-              <img src="../images/projects/valoursf/ideation.jpg" alt="Ideation">
-              <p>Bouncing around ideas for this was difficult, as my team members and I had differing opinions on how to
-                approach the design of such a solution. <span class="bold">I suggested coming up with user
-                  personas</span> to narrow our scope of
-                the project and help direct our decisions for the application.
-              </p>
-            </div>
-          </div>
-
-          <!-- Personas -->
-          <div id="personas">
-            <div class="project-content-item">
-              <h2>User Personas</h2>
-              <p>My team came up with profiles for three individuals in San Francisco and defined their ideas about
-                volunteering. We considered users who were in different life stages and shared a <span
-                  class="bold">similar sentiment of not previously being involved with volunteer programs.</span></p>
-
-              <!-- Tab Carousel / Text Carousel -->
-              <div class="tabCarousel">
-                <div id="personascarousel" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#personascarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#personascarousel" data-slide-to="1"></li>
-                    <li data-target="#personascarousel" data-slide-to="2"></li>
-                  </ol>
-
-                  <div class="carousel-inner">
-                    <!-- Persona: Joe -->
-                    <div class="carousel-item active">
-                      <h5>Joe, 22: The Passive Young Professional</h5>
-                      <ul>
-                        <li>Joe is a <span class="bold">software engineer</span> in San Francisco. He is single and
-                          lives with two roommates in
-                          the Mission district. While he <span class="bold">often complains about high rent,</span> he
-                          loves living in the City.
-                        </li>
-                        <li><span class="bold">He leaves for work early and comes home late,</span> so in his free time
-                          he likes to relax by
-                          playing Call of Duty with his roommates – sometimes, he goes out to bars.</li>
-                        <li>Joe thinks helping others is nice, but doesn’t want to donate money because <span
-                            class="bold">he thinks he
-                            doesn’t have enough (given his high rent)</span> and is unsure with where the money will go.
-                          He also
-                          doesn’t have time during the week to physically volunteer.</li>
-                      </ul>
+    <div id="projectHeader" class="container-fluid remove-padding">
+        <div class="d-flex row remove-padding py-5 w-100 align-items-center">
+            <div class="col-xl-6 col-7 w-100 order-md-1 order-2">
+                <div id="projectTitle" class="row py-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-6 offset-xl-3 offset-lg-2 offset-md-1 w-100">
+                        <h1>Valour SF</h1>
+                        <h3>UX Design</h3>
                     </div>
-                    <!-- Persona: Maddie -->
-                    <div class="carousel-item">
-                      <h5>Maddie, 32: The Selective Helper</h5>
-                      <ul>
-                        <li>Maddie is a <span class="bold">psychotherapist</span> with an expertise in Mindfulness
-                          Meditation at UCSF. When she
-                          comes home from work on weekdays, she is emotionally exhausted from the day’s sessions. She
-                          usually winds down by reading a book before bed.
-                        </li>
-                        <li>She <span class="bold">spends the weekends hanging out with friends,</span> journaling at
-                          coffee shops, or preparing
-                          for her sessions in the upcoming week.</li>
-                        <li>Maddie <span class="bold">believes that she’s doing enough for the community</span> with her
-                          counseling services and
-                          doesn’t think she needs to spend her free time helping non-profit organizations. If she were
-                          to volunteer her time, <span class="bold">she would want to volunteer with minimal
-                            engagement.</span></li>
-                      </ul>
+                </div>
+                <div id="projectInfo" class="row py-3">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-10 offset-xl-3 offset-lg-2 offset-md-1 w-100">
+                        <div class="row">
+                            <div class="col">
+                                <h2>Duration</h2>
+                                <p>Nov 2019<br />(24 Hours)</p>
+                            </div>
+                            <div class="col">
+                                <h2>Role</h2>
+                                <p>Designer<br />
+                                    Information Architect</p>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col">
+                                <h2>Tools</h2>
+                                <p>Adobe XD</p>
+                            </div>
+                            <div class="col">
+                                <h2>Methods</h2>
+                                <p>Personas<br />
+                                    Information Architecture<br />
+                                    Wireframing<br />
+                                    Prototyping</p>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Persona: Blake -->
-                    <div class="carousel-item">
-                      <h5>Blake, 45: The Caring Mother</h5>
-                      <ul>
-                        <li>Blake is a <span class="bold">stay-at-home mother</span> to two children, ages 9 and 10. She
-                          feels content with her
-                          life and is financially stable. Her <span class="bold">primary concerns are for her immediate
-                            family,</span> as she
-                          wants to take care of her growing children and parents.
-                        </li>
-                        <li><span class="bold">She has compassion for the homeless community,</span> and she contributes
-                          to her children’s
-                          canned food drives and often donates outgrown clothes to her local Goodwill. </li>
-                        <li>Blake has lived a well-balanced life and wants her children to grow up with the same
-                          values she adopted over the years. She <span class="bold">wants to encourage her children to
-                            also be
-                            compassionate</span> for the homeless community.</li>
-                      </ul>
-                    </div>
-                  </div>
                 </div>
-
-              </div>
             </div>
-          </div>
-
-          <!-- Reframing -->
-          <div id="reframing">
-            <div class="project-content-item">
-              <h2>Reframing</h2>
-              <h4>How might we design a simple volunteer experience for people who have no prior experience with
-                volunteering?</h4>
-              <p>Defining the user personas helped my team ideate an experience that <span class="bold">felt
-                  personalized but also low-commitment</span> to encourage more volunteerism – with the ultimate goal of
-                building a relationship with the homeless community. We didn’t consider user acquisition, as we assumed
-                that people using the application would be those already interested in finding out how to volunteer.</p>
-            </div>
-          </div>
-
-          <!-- Design Process -->
-          <div id="designprocess">
-            <div class="project-content-item">
-              <h2>Design Process</h2>
-              <h4>All of our design decisions were made to encourage more people to volunteer, ultimately encouraging volunteers to build relationships with homeless individuals.</h4>
-              <p>Our first decision was to <span class="bold">create a mobile application</span> in order to represent
-                the easy access to
-                volunteering. To encourage user retention with the application, we decided to <span class="bold">gamify
-                  the experience</span> and
-                allow users to earn badges and climb statuses as they continued to volunteer. We also decided to <span
-                  class="bold">add a
-                  social component</span> so users would be able to see their friends’ activities at organizations,
-                further
-                encouraging them to volunteer on their own time.</p>
-
-              <!-- Onboarding -->
-              <h5>Onboarding</h5>
-              <h6>We designed an onboarding experience that would affirm users of their contributions to local
-                organizations, hoping to give users an idea of how they could easily begin their volunteer journey.
-              </h6>
-              <p>We took inspiration from Duolingo, a language learning application, and its onboarding experience for
-                new users. In Duolingo’s onboarding process, users are asked to quickly assess their level of language
-                mastery and outline their personal goals for the application, creating a personalized experience. These
-                first few screens also give users a good idea of what to expect in the application.</p>
-
-              <img src="../images/projects/valoursf/onboarding.png" alt="Onboarding Drafts">
-              <p>For our onboarding experience, we <span class="bold">gave new users the opportunity to take ownership
-                  over their
-                  volunteering journey</span> by answering several questions on their goals for volunteering and
-                categorizing the
-                types of contributions they could make (time, money, and items). By simplifying their potential
-                contributions, we also <span class="bold">set the expectation that volunteering can be easy.</span>
-              </p>
-              <p>We also wanted to <span class="bold">introduce the gamification features to further validate and reward
-                  users</span> for taking
-                the first step to becoming a volunteer.
-              </p>
-              <img src="../images/projects/valoursf/designs/onboarding flow.png" alt="Onboarding Flow">
-              <img src="../images/projects/valoursf/designs/onboarding-high.gif" alt="Onboarding"
-                class="mobiledesign centeralign">
-
-              <!-- Information Architecture -->
-              <h5>Information Architecture</h5>
-              <h6>With the goals of encouraging more volunteerism and empowering users with resources to volunteer, we
-                consolidated all the volunteer resources to a single page.
-              </h6>
-              <p>By reducing the application to having three main pages, the only major interaction users would have
-                with the application would be with the <span class="bold">Volunteer</span> page. The <span
-                  class="bold">Profile</span> and <span class="bold">Friends</span> pages served as ways for
-                users to track their progress and view their friends’ progress.</p>
-
-              <img src="../images/projects/valoursf/infoarch.png" alt="Information Architecture">
-
-
-              <!-- Tab Carousel -->
-              <div class="tabCarousel">
-                <ul class="nav nav-pills">
-                  <li>
-                    <a href="#pagecarousel-1" data-toggle="tab" class="tabActive">Volunteer</a>
-                  </li>
-                  <li>
-                    <a href="#pagecarousel-2" data-toggle="tab">Friends</a>
-                  </li>
-                  <li>
-                    <a href="#pagecarousel-3" data-toggle="tab">Profile</a>
-                  </li>
-                </ul>
-
-                <div class="tab-content clearfix">
-
-                  <!-- Volunteer -->
-                  <div id="pagecarousel-1" class="tab-pane active">
-                    <ul>
-                      <li>Considering the profile of <span class="bold">Joe</span> (someone who is unsure on how to
-                        help), I added <span class="bold">an
-                          automatically generated task</span> for volunteers who are unsure of how to contribute to
-                        organizations.
-                      </li>
-                      <li><span class="bold">Breaking down three different ways</span> volunteers could donate or
-                        volunteer would promote the
-                        idea that volunteering can be easy.</li>
-                      <li>To encourage volunteer retention at the same organizations, I included a <span
-                          class="bold">carousel of
-                          organizations</span> for volunteers to keep track of places they’ve volunteered at or would
-                        like to
-                        volunteer with.</li>
-                    </ul>
-                  </div>
-
-                  <!-- Friends -->
-                  <div id="pagecarousel-2" class="tab-pane">
-                    <ul>
-                      <li>Social users like <span class="bold">Maddie</span> would find extra incentives to volunteer
-                        with the <span class="bold">Friends</span> page, as
-                        volunteers would be able to view where and what their friends are volunteering.
-                      </li>
-                      <li>We decided to not include the option for users to like or comment on friend activities, as
-                        we wanted to steer away from romanticizing volunteering.</li>
-                    </ul>
-                  </div>
-
-                  <!-- Profile -->
-                  <div id="pagecarousel-3" class="tab-pane">
-                    <ul>
-                      <li>A quick overview of a volunteer’s status and achievements would <span class="bold">encourage
-                          users to continue
-                          volunteering to gain more points</span> to level up and to <span class="bold">acquire more
-                          badges</span> to display on their
-                        profile.
-                      </li>
-                    </ul>
-                  </div>
+            <div class="col-xl-6 col-lg-5 col-md-4 col-8 w-100 remove-padding order-md-2 order-1">
+                <div id="projectHeaderMobileImg" class="offset-xl-2 offset-lg-0 pb-3">
+                    <img class="w-100" src="../images/projects/valoursf/valoursf.gif" alt="Valour SF">
                 </div>
-              </div>
-              <!-- End Tab Carousel -->
-
             </div>
-          </div>
-
-          <!-- Solutions -->
-          <div id="solutions">
-            <div class="project-content-item">
-              <h2>Solutions</h2>
-              <h4>We decided to name our application <span class="bold">Valour SF</span> to reflect our user’s
-                empowerment and compassion from volunteering in the San Francisco community.</h4>
-              <p>Our ultimate goal for this project was to <span class="bold">empower the user through incentivizing
-                  volunteering and destigmatizing homeless shelter volunteering,</span> and to <span
-                  class="bold">empower the homeless through deepening relationships with consistent volunteers.</span>
-              </p>
-              <p>We presented our solutions through four avenues: Partnership, Gamification, Friends, and Humanization.
-              </p>
-
-              <!-- Tab Carousel -->
-              <div class="tabCarousel">
-                <ul class="nav nav-pills">
-                  <li>
-                    <a href="#solutionscarousel-1" data-toggle="tab" class="tabActive">Partnership</a>
-                  </li>
-                  <li>
-                    <a href="#solutionscarousel-2" data-toggle="tab">Gamification</a>
-                  </li>
-                  <li>
-                    <a href="#solutionscarousel-3" data-toggle="tab">Friends</a>
-                  </li>
-                  <li>
-                    <a href="#solutionscarousel-4" data-toggle="tab">Humanization</a>
-                  </li>
-
-                </ul>
-
-                <div class="tab-content clearfix">
-
-                  <!-- Partnership -->
-                  <div id="solutionscarousel-1" class="tab-pane active">
-                    <img src="../images/projects/valoursf/designs/partnership.png" alt="Partnerships">
-                    <p>By eventually partnering with non-profit organizations such as St. Anthony’s in San Francisco, we
-                      hoped
-                      to directly connect volunteers with organizations through our mobile application and <span
-                        class="bold">streamline the
-                        process of volunteers signing up and tracking their volunteering.</span> Features like the <span
-                        class="bold">Time</span> page would
-                      allow volunteers to coordinate with the site supervisors and record their volunteer hours directly
-                      in the
-                      application. This feature would be useful for students who need volunteer hours, and <span
-                        class="bold">would encourage
-                        volunteers to further foster relationships with those they meet</span> at the organizations.</p>
-                  </div>
-
-                  <!-- Gamification -->
-                  <div id="solutionscarousel-2" class="tab-pane">
-                    <img src="../images/projects/valoursf/designs/gamification.png" alt="Gamification">
-                    <p>Gamifying the experience with achievements, status levels, and experience points <span
-                        class="bold">gives an extra
-                        incentive for users to continue volunteering and using the application.</span> With each item or
-                      monetary
-                      donation, or time spent volunteering, volunteers would gain experience points (XP) to level up as
-                      a
-                      volunteer. This feature would hopefully <span class="bold">lead volunteers to develop the habit of
-                        voluntarily spending
-                        their time</span> at charitable organizations. I designed all the icons to represent the status
-                      levels
-                      of a
-                      volunteer.</p>
-                  </div>
-
-                  <!-- Friends -->
-                  <div id="solutionscarousel-3" class="tab-pane">
-                    <img src="../images/projects/valoursf/designs/friends.png" alt="Friends">
-                    <p>The friends feed would allow volunteers to see their friends’ status levels, recently acquired
-                      badges,
-                      and activities. One decision we came to was <span class="bold">omitting the option to like or
-                        comment on
-                        activities,</span> as we
-                      did not want volunteerism to become a competition with other people.</p>
-                  </div>
-
-                  <!-- Humanization -->
-                  <div id="solutionscarousel-4" class="tab-pane">
-                    <p>(Because this feature was one that was beyond the scope of our time at the hackathon, we filed
-                      away
-                      this idea as a future feature.) To bring it back to compassion as our core value and relationships
-                      as
-                      the end goal, we wanted to design an experience that would <span class="bold">allow volunteers to
-                        have a
-                        one-to-one
-                        relationship with homeless individuals</span> at these local organizations, or form a
-                      sponsorship-like
-                      program
-                      with them. Because every individual has a different story, we wanted to create a space for
-                      understanding
-                      and empathy in these relationships.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Tab Carousel -->
-              <div id="cta"><a href="https://xd.adobe.com/view/df18674b-bbc6-4ab1-48c6-385ec0302c17-a929/"
-                  target="_blank"><button>VIEW FULL PROTOTYPE</button></a></div>
-            </div>
-          </div>
-
-          <!-- Takeaways -->
-          <div id="takeaways">
-            <div class="project-content-item">
-              <h2>Takeaways</h2>
-              <ul>
-                <li><span class="bold">Defining a target audience and user base is essential for directing design
-                    decisions.</span> Given that
-                  most of my team consisted of people who were new to hackathons and design thinking, initially ideating
-                  solutions to a huge problem was exciting. But after I led my team to create user personas to better
-                  frame our problem, it was easier to scope project ideas. Personas also helped us to understand the
-                  purpose of the application: to encourage new volunteers to begin their volunteer journeys and
-                  eventually build relationships with the people they served.</li>
-                <li><span class="bold">Every single screen, design element, or interaction should contribute to the end
-                    goal of the user.</span>
-                  My team became quickly overwhelmed by the idea of gamification and had a few disagreements over how to
-                  approach gamifying the experience, but I advocated for the user personas we defined and the goal of
-                  the application: to encourage volunteerism. The gamification feature then became a secondary priority,
-                  and we were able to simplify the user experience of the application. </li>
-                <li>And a bonus takeaway: <span class="bold">It’s possible to sleep at hackathons!</span></li>
-              </ul>
-              <p>Designing this application from scratch was an exciting process. After being given the prompt and some
-                time to think about how to “hack for humanity,” it was easy for my team to quickly jump around different
-                project ideas, but remembering that every design process begins with the users helped us define a single
-                project idea.</p>
-              <p>Given that this project was completed in a 24-hour hackathon, we were unable to complete any in-person
-                user research on our initial idea and the end prototype I designed. As a result, a lot of our design
-                decisions were based on assumptions of the user personas and off of one of our team members, as she was
-                a high school student who needed volunteer hours for school. If we were given more time, I would have
-                also done deeper research on the effects of gamification on activity retention.</p>
-              <p>Participating in this hackathon was a great opportunity to work alongside strangers who quickly became
-                a cohesive team: two recent graduates, one high school student, one engineer, and one mother. Being able
-                to witness many of their first introductions to design thinking in the first workshop confirmed my
-                passion for user experience design, and encourages me even more to continue advocating for the user in
-                everything I design.</p>
-
-              <img src="../images/projects/valoursf/team.JPG" alt="Team!">
-            </div>
-          </div>
         </div>
-
-      </div>
     </div>
-    <div id="backtoprojects">
-      <h2><a href="../#valoursf">&#8592; BACK TO PROJECTS</a></h2>
+
+    <div id="projectContent" class="container">
+        <!-- Project Context -->
+        <div id="projectContext">
+            <div class="row row px-md-5 px-3 py-5">
+                <div class="col-md-9 col-12 py-md-4 py-2">
+                    <h4>Valour SF is a mobile application that encourages people to volunteer at local homeless
+                        organizations in San Francisco. By gamifying the experience and providing an option to connect
+                        with friends online, this project aimed to be a stepping stone for people to begin their
+                        volunteerism journey.</h4>
+                    <p>This project was completed at a 24-hour hackathon in November 2019 (Hacking for Humanity with
+                        Girls in Tech SF) and received an honorable mention from the judges. I worked in a team with
+                        four other people, and taught design thinking principles to my team. I was the sole designer.
+                    </p>
+                </div>
+                <div class="projectTOC col-md-3 col-12 py-md-4 py-4">
+                    <h5>In this project:</h5>
+                    <h3><a href="#challenge">The Challenge</a></h3>
+                    <h3><a href="#context">Context &amp; Research</a></h3>
+                    <h3><a href="#ideation">Ideation</a></h3>
+                    <h3><a href="#personas">User Personas</a></h3>
+                    <h3><a href="#reframing">Reframing</a></h3>
+                    <h3><a href="#designprocess">Design Process</a></h3>
+                    <h3><a href="#solutions">Solutions</a></h3>
+                    <h3><a href="#takeaways">Takeaways</a></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectContentContainer">
+            <!-- The Challenge -->
+            <div id="challenge" class="row px-3 py-5 justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
+                    <h5 class="mt-3">The Challenge</h5>
+                    <h4>Hack for humanity.</h4>
+                    <p>The topic of the hackathon was <strong>social and civic issues in the San Francisco
+                            community.</strong> Our goal was to address one issue in San Francisco and design a solution
+                        for it. To spur ideas, a couple of representatives from different community organizations were
+                        invited to speak about their organizations’ respective missions.</p>
+                </div>
+            </div>
+            <!-- Context -->
+            <div id="context" class="projectBackground row px-3 py-5 justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
+                    <h5 class="mt-3">Context &amp; User Research</h5>
+                    <h4>Homelessness is a big issue, so we decided to narrow our users to people who have the capacity
+                        to help.
+                    </h4>
+                    <p>One organization stood out to my team – <strong>the St. Anthony Foundation, an organization that
+                            provides free services to the homeless community in San Francisco.</strong> A couple of the
+                        services include a dining hall that serves over 2,000 meals each day and a free technology
+                        center that gives homeless individuals access to computers.</p>
+                    <p>My team wanted to explore this issue of homelessness even further. With over 8,000 homeless
+                        individuals and 800,000 residents in San Francisco, I knew we needed to <strong>incorporate
+                            human compassion</strong> into our project solution to galvanize change.</p>
+                    <p>We identified three groups involved in this space:</p>
+                    <ul>
+                        <li>Homeless individuals
+                        </li>
+                        <li>Non-profit organizations
+                        </li>
+                        <li>Volunteers</li>
+                    </ul>
+                    <p>My team preliminarily discussed a few project ideas, including an Airbnb-type service to connect
+                        homeless individuals with willing hosts, or a way to simplify the eviction process for
+                        individuals before they become homeless. While these ideas were worth exploring, we were
+                        concerned about the technology needed to access these services. Because of this, <strong>we
+                            shifted our users from homeless individuals to people who have the resources to contribute
+                            to the homeless community.</strong>
+                    </p>
+                </div>
+            </div>
+            <!-- Ideation -->
+            <div id="ideation" class="row px-3 py-5 justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
+                    <h5 class="mt-3">Ideation</h5>
+                    <h4>The core value of this project was compassion. My team considered several project ideas to drive
+                        compassion for the homeless community.
+                    </h4>
+                    <p><strong>The idea of fostering a relationship with homeless individuals</strong> would allow
+                        people to directly show compassion to the homeless community. We considered the idea of an
+                        independent sponsorship program to bridge these relationships, but ran into the problem of
+                        finding willing individuals to participate in the program.</p>
+                    <!-- Image -->
+                    <figure class="projectContentImg figure">
+                        <img src="../images/projects/valoursf/ideation.jpg" class="figure-img img-fluid rounded w-100"
+                            alt="Ideation">
+                        <figcaption class="figure-caption text-center">Initial whiteboard ideation session</figcaption>
+                    </figure>
+                    <p><strong>We decided to leverage organizations like St. Anthony’s to form the foundations of these
+                            relationships.</strong> My team began considering ways to encourage people to volunteer with
+                        the end goal of fostering relationships with the people they would interact with.</p>
+                    <p>Bouncing around ideas for this was difficult, as my team members and I had differing opinions on
+                        the solution. <strong>I suggested coming up with user personas</strong> to narrow down the scope
+                        and help direct our decisions for the project.</p>
+                </div>
+            </div>
+            <!-- Personas -->
+            <div id="personas" class="projectBackground row px-3 py-5 justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
+                    <h5 class="mt-3">User Personas</h5>
+                    <h4>I led my team to develop personas in order to guide our project.</h4>
+                    <p>My team was not familiar with human-centered design principles, so I led my team to create
+                        profiles for three individuals living in San Francisco. We defined general perspectives on
+                        volunteering and considered users who <strong>shared a similar sentiment of not previously being
+                            involved with volunteer programs.</strong>
+                    </p>
+                    <!-- Tab Carousel -->
+                    <div class="projectCarousel my-4 py-3 px-3">
+                        <ul id="personasCarousel" class="nav nav-pills mb-2 py-3 px-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-joe-tab" data-toggle="pill" href="#pills-joe"
+                                    role="tab" aria-controls="pills-joe" aria-selected="true">Joe, 22</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-maddie-tab" data-toggle="pill" href="#pills-maddie"
+                                    role="tab" aria-controls="pills-maddie" aria-selected="false">Maddie, 32</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-blake-tab" data-toggle="pill" href="#pills-blake"
+                                    role="tab" aria-controls="pills-blake" aria-selected="false">Blake, 45</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content px-3" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-joe" role="tabpanel"
+                                aria-labelledby="pills-joe-tab">
+                                <h5>The Passive Young Professional</h5>
+                                <ul>
+                                    <li>Joe is a <strong>software engineer in San Francisco.</strong> He is single and
+                                        lives with two roommates in the Mission district. While he often complains about
+                                        high rent, he loves living in the City.
+                                    </li>
+                                    <li>He leaves for work early and comes home late, so in his free time he likes to
+                                        relax by playing Call of Duty with his roommates – sometimes, he goes out to
+                                        bars.</li>
+                                    <li>Joe thinks helping others is nice, but doesn’t want to donate money because
+                                        <strong>he thinks he doesn’t have enough (given his high rent)</strong> and is
+                                        unsure about where the money will go. He also <strong>doesn’t have time during
+                                            the week</strong> to physically volunteer.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="pills-maddie" role="tabpanel"
+                                aria-labelledby="pills-maddie-tab">
+                                <h5>The Selective Helper</h5>
+                                <ul>
+                                    <li>Maddie is a <strong>psychotherapist with an expertise in Mindfulness Meditation
+                                            at UCSF.</strong> When she comes home from work on weekdays, she is
+                                        emotionally exhausted from the day’s sessions. She usually winds down by reading
+                                        a book before bed.
+                                    </li>
+                                    <li>She spends the weekends hanging out with friends, journaling at coffee shops, or
+                                        preparing for her sessions in the upcoming week.</li>
+                                    <li>Maddie believes that <strong>she’s doing enough for the community with her
+                                            counseling services</strong> and doesn’t think she needs to spend her free
+                                        time helping non-profit organizations. If she were to volunteer her time,
+                                        <strong>she would want to volunteer with minimal engagement.</strong></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="pills-blake" role="tabpanel"
+                                aria-labelledby="pills-blake-tab">
+                                <h5>The Caring Mother</h5>
+                                <ul>
+                                    <li>Blake is a <strong>stay-at-home mother to two children,</strong> ages 9 and 10.
+                                        She feels content with her life and is financially stable. <strong>Her primary
+                                            concerns are for her immediate family,</strong> as she wants to take care of
+                                        her growing children and parents.
+                                    </li>
+                                    <li>She has compassion for the homeless community, and she contributes to her
+                                        children’s canned food drives and often donates outgrown clothes to her local
+                                        Goodwill.
+                                    </li>
+                                    <li>Blake has lived a well-balanced life and wants her children to grow up with
+                                        the same values she adopted over the years. She <strong>wants to encourage her
+                                            children to also be compassionate for the homeless community</strong> but is
+                                        overwhelmed with where to begin.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Reframing -->
+            <div id="reframing" class="row px-3 py-5 justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
+                    <h5 class="mt-3">Reframing</h5>
+                    <h4>How might we design a simple volunteer experience for people who have no prior experience with
+                        volunteering?
+                    </h4>
+                    <p>Defining the personas helped my team ideate an experience that <strong>felt personalized but was
+                            also low-commitment to encourage more volunteerism.</strong> The ultimate far-reaching goal
+                        for the project was to build relationships with individuals in the homeless community. (We
+                        didn’t consider user acquisition of our product, as we assumed that people using the application
+                        would be those already interested in finding out how to volunteer.)
+                    </p>
+                </div>
+            </div>
+            <!-- Design -->
+            <div id="designprocess" class="projectBackground row px-3 py-5 justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
+                    <!-- Design Process -->
+                    <h5 class="mt-3">Design Process</h5>
+                    <h4>All of the design decisions were made to encourage more people to volunteer, ultimately
+                        encouraging volunteers to build relationships with homeless individuals.
+                    </h4>
+                    <p>The first decision I made was to <strong>create a mobile application in order to reflect the ease
+                            of volunteering.</strong> To encourage user retention with the application, some of my team
+                        members suggested that we to <strong>gamify the experience</strong> and allow users to earn
+                        badges and climb statuses as they continued to volunteer. As a team, we also decided to add a
+                        <strong>social component</strong> to the application so users would be able to see their
+                        friends’ activities at organizations, further encouraging them to volunteer on their own time.
+                    </p>
+                    <p>With a little over 12 hours left in the hackathon, I organized the information architecture and
+                        designed high-fidelity wireframes and prototypes while providing design support for my team with
+                        the application onboarding experience.</p>
+
+                    <!-- Onboarding -->
+                    <h5 class="mt-3">Onboarding Designs</h5>
+                    <h4>The onboarding experience aimed to give users an idea of how easy it is to begin their volunteer
+                        journeys.</h4>
+                    <p>We took inspiration from Duolingo, a language learning application, and its onboarding experience
+                        for new users. Duolingo’s onboarding process asks users to quickly assess their level of
+                        language mastery and outline their personal goals with using the application, personalizing
+                        their language learning experience. </p>
+                    <!-- Image -->
+                    <figure class="projectContentImg figure">
+                        <img src="../images/projects/valoursf/onboarding.png" class="figure-img img-fluid rounded w-100"
+                            alt="Onboarding Comparisons">
+                        <figcaption class="figure-caption text-center">Comparison between Duolingo's onboarding and our
+                            proposed onboarding experiences
+                        </figcaption>
+                    </figure>
+                    <p>In our onboarding experience, we asked new users about their goals for volunteering and
+                        categorized the types of contributions they could make (time, money, and items). By limiting the
+                        number of potential contributions users could make, <strong>we were setting the expectation that
+                            volunteering can be easy.</strong> We also <strong>introduced the gamification features to
+                            further validate and reward users</strong> for taking the first step to becoming a
+                        volunteer.</p>
+                    <p>Taking the sketches that my team and I had created, I designed a high-fidelity prototype for the
+                        onboarding experience.</p>
+                    <!-- Image -->
+                    <figure class="projectContentImg figure">
+                        <img src="../images/projects/valoursf/designs/onboardingflow.png"
+                            class="figure-img img-fluid rounded w-100" alt="Onboarding Flows">
+                        <figcaption class="figure-caption text-center">Screens for onboarding
+                        </figcaption>
+                    </figure>
+                    <!-- Image -->
+                    <div class="row justify-content-center">
+                        <figure class="projectContentImg col-md-5 col-sm-7 col-8 figure">
+                            <img src="../images/projects/valoursf/designs/onboarding-high.gif"
+                                class="figure-img img-fluid rounded w-100" alt="Onboarding">
+                            <figcaption class="figure-caption text-center">Onboarding prototype
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Information Architecture -->
+                    <h5 class="mt-3">Information Architecture</h5>
+                    <h4>With the goal of encouraging more volunteerism, I consolidated all the volunteer resources to a
+                        single page to empower users to volunteer.</h4>
+                    <p>By reducing the number of pages in the application to three main pages, I hoped to encourage
+                        users to primarily interact with the <strong>Volunteer page.</strong> The
+                        <strong>Profile</strong> and <strong>Friends</strong> pages served as ways for users to track
+                        their progress and view their friends’ volunteer journeys.</p>
+                    <!-- Image -->
+                    <figure class="projectContentImg figure">
+                        <img src="../images/projects/valoursf/infoarch.png" class="figure-img img-fluid rounded w-100"
+                            alt="Information Architecture">
+                        <figcaption class="figure-caption text-center">Information Architecture
+                        </figcaption>
+                    </figure>
+                    <!-- Tab Carousel -->
+                    <div class="projectCarousel my-4 py-3 px-3">
+                        <ul id="infoarchCarousel" class="nav nav-pills mb-2 py-3 px-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill"
+                                    href="#pills-volunteer" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Volunteer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-friends"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Friends</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false">Profile</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content px-3" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-volunteer" role="tabpanel"
+                                aria-labelledby="pills-volunteer-tab">
+                                <ul>
+                                    <li>Considering the profiles of <strong>Joe and Blake (people who are unsure about
+                                            how to help),</strong> I designed <strong>automatically generated
+                                            tasks</strong> in the form of “quick tasks” for volunteers who are unsure of
+                                        how to contribute to organizations.
+                                    </li>
+                                    <li><strong>Limiting the donation categories</strong> would promote the idea that
+                                        volunteering can be easy.</li>
+                                    <li>To encourage volunteer retention at the same organizations, I included a
+                                        <strong>list of organizations</strong> for volunteers to keep track of places
+                                        they had previously volunteered or would like to volunteer with.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="pills-friends" role="tabpanel"
+                                aria-labelledby="pills-friends-tab">
+                                <ul>
+                                    <li><strong>Social users like Maddie</strong> would find extra incentives to
+                                        volunteer with this page, as volunteers would be able to view where their
+                                        friends are volunteering.
+                                    </li>
+                                    <li>We decided to not include the option for users to like or comment on friend
+                                        activities, as we wanted to steer away from romanticizing volunteering.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <ul>
+                                    <li>All of the user’s status updates and achievements would live in the profile
+                                        page. By displaying all of their achievements, we wanted to encourage users to
+                                        continue volunteering to gain more points and earn more badges.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Solutions -->
+            <div id="solutions" class="row px-3 py-5 justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
+                    <h5 class="mt-3">Solutions</h5>
+                    <h4>We decided to name our application <strong>Valour SF</strong> to reflect our user’s empowerment
+                        and compassion gained from volunteering in the San Francisco community.</h4>
+                    <p>My team’s ultimate goal for this project was to <strong>empower the user through incentivizing
+                            volunteering and destigmatizing homeless shelter volunteering,</strong> and to
+                        <strong>empower the homeless through deepening relationships with consistent
+                            volunteers.</strong>
+                    </p>
+                    <p>We presented our final solutions through four avenues: Partnership, Gamification, Friends, and
+                        Humanization. I designed all of the following screens.
+                    </p>
+                    <!-- Tab Carousel -->
+                    <div class="projectCarousel my-4 py-3 px-3">
+                        <ul id="solutionsCarousel" class="nav nav-pills mb-2 py-3 px-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-partnership-tab" data-toggle="pill"
+                                    href="#pills-partnership" role="tab" aria-controls="pills-partnership"
+                                    aria-selected="true">Partnership</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-gamification-tab" data-toggle="pill"
+                                    href="#pills-gamification" role="tab" aria-controls="pills-gamification"
+                                    aria-selected="false">Gamification</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-social-tab" data-toggle="pill" href="#pills-social"
+                                    role="tab" aria-controls="pills-social" aria-selected="false">Social</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-humanization-tab" data-toggle="pill"
+                                    href="#pills-humanization" role="tab" aria-controls="pills-humanization"
+                                    aria-selected="false">Humanization</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content px-3" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-partnership" role="tabpanel"
+                                aria-labelledby="pills-partnership-tab">
+                                <!-- Image -->
+                                <figure class="projectContentImg figure">
+                                    <img src="../images/projects/valoursf/designs/partnership.png"
+                                        class="figure-img img-fluid rounded w-100" alt="Partnership">
+                                    <figcaption class="figure-caption text-center">Partnership with local organizations
+                                    </figcaption>
+                                </figure>
+                                <p>By eventually partnering with non-profit organizations such as St. Anthony’s in San
+                                    Francisco, we hoped to directly connect volunteers with organizations through our
+                                    mobile application and <strong>streamline the process of volunteers signing up and
+                                        tracking their volunteering.</strong> Features like the <strong>Time
+                                        page</strong> would require volunteers to coordinate with the site supervisors
+                                    and record their volunteer hours directly in the application. This feature would be
+                                    useful for students who need volunteer hours, and <strong>would encourage volunteers
+                                        to further foster relationships with those they meet at the
+                                        organizations.</strong></p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-gamification" role="tabpanel"
+                                aria-labelledby="pills-gamification-tab">
+                                <!-- Image -->
+                                <figure class="projectContentImg figure">
+                                    <img src="../images/projects/valoursf/designs/gamification.png"
+                                        class="figure-img img-fluid rounded w-100" alt="Gamification">
+                                    <figcaption class="figure-caption text-center">Gamification of volunteering
+                                        experience
+                                    </figcaption>
+                                </figure>
+                                <p>Gamifying the experience with achievements, status levels, and experience points
+                                    <strong>gives extra incentives for users to continue volunteering and using the
+                                        application.</strong> With each item or monetary donation, or time spent
+                                    volunteering, volunteers would gain experience points (XP) to level up as a
+                                    volunteer. This feature would hopefully <strong>lead volunteers to develop the habit
+                                        of voluntarily spending their time at charitable organizations.</strong> I
+                                    designed all the icons to represent the status levels of a volunteer.</p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-social" role="tabpanel"
+                                aria-labelledby="pills-social-tab">
+                                <!-- Image -->
+                                <div class="row justify-content-center">
+                                    <figure class="projectContentImg figure">
+                                        <img src="../images/projects/valoursf/designs/friends.png"
+                                            class="figure-img img-fluid rounded w-100" alt="Social">
+                                        <figcaption class="figure-caption text-center">Social feed
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <p>The friends feed would allow volunteers to see their friends’ status levels, recently
+                                    acquired badges, and activities. One decision we came to was <strong>omitting the
+                                        option to like or comment on friends’ activities,</strong> as we did not want
+                                    volunteerism to become a competition with other people.</p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-humanization" role="tabpanel"
+                                aria-labelledby="pills-humanization-tab">
+                                <p><small>Because this feature was one that was beyond the scope of our time at the
+                                        hackathon,
+                                        we filed away this idea as a future feature.</small></p>
+                                <p>Considering our core value of
+                                    compassion and our end goal of relationships, we wanted to design an experience that
+                                    would <strong>allow volunteers to have a one-to-one relationship with homeless
+                                        individuals at these local organizations,</strong> or form a sponsorship-like
+                                    program with them. Because every individual has a different story, we wanted to
+                                    create a space for understanding and empathy in these relationships.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>In the remaining 8 hours of the hackathon, I designed the screens and full prototype for the
+                        mobile application.</p>
+                    <div class="col w-100 remove-padding text-center">
+                        <a href="" target="_blank"><button>View Full Prototype</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Takeaways -->
+            <div id="takeaways" class="projectBackground row px-3 py-5 justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
+                    <h5 class="mt-3">Takeaways</h5>
+                    <ul>
+                        <li><strong>Defining a target audience and user base is essential for driving design
+                                decisions.</strong> My team consisted of people who were new to hackathons and design
+                            thinking, so our initial ideations were broad, exciting, and perplexing. But after I led my
+                            team to create user personas to better frame our problem, it was easier to narrow down our
+                            scope. Personas also helped us to develop the goal of our project: to encourage new
+                            volunteers to begin their volunteer journeys and eventually build relationships with the
+                            people they served.</li>
+                        <li><strong>Every single screen, design element, or interaction should contribute to the end
+                                goal of the user.</strong> My team quickly became overwhelmed by the idea of
+                            gamification and had a few disagreements over how to approach gamifying the experience.
+                            However, I advocated for the user personas we had defined together and helped to reframe our
+                            project goal of encouraging volunteerism, so the gamification feature became a secondary
+                            priority. Setting that expectation helped to simplify the user experience of the
+                            application. </li>
+                        <li>And a bonus takeaway: <strong>It’s possible to sleep at hackathons!</strong></li>
+                    </ul>
+                    <p>Designing this application from scratch was an exciting process. After being given the prompt to
+                        “hack for humanity,” it was easy for my team to jump between many project ideas, but guiding my
+                        team to think from the perspective of our users helped us to define our single project idea.</p>
+                    <p>Given that this project was completed during a 24-hour hackathon, we were unable to complete any
+                        in-person user research on our initial idea and on the end prototype I designed. As a result, a
+                        lot of our design decisions were based on assumptions from personal experience and our user
+                        personas. If we were given more time, I would have also done deeper research on the effects of
+                        gamification on activity retention.</p>
+                    <p>Participating in this hackathon was a great opportunity to work alongside strangers from
+                        different backgrounds who quickly became a cohesive team: two recent college graduates, one high
+                        school student, one engineer, and one mother. Being able to witness many of their first
+                        introductions to design thinking throughout the hackathon confirmed my passion for user
+                        experience design, and encourages me even more to continue advocating for the user in everything
+                        I design.</p>
+                </div>
+                <!-- Image -->
+                <figure class="figure">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-8 pt-4 text-center">
+                            <img src="../images/projects/valoursf/team.JPG" class="figure-img img-fluid rounded w-100"
+                                alt="Team!">
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div id="projectFooter" class="container row">
+            <div class="col py-5 text-center">
+                <h5 class="mb-3">Take a peek into my other projects:</h5>
+                <h3>
+                    <a href="../projects/disney">Disney Parks, Experiences, and Products</a>
+                </h3>
+                <h3>
+                    <a href="../projects/uber">Ethical Surveillance Design Analysis – Uber</a>
+                </h3>
+                <h3>
+                    <a href="../projects/fulcrumlabs">
+                        Fulcrum Labs Product Design Internship
+                    </a>
+                </h3>
+                <h3>
+                    <a href="../projects/royalway">
+                        Royal Way
+                    </a>
+                </h3>
+                <h3>
+                    <a href="../projects/workingwomansfight">
+                        A Working Woman's Fight
+                </h3>
+            </div>
+        </div>
     </div>
-    <footer id="footer-proj">
-      <div id="footer-cols">
-        <div class="footer-col">
-          <div class="footer-title">
-            <h2>HANNAH PHAM</h2>
-          </div>
-          <div class="footer-text">
-            <p>Digital Designer</p>
-          </div>
-        </div>
-        <div class="footer-col">
-          <div class="footer-title">
-            <h2>WORK</h2>
-          </div>
-          <div class="footer-text">
-            <p><a href="../#projects">Projects</a><br />
-              <a href="https://www.behance.net/hannahhp" target="_blank">Behance</a><br />
-              <a href="https://www.dribbble.com/hannahhp" target="_blank">Dribbble</a>
-            </p>
-          </div>
-        </div>
-        <div class="footer-col">
-          <div class="footer-title">
-            <h2>CONTACT</h2>
-          </div>
-          <div class="footer-text">
-            <p><a href="https://www.linkedin.com/in/hannahhp/" target="_blank">LinkedIn</a><br />
-              <a href="mailto:hannah.pham@gmail.com">Email</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Custom JQuery -->
+    <script src="../jquery/projects.js"></script>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../vendor/jquery/projects/valoursf.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="../vendor/jquery/projects.js"></script>
 
 </body>
-
-
 
 </html>
