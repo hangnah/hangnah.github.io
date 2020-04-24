@@ -277,6 +277,7 @@ html,body{
 
 /* Projects */
 #homeContent{
+    width:100%;
     min-height:100% !important;
     height:100%;
 }
@@ -292,6 +293,7 @@ html,body{
     position: relative;
     width: 100vw;
     height: 85vh;
+    height: calc(var(--vh, 1vh) * 85);
     scroll-snap-align: center;
 }
 
@@ -397,11 +399,11 @@ html,body{
     }
     .projectImgDesktop img {
         width: 100%;
-        max-width: 250px
+        max-width: 230px;
     }
     .projectImgMobile img {
         width: 100%;
-        max-width: 150px;
+        max-width: 125px;
     }
     .projectContainer .container {
         background-color: #FFFFFF !important;
