@@ -292,15 +292,15 @@ html,body{
 .projectContainer {
     position: relative;
     width: 100vw;
-    height: 85vh;
-    height: calc(var(--vh, 1vh) * 85);
+    height: 75vh;
+    height: calc(var(--vh, 1vh) * 75);
     scroll-snap-align: center;
 }
 
 .projectContainer .container {
     background-color: #f5f5f5;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.25);
-    border-radius: 10px !important;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+    border-radius: 8px !important;
     overflow: hidden;
 
     -webkit-transition: all 0.4s ease-in-out 0s;
@@ -325,11 +325,11 @@ html,body{
 
 .projectImgMobile img {
     width: 100%;
-    max-width: 200px;
+    max-width: 180px;
 }
 
 .projectImgDesktop img {
-    max-width: 550px; /*675*/
+    max-width: 525px; /*675*/
 }
 
 .projectContainer h5{
