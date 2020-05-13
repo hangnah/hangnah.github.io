@@ -93,6 +93,27 @@ $(document).ready(function () {
 
     });
 
+    $(".heroProjectsAbout").on('click', function (event) { // Projects
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        $('html,body').animate({
+            scrollTop: $(hash).offset().top
+        }, "slow", function(){
+            $('#projects').animate({
+                scrollTop: $(hash).offset().top
+            }, "slow",
+            );
+        }
+        );
+
+        
+        console.log('should work')
+
+    });
+
     $('body,html').scroll(function() {
 
         // Add Overflow behavior to projects
@@ -100,7 +121,7 @@ $(document).ready(function () {
         var winHeight = $("#hero").innerHeight();
         //var winHeight = $(this).innerHeight();
 
-        if (y >= winHeight) {
+        if (y >= winHeight - 0.5) {
             $('#projects').css('overflow-y', 'scroll');
             $('#topHomeContainer').css('opacity', '1');
         } else {
