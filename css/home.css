@@ -9,7 +9,7 @@ html,body{
     width: 100vw;
     height: 80vh;
     height: calc(var(--vh, 1vh) * 80);
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.25);
+    /* box-shadow: 0px 0px 15px rgba(0,0,0,0.25); */
 }
 
 .heroContainer {
@@ -26,6 +26,8 @@ html,body{
     background-color: #f5f5f5;
     top: 0;
     left: 0;
+
+    border-top: 5px solid #b71212b5;
 }
 
 .heroContainer #heroTwo {
@@ -35,6 +37,8 @@ html,body{
     background-color: #845857;
     top: 0;
     left: 0;
+
+    border-top: 5px solid #ffc24f;
 }
 
 #heroOne, #heroTwo {
