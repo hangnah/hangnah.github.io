@@ -114,26 +114,26 @@ $(document).ready(function () {
 
     });
 
-    // $('.nav-pills li a').click(function () { // Projects
-    //     var hash = "#projects";
-    //     // Scroll to projects
-    //     $('html,body').animate({
-    //         scrollTop: $(hash).offset().top
-    //     }, "slow"
-    //     );
+    $('.nav-pills li a').click(function () { // Projects
+        var hash = "#projects";
+        // Scroll to projects
+        $('html,body').animate({
+            scrollTop: $(hash).offset().top
+        }, "slow"
+        );
 
-    //     var href = $(this).attr('href');
+        // var href = $(this).attr('href');
 
-    //     //set all nav tabs to inactive
-    //     $('.nav-pills li a').removeClass('active').attr("aria-selected","false");
+        // //set all nav tabs to inactive
+        // $('.nav-pills li a').removeClass('active').attr("aria-selected","false");
 
-    //     //get all nav tabs matching the href and set to active
-    //     $('.nav-pills li a[href="' + href + '"]').closest('a').addClass('active').attr("aria-selected","true");
+        // //get all nav tabs matching the href and set to active
+        // $('.nav-pills li a[href="' + href + '"]').closest('a').addClass('active').attr("aria-selected","true");
 
-    //     //active tab
-    //     $('.tab-pane').removeClass('active').removeClass('show');
-    //     $('.tab-pane' + href).addClass('active').addClass('show');
+        // //active tab
+        // $('.tab-pane').removeClass('active').removeClass('show');
+        // $('.tab-pane' + href).addClass('active').addClass('show');
 
-    // });
+    });
 
 });
