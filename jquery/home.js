@@ -3,7 +3,7 @@ window.addEventListener('resize', () => {
     // We execute the same script as before
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-  });
+});
 
 $(document).ready(function () {
 
@@ -93,20 +93,47 @@ $(document).ready(function () {
 
     });
 
-    $('body,html').scroll(function() {
+    $(".heroProjectsAbout").on('click', function (event) { // Projects
+        event.preventDefault();
 
-        // Add Overflow behavior to projects
-        var y = $(this).scrollTop();
-        var winHeight = $("#hero").innerHeight();
-        //var winHeight = $(this).innerHeight();
+        // Store hash
+        var hash = this.hash;
 
-        if (y >= winHeight) {
-            $('#projects').css('overflow-y', 'scroll');
-            $('#topHomeContainer').css('opacity', '1');
-        } else {
-            $('#projects').css('overflow-y', 'hidden');
-            $('#topHomeContainer').css('opacity', '0');
+        $('html,body').animate({
+            scrollTop: $(hash).offset().top
+        }, "slow", function () {
+            $('#projects').animate({
+                scrollTop: $(hash).offset().top
+            }, "slow",
+            );
         }
+        );
+
+
+        console.log('should work')
 
     });
+
+    // $('.nav-pills li a').click(function () { // Projects
+    //     var hash = "#projects";
+    //     // Scroll to projects
+    //     $('html,body').animate({
+    //         scrollTop: $(hash).offset().top
+    //     }, "slow"
+    //     );
+
+    //     var href = $(this).attr('href');
+
+    //     //set all nav tabs to inactive
+    //     $('.nav-pills li a').removeClass('active').attr("aria-selected","false");
+
+    //     //get all nav tabs matching the href and set to active
+    //     $('.nav-pills li a[href="' + href + '"]').closest('a').addClass('active').attr("aria-selected","true");
+
+    //     //active tab
+    //     $('.tab-pane').removeClass('active').removeClass('show');
+    //     $('.tab-pane' + href).addClass('active').addClass('show');
+
+    // });
+
 });

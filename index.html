@@ -33,14 +33,6 @@
 </head>
 
 <body>
-  <!-- Back To Top -->
-  <div id="topHomeContainer">
-    <a href="">
-      <div id="topHome">
-        <h2>&uarr; Back To Top &uarr;
-      </div>
-    </a>
-  </div>
 
   <!-- Body Content -->
   <div id="homeContent">
@@ -107,7 +99,7 @@
                 <p>I am also a Bay Area-based product designer with experience designing for SaaS platforms, mobile
                   applications, and websites. I am empathy-driven and data-informed, and I <strong>strongly value
                     feedback and cross-functional collaboration</strong> to inform my design decisions.</p>
-                <p>Previously at Disney</p>
+                <p><a class="heroProjectsAbout" href="#about">(More about me at the bottom of the page!)</a></p>
               </div>
             </div>
             <div class="heroDisclaimer" id="heroOneNext">
@@ -163,146 +155,385 @@
     <!-- Projects -->
     <div id="projects" class="">
 
-      <!-- Project Zero -->
-      <div class="projectContainer mt-sm-5 py-sm-5 px-sm-auto px-2">
-        <div class="container col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
-          <div id="projectZero" class="row h-100 justify-content-center align-items-center">
-            <div class="projectImgMobile col-sm-4 w-50 text-center align-self-sm-center align-self-end">
-              <a href="projects/valoursf"><img src="images/projects/valoursf/valoursf.gif" alt="Valour SF"></a>
-            </div>
-            <div
-              class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
-              <h5>Hackathon</h5>
-              <h1>Valour SF</h1>
-              <h3>UX Design</h3>
-              <p>Designed a mobile application to encourage volunteerism at a 24-hour hackathon.</p>
-              <a href="projects/valoursf"><button>View Project &rarr;</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Tab Carousel -->
+      <div class="homeCarousel py-md-5 py-3">
+        <!-- Top Carousel Nav -->
+        <ul id="projectsCarouselTop" class="projectsCarousel nav nav-pills py-3 px-3 justify-content-center sticky-top"
+          id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-featured-tab" data-toggle="pill" href="#pills-featured" role="tab"
+              aria-controls="pills-featured" aria-selected="true">Featured Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-internships-tab" data-toggle="pill" href="#pills-internships" role="tab"
+              aria-controls="pills-internships" aria-selected="false">Internships</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-class-tab" data-toggle="pill" href="#pills-class" role="tab"
+              aria-controls="pills-class" aria-selected="false">Class Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-other-tab" data-toggle="pill" href="#pills-other" role="tab"
+              aria-controls="pills-other" aria-selected="false">Other</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab"
+              aria-controls="pills-all" aria-selected="false">All</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
 
-      <!-- Project One -->
-      <div class="projectContainer py-sm-5 px-sm-auto px-2">
-        <div class="container col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
-          <div id="projectOne" class="row h-100 justify-content-center align-items-center">
-            <div class="projectImgMobile col-sm-4 w-50 text-center align-self-sm-center align-self-end">
-              <a href="projects/disney"><img src="images/projects/disney/disney.gif" alt="Disney"></a>
-            </div>
-            <div
-              class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
-              <h5>Internship</h5>
-              <h1>Disney Parks,<br />Experiences, and Products</h1>
-              <h3>UX & Product Design</h3>
-              <p>Designed end-to-end flows and prototypes to optimize the digital Food and Beverage experience in the
-                parks.</p>
-              <a href="projects/disney"><button>View Project &rarr;</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
+          <!-- Featured Projects -->
+          <div class="tab-pane fade show active" id="pills-featured" role="tabpanel"
+            aria-labelledby="pills-featured-tab">
 
-      <!-- Project Two -->
-      <div class="projectContainer py-sm-5 px-sm-auto px-2">
-        <div class="container col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
-          <div id="projectTwo" class="row h-100 justify-content-center align-items-center">
-            <div class="projectImgDesktop col-sm-4 text-center align-self-sm-center align-self-end">
-              <a href="projects/fulcrumlabs"><img class="float-sm-right float-none"
-                  src="images/projects/fulcrumlabs/fulcrumlabs.gif" alt="Fulcrum Labs Product Design Internship"></a>
-            </div>
-            <div
-              class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
-              <h5>Internship</h5>
-              <h1>Fulcrum Labs</h1>
-              <h3>UX Research & Design</h3>
-              <p>Introduced two features to increase learner engagement with the adaptive learning platform.</p>
-              <a href="projects/fulcrumlabs"><button>View Project &rarr;</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Three -->
-      <div class="projectContainer py-sm-5 px-sm-auto px-2">
-        <div class="container col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
-          <div id="projectThree" class="row h-100 justify-content-center align-items-center">
-            <div class="projectImgMobile col-sm-4 w-50 text-center align-self-sm-center align-self-end">
-              <a href="projects/uber"><img src="images/projects/uber/uber.gif" alt="Uber Design Analysis"></a>
-            </div>
-            <div
-              class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
-              <h5>HCI Class Project</h5>
-              <h1>Ethical Surveillance<br />Design Analysis – Uber</h1>
-              <h3>UX Research & Design</h3>
-              <p>Analyzed ethical surveillance design in Uber and proposed design solutions.</p>
-              <a href="projects/uber"><button>View Project &rarr;</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-
-      <!-- Project Four -->
-      <div class="projectContainer py-sm-5 px-sm-auto px-2">
-        <div class="container col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
-          <div id="projectFour" class="row h-100 justify-content-center align-items-center">
-            <div class="projectImgDesktop col-sm-4 text-center align-self-sm-center align-self-end">
-              <a href="projects/royalway"><img class="float-sm-right float-none"
-                  src="images/projects/royalway/royalway.gif" alt="Royal Way Spiritual Center"></a>
-            </div>
-            <div
-              class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
-              <h5>Internship</h5>
-              <h1>Royal Way<br />Spiritual Center</h1>
-              <h3>UI Design</h3>
-              <p>Designed 10+ high-fidelity wireframes to reflect the branding of the spiritual center.</p>
-              <a href="projects/royalway"><button>View Project &rarr;</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Five -->
-      <div class="projectContainer mb-sm-5 py-sm-5 px-sm-auto px-2">
-        <div class="container col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
-          <div id="projectFive" class="row h-100 justify-content-center align-items-center">
-            <div class="projectImgDesktop col-sm-4 text-center align-self-sm-center align-self-end">
-              <a href="projects/workingwomansfight"><img class="float-sm-right float-none"
-                  src="images/projects/workingwomansfight/workingwomansfight.gif" alt="A Working Woman's Fight"></a>
-            </div>
-            <div
-              class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
-              <h5>Digital Humanities Project</h5>
-              <h1>A Working Woman's Fight</h1>
-              <h3>UI Design & Web Development</h3>
-              <p>Built and designed a website to house the stories of women’s labor movements in Los Angeles.</p>
-              <a href="projects/workingwomansfight"><button>View Project &rarr;</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="about">
-        <div class="aboutContainer">
-          <div class="container">
-            <div class="row">
-              <div id="aboutText" class="col-md-7 py-5 px-4">
-                <h1>Thanks for stopping by!</h1>
-                <p>I graduated from UCLA in June 2019 and recently wrapped up my product design internship at Disney. I
-                  am
-                  actively looking for new product or UX design opportunities in the Bay Area and beyond, and I am
-                  especially interested in causes that contribute to the social and civic good of the community.</p>
-                <p>In the meantime, please send me your favorite playlists, films, or recipes at the moment. I
-                  appreciate
-                  all
-                  things creative and would be more than happy to share in your interests!</p>
-                <h3><a href="https://linkedin.com/in/hannahhp" target="_blank">LinkedIn</a> / <a
-                    href="https://goo.gl/nWZd5k" target="_blank">Resume</a> / <a
-                    href="mailto:hannah.pham@gmail.com">Email</a></h3>
-                <p><small>This portfolio was designed + built by Hannah Pham &copy; 2020</small></p>
+            <!-- Valour SF -->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgMobile col-sm-4 w-50 text-center align-self-sm-center align-self-end">
+                    <a href="projects/valoursf"><img src="images/projects/valoursf/valoursf.gif" alt="Valour SF"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>Hackathon</h5>
+                    <h1>Valour SF</h1>
+                    <h3>UX Design</h3>
+                    <p>Designed a mobile application to encourage volunteerism at a 24-hour hackathon.</p>
+                    <a href="projects/valoursf"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
               </div>
-              <div id="aboutImg" class="col col-md-5 w-100 text-center align-self-end">
-                <img class="w-100" src="images/home/about.png" alt="Hannah Pham">
+            </div>
+
+            <!-- Disney -->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgMobile col-sm-4 w-50 text-center align-self-sm-center align-self-end">
+                    <a href="projects/disney"><img src="images/projects/disney/disney.gif" alt="Disney"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>Internship</h5>
+                    <h1>Disney Parks,<br />Experiences, and Products</h1>
+                    <h3>UX & Product Design</h3>
+                    <p>Designed end-to-end flows and prototypes to optimize the digital Food and Beverage experience in
+                      the
+                      parks.</p>
+                    <a href="projects/disney"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
               </div>
+            </div>
+
+            <!-- Fulcrum Labs -->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgDesktop col-sm-4 text-center align-self-sm-center align-self-end">
+                    <a href="projects/fulcrumlabs"><img class="float-sm-right float-none"
+                        src="images/projects/fulcrumlabs/fulcrumlabs.gif"
+                        alt="Fulcrum Labs Product Design Internship"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>Internship</h5>
+                    <h1>Fulcrum Labs</h1>
+                    <h3>UX Research & Design</h3>
+                    <p>Introduced two features to increase learner engagement with the adaptive learning platform.</p>
+                    <a href="projects/fulcrumlabs"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Internships -->
+          <div class="tab-pane fade" id="pills-internships" role="tabpanel" aria-labelledby="pills-internships-tab">
+
+            <!-- Disney-->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="projectOne" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgMobile col-sm-4 w-50 text-center align-self-sm-center align-self-end">
+                    <a href="projects/disney"><img src="images/projects/disney/disney.gif" alt="Disney"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>Internship</h5>
+                    <h1>Disney Parks,<br />Experiences, and Products</h1>
+                    <h3>UX & Product Design</h3>
+                    <p>Designed end-to-end flows and prototypes to optimize the digital Food and Beverage experience in
+                      the
+                      parks.</p>
+                    <a href="projects/disney"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fulcrum Labs -->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgDesktop col-sm-4 text-center align-self-sm-center align-self-end">
+                    <a href="projects/fulcrumlabs"><img class="float-sm-right float-none"
+                        src="images/projects/fulcrumlabs/fulcrumlabs.gif"
+                        alt="Fulcrum Labs Product Design Internship"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>Internship</h5>
+                    <h1>Fulcrum Labs</h1>
+                    <h3>UX Research & Design</h3>
+                    <p>Introduced two features to increase learner engagement with the adaptive learning platform.</p>
+                    <a href="projects/fulcrumlabs"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Royal Way -->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgDesktop col-sm-4 text-center align-self-sm-center align-self-end">
+                    <a href="projects/royalway"><img class="float-sm-right float-none"
+                        src="images/projects/royalway/royalway.gif" alt="Royal Way Spiritual Center"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>Internship</h5>
+                    <h1>Royal Way<br />Spiritual Center</h1>
+                    <h3>UI Design</h3>
+                    <p>Designed 10+ high-fidelity wireframes to reflect the branding of the spiritual center.</p>
+                    <a href="projects/royalway"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- Class Projects -->
+          <div class="tab-pane fade" id="pills-class" role="tabpanel" aria-labelledby="pills-class-tab">
+
+            <!-- Uber -->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgMobile col-sm-4 w-50 text-center align-self-sm-center align-self-end">
+                    <a href="projects/uber"><img src="images/projects/uber/uber.gif" alt="Uber Design Analysis"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>HCI Class Project</h5>
+                    <h1>Ethical Surveillance<br />Design Analysis – Uber</h1>
+                    <h3>UX Research & Design</h3>
+                    <p>Analyzed ethical surveillance design in Uber and proposed design solutions.</p>
+                    <a href="projects/uber"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Working Woman's Fight -->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="projectFive" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgDesktop col-sm-4 text-center align-self-sm-center align-self-end">
+                    <a href="projects/workingwomansfight"><img class="float-sm-right float-none"
+                        src="images/projects/workingwomansfight/workingwomansfight.gif"
+                        alt="A Working Woman's Fight"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>Digital Humanities Project</h5>
+                    <h1>A Working Woman's Fight</h1>
+                    <h3>UI Design & Web Development</h3>
+                    <p>Built and designed a website to house the stories of women’s labor movements in Los Angeles.</p>
+                    <a href="projects/workingwomansfight"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Other -->
+          <div class="tab-pane fade" id="pills-other" role="tabpanel" aria-labelledby="pills-other-tab">
+            <!-- Valour SF -->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgMobile col-sm-4 w-50 text-center align-self-sm-center align-self-end">
+                    <a href="projects/valoursf"><img src="images/projects/valoursf/valoursf.gif" alt="Valour SF"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>Hackathon</h5>
+                    <h1>Valour SF</h1>
+                    <h3>UX Design</h3>
+                    <p>Designed a mobile application to encourage volunteerism at a 24-hour hackathon.</p>
+                    <a href="projects/valoursf"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- All -->
+          <div class="tab-pane fade" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+            <!-- Project Zero -->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgMobile col-sm-4 w-50 text-center align-self-sm-center align-self-end">
+                    <a href="projects/valoursf"><img src="images/projects/valoursf/valoursf.gif" alt="Valour SF"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>Hackathon</h5>
+                    <h1>Valour SF</h1>
+                    <h3>UX Design</h3>
+                    <p>Designed a mobile application to encourage volunteerism at a 24-hour hackathon.</p>
+                    <a href="projects/valoursf"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project One -->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgMobile col-sm-4 w-50 text-center align-self-sm-center align-self-end">
+                    <a href="projects/disney"><img src="images/projects/disney/disney.gif" alt="Disney"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>Internship</h5>
+                    <h1>Disney Parks,<br />Experiences, and Products</h1>
+                    <h3>UX & Product Design</h3>
+                    <p>Designed end-to-end flows and prototypes to optimize the digital Food and Beverage experience in
+                      the
+                      parks.</p>
+                    <a href="projects/disney"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Two -->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgDesktop col-sm-4 text-center align-self-sm-center align-self-end">
+                    <a href="projects/fulcrumlabs"><img class="float-sm-right float-none"
+                        src="images/projects/fulcrumlabs/fulcrumlabs.gif"
+                        alt="Fulcrum Labs Product Design Internship"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>Internship</h5>
+                    <h1>Fulcrum Labs</h1>
+                    <h3>UX Research & Design</h3>
+                    <p>Introduced two features to increase learner engagement with the adaptive learning platform.</p>
+                    <a href="projects/fulcrumlabs"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Three -->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgMobile col-sm-4 w-50 text-center align-self-sm-center align-self-end">
+                    <a href="projects/uber"><img src="images/projects/uber/uber.gif" alt="Uber Design Analysis"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>HCI Class Project</h5>
+                    <h1>Ethical Surveillance<br />Design Analysis – Uber</h1>
+                    <h3>UX Research & Design</h3>
+                    <p>Analyzed ethical surveillance design in Uber and proposed design solutions.</p>
+                    <a href="projects/uber"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Project Four -->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgDesktop col-sm-4 text-center align-self-sm-center align-self-end">
+                    <a href="projects/royalway"><img class="float-sm-right float-none"
+                        src="images/projects/royalway/royalway.gif" alt="Royal Way Spiritual Center"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>Internship</h5>
+                    <h1>Royal Way<br />Spiritual Center</h1>
+                    <h3>UI Design</h3>
+                    <p>Designed 10+ high-fidelity wireframes to reflect the branding of the spiritual center.</p>
+                    <a href="projects/royalway"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Five -->
+            <div class="projectContainer py-sm-3 py-2 px-sm-auto px-2">
+              <div class="container py-5 col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 rounded h-100">
+                <div id="" class="row h-100 justify-content-center align-items-center">
+                  <div class="projectImgDesktop col-sm-4 text-center align-self-sm-center align-self-end">
+                    <a href="projects/workingwomansfight"><img class="float-sm-right float-none"
+                        src="images/projects/workingwomansfight/workingwomansfight.gif"
+                        alt="A Working Woman's Fight"></a>
+                  </div>
+                  <div
+                    class="projectSnippet col-sm-5 mt-sm-0 ml-sm-5 mt-4 text-sm-left text-center align-self-sm-center align-self-start">
+                    <h5>Digital Humanities Project</h5>
+                    <h1>A Working Woman's Fight</h1>
+                    <h3>UI Design & Web Development</h3>
+                    <p>Built and designed a website to house the stories of women’s labor movements in Los Angeles.</p>
+                    <a href="projects/workingwomansfight"><button>View Project &rarr;</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+      <div class="aboutContainer">
+        <div class="container">
+          <div class="row">
+            <div id="aboutText" class="col-md-7 py-5 px-4">
+              <h1>Thanks for stopping by!</h1>
+              <p>I graduated from UCLA in June 2019 and recently wrapped up my product design internship at Disney.
+                I
+                am
+                actively looking for new product or UX design opportunities in the Bay Area and beyond, and I am
+                especially interested in causes that contribute to the social and civic good of the community.</p>
+              <p>In the meantime, please send me your favorite playlists, films, or recipes at the moment. I
+                appreciate
+                all
+                things creative and would be more than happy to share in your interests!</p>
+              <h3><a href="https://linkedin.com/in/hannahhp" target="_blank">LinkedIn</a> / <a
+                  href="https://goo.gl/nWZd5k" target="_blank">Resume</a> / <a
+                  href="mailto:hannah.pham@gmail.com">Email</a></h3>
+              <p><small>This portfolio was designed + built by Hannah Pham &copy; 2020</small></p>
+            </div>
+            <div id="aboutImg" class="col col-md-5 w-100 text-center align-self-end">
+              <img class="w-100" src="images/home/about.png" alt="Hannah Pham">
             </div>
           </div>
         </div>
