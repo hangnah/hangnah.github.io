@@ -20,8 +20,9 @@ $(document).ready(function () {
     });
 
     $("#heroOneNext").click(function () {
+
         $(this).closest(".heroContainer").animate(
-            { width: 0 }, 450,
+            { width: 0 }, 550,
             function () {
                 $(".heroContainer #heroOne").css("z-index", "-1");
             }
@@ -29,9 +30,10 @@ $(document).ready(function () {
     });
 
     $("#heroTwoBack").click(function () {
+        
         $(".heroContainer #heroOne").css("z-index", "9999");
         $(".heroContainer").animate(
-            { width: "100vw" }, 450
+            { width: "100vw" }, 550
         );
     });
 
