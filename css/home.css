@@ -39,7 +39,7 @@ html,body{
     z-index: 9998;
     /* background-color: #845857; */
     background: rgb(132,88,87);
-    background: linear-gradient(180deg, rgb(132,88,87) 0%, rgb(157,121,121) 75%, rgb(194,172,171) 95%, rgb(206,188,188) 97%, rgba(255,255,255,1) 100%);
+    /* background: linear-gradient(180deg, rgb(132,88,87) 0%, rgb(157,121,121) 75%, rgb(194,172,171) 95%, rgb(206,188,188) 97%, rgba(255,255,255,1) 100%); */
 
     top: 0;
     left: 0;
