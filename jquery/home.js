@@ -6,68 +6,77 @@ window.addEventListener('resize', () => {
 });
 
 $(document).ready(function () {
+    // Hero Text
+    var $text = $("#hero-text .hero-text-opacity");
+    var $funkytextOne = $("#hero-text #funkyOne")
+    var $funkytextTwo = $("#hero-text #funkyTwo")
+
+    // Hero Images
+    var $main = $("#hero-img-girl img");
+    var $funkyOne = $("#hero-img-pd img");
+    var $funkyTwo = $("#hero-img-ja img");
+
+    var $herobg = $("#hero");
+    var $navbg = $("#nav");
 
 
-    // // Always start at top
-    // $('html,body').scrollTop(0);
+    $('#funkyOne').mouseenter(function () {
+        $main.fadeToggle(350, "swing");
+        $funkyOne.fadeToggle(350, "swing")
 
-    // Check if in viewport
+        $text.animate({ opacity: .5 }, 350);
+        $funkytextOne.addClass('funky-opacity');
+
+        $herobg.addClass('herobg');
+        $navbg.addClass('herobg');
+
+        $navbg.addClass('navcolor');
 
 
-    // Hero
-    $('.heroDisclaimer a').click(function (e) {
-        e.preventDefault();
     });
 
-    $("#heroOneNext").click(function () {
+    $('#funkyOne').mouseleave(function () {
+        $main.fadeToggle(350, "swing");
+        $funkyOne.fadeToggle(350, "swing")
 
-        $(this).closest(".heroContainer").animate(
-            { width: 0 }, 550,
-            function () {
-                $(".heroContainer #heroOne").css("z-index", "-1");
-            }
-        );
+        $text.animate({ opacity: 1 }, 350);
+        $funkytextOne.removeClass('funky-opacity');
+
+        $herobg.removeClass('herobg');
+        $navbg.removeClass('herobg');
+
+        $navbg.removeClass('navcolor');
     });
 
-    $("#heroTwoBack").click(function () {
-        
-        $(".heroContainer #heroOne").css("z-index", "9999");
-        $(".heroContainer").animate(
-            { width: "100vw" }, 550
-        );
+
+    $('#funkyTwo').mouseenter(function () {
+        $main.fadeToggle(350, "swing");
+        $funkyTwo.fadeToggle(350, "swing")
+
+        $text.animate({ opacity: .5 }, 350);
+        $funkytextTwo.addClass('funky-opacity');
+
+        $herobg.addClass('herobg');
+        $navbg.addClass('herobg');
+
+        $navbg.addClass('navcolor');
     });
 
-    // Funky Images
-    var $funkyOne = $("#funkyOne");
-    var $funkyTwo = $("#funkyTwo");
-    var $funkyThree = $("#funkyThree");
+    $('#funkyTwo').mouseleave(function () {
+        $main.fadeToggle(350, "swing");
+        $funkyTwo.fadeToggle(350, "swing")
 
-    $('#funkyItemOne').hover(function () {
-        $funkyOne.fadeToggle(400, "linear")
-        $funkyOne.css('z-index', '999999');
-    });
-    $('#funkyItemTwo').hover(function () {
-        $funkyTwo.fadeToggle(400, "linear")
-    });
-    $('#funkyItemThree').hover(function () {
-        $funkyThree.fadeToggle(400, "linear")
+        $text.animate({ opacity: 1 }, 350);
+        $funkytextTwo.removeClass('funky-opacity');
+
+        $herobg.removeClass('herobg');
+        $navbg.removeClass('herobg');
+
+        $navbg.removeClass('navcolor');
     });
 
     // Add smooth scrolling to navigation
-    $('#topHomeContainer a').click(function (e) { // Back To Top
-        e.preventDefault();
-        $('html,body').animate({
-            scrollTop: 0
-        }, "slow"
-        );
-
-        $('#projects').animate({
-            scrollTop: 0
-        }, "slow"
-        );
-    });
-
-    $(".heroProjects a").on('click', function (event) { // Projects
+    $("#hero a").on('click', function (event) { // Projects
 
         event.preventDefault();
 
@@ -82,7 +91,8 @@ $(document).ready(function () {
 
     });
 
-    $(".heroProjectsDisclaimer").on('click', function (event) { // Projects
+    $("#nav a").on('click', function (event) { // Projects
+
         event.preventDefault();
 
         // Store hash
@@ -92,50 +102,31 @@ $(document).ready(function () {
             scrollTop: $(hash).offset().top
         }, "slow",
         );
-
-    });
-
-    $(".heroProjectsAbout").on('click', function (event) { // Projects
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        $('html,body').animate({
-            scrollTop: $(hash).offset().top
-        }, "slow", function () {
-            $('#projects').animate({
-                scrollTop: $(hash).offset().top
-            }, "slow",
-            );
-        }
-        );
-
-
-        console.log('should work')
-
-    });
-
-    $('.nav-pills li a').click(function () { // Projects
-        var hash = "#projects";
-        // Scroll to projects
-        $('html,body').animate({
-            scrollTop: $(hash).offset().top
-        }, "slow"
-        );
-
-        // var href = $(this).attr('href');
-
-        // //set all nav tabs to inactive
-        // $('.nav-pills li a').removeClass('active').attr("aria-selected","false");
-
-        // //get all nav tabs matching the href and set to active
-        // $('.nav-pills li a[href="' + href + '"]').closest('a').addClass('active').attr("aria-selected","true");
-
-        // //active tab
-        // $('.tab-pane').removeClass('active').removeClass('show');
-        // $('.tab-pane' + href).addClass('active').addClass('show');
-
     });
 
 });
+
+// Move Hero Images
+$(document).ready(function () {
+    var heroimg = document.getElementById('hero-img-girl');
+    heroimg.homePos = { x: heroimg.offsetLeft, y: heroimg.offsetTop };
+
+    $('#hero').mousemove(function (e) {
+        parallax(e, heroimg, 60);
+    });
+
+    
+});
+
+function parallax(e, target, layer) {
+    var x = target.homePos.x - (e.pageX - target.homePos.x) / layer;
+    var y = target.homePos.y - (e.pageY - target.homePos.y) / layer;
+
+    targetLocation = $(target).offset({ top: y ,left : x });
+
+    $(target).animate({
+        'top': targetLocation.top,
+        'left': targetLocation.left
+  }, 10, "linear");
+    //$(target).offset({ top: y ,left : x });
+};

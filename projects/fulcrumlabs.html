@@ -34,383 +34,50 @@
 
 <body>
 
-    <!-- Image Modal -->
-    <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="Image Modal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-title" id="imgModalTitle"></p>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="" class="imagepreview" style="width: 100%">
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Nav Bar -->
+    <div id="nav">
 
-    <div id="topProjectContainer" class="container-fluid">
-        <div id="topProjectHome" class="col">
-            <a href="../">
-                <h2>&larr; Back To Home</h2>
-            </a>
-        </div>
-        <div id="topProject" class="col">
-            <a href="#">
-                <h2 class="w-auto h-auto">Back To Top &uarr;</h2>
-            </a>
-        </div>
-    </div>
-
-    <!-- Project Header -->
-    <div id="projectHeader" class="container-fluid remove-padding">
-        <div class="d-flex row remove-padding py-5 w-100 align-items-center">
-            <div class="col-xl-6 col-7 w-100 order-md-1 order-2">
-                <div id="projectTitle" class="row py-3">
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-6 offset-xl-3 offset-lg-2 offset-md-1 w-100">
-                        <h1>Fulcrum Labs</h1>
-                        <h3>UX Research &amp; Design</h3>
-                    </div>
-                </div>
-                <div id="projectInfo" class="row py-3">
-                    <div class="col-xl-3 col-lg-4 col-sm-6 col-10 offset-xl-3 offset-lg-2 offset-md-1 w-100">
-                        <div class="row">
-                            <div class="col">
-                                <h2>Duration</h2>
-                                <p>June - Sep 2018</p>
-                            </div>
-                            <div class="col">
-                                <h2>Role</h2>
-                                <p>UX Researcher<br />
-                                    UX Designer</p>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col">
-                                <h2>Tools</h2>
-                                <p>Sketch</p>
-                            </div>
-                            <div class="col">
-                                <h2>Methods</h2>
-                                <p>Research<br />
-                                    Wireframing<br />
-                                    Prototyping<br />
-                                    User Testing</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-md-5 col-8 w-100 remove-padding order-md-2 order-1">
-                <div id="projectHeaderDesktopImg" class="offset-xl-2 offset-lg-0 pb-3">
-                    <img class="" src="../images/projects/fulcrumlabs/fulcrumlabs.gif" alt="Fulcrum Labs">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="projectContent" class="container">
-        <!-- Project Context -->
-        <div id="projectContext">
-            <div class="row row px-md-5 px-3 py-5">
-                <div class="col-md-9 col-12 py-md-4 py-2">
-                    <h4>Fulcrum Labs is an online adaptive learning platform that helps learners achieve mastery through
-                        artificial intelligence. I analyzed the current platform and conceptualized ways to improve the
-                        product, and tackled the issues of online note-taking and customization of the learner
-                        dashboard.</h4>
-                    <p>This project was completed at my internship at <a href="https://www.fulcrumlabs.ai/"
-                            target="_blank">Fulcrum Labs</a> in Summer 2018.</p>
-                </div>
-                <div class="projectTOC col-md-3 col-12 py-md-4 py-4">
-                    <h5>In this project:</h5>
-                    <h3><a href="#research">Research &amp; Ideation</a></h3>
-                    <h3><a href="#design">Design I</a></h3>
-                    <h3><a href="#usertests">User Tests &amp; Design II</a></h3>
-                    <h3><a href="#reflection">Reflection</a></h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="projectContentContainer">
-            <!-- Research & Ideation -->
-            <div id="research" class="row px-3 py-5 justify-content-center">
-                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
-                    <h5 class="mt-3">Research &amp; Ideation</h5>
-                    <h4>How can online learning be more interactive and engaging?</h4>
-                    <p>Fulcrum Labs is revolutionizing the way learners achieve mastery in various industries with its
-                        machine learning platform. Using data-driven analytics, <strong>the platform presents learners
-                            with material based on their performance throughout their courses.</strong> Learners are
-                        able to learn at their own pace and are presented with either text or video modules, and
-                        complete assessments at the end of each course section. </p>
-                    <p>Part of my research for this project stemmed from a psychology course on perception and learning
-                        that I took at UCLA. <strong>Perceptual learning is fostered through repeated exposure and
-                            experience with the presented stimuli,</strong> and these skills help form the foundation
-                        for other complex cognitive processes such as language processing and decision making. For
-                        example, perceptual learning can explain why an individual’s physical learning environment
-                        affects his or her learning, as he or she will be better equipped to respond in that particular
-                        environment more than other environments. Additionally, note-taking contributes to better
-                        information processing, as it allows individuals to visually organize materials and reduces
-                        cognitive load during learning.</p>
-                    <p>The existing interface for Fulcrum Lab’s learning product was simple and conducive to learning,
-                        but I wanted to explore the addition of interactive elements to increase learner engagement with
-                        the platform and retention of material. <strong>Therefore, my objective was to introduce a
-                            note-taking system and a dashboard customization feature to make learning more engaging for
-                            the user.</strong></p>
-                </div>
-            </div>
-            <!-- Design I -->
-            <div id="design" class="projectBackground row px-3 py-5 justify-content-center">
-                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
-                    <h5 class="mt-3">Design I</h5>
-                    <h4>I designed a native note-taking feature and created templates for learners to customize their
-                        dashboards.
-                    </h4>
-                    <p>The design proposals needed to be native in the current platform, so I introduced in-app changes
-                        to the dashboard interface. I decided to design the note-taking feature directly to the right of
-                        the current module for learners to easily take notes as they proceed through the course. I
-                        tucked the dashboard customization feature to the bottom of the dashboard, as this feature was
-                        cosmetic and I assumed would not contribute to learner engagement and retention as strongly as
-                        note-taking would.</p>
-                    <!-- Tab Carousel -->
-                    <div class="projectCarousel my-4 py-3 px-3">
-                        <ul id="personasCarousel" class="nav nav-pills mb-2 py-3 px-3" id="pills-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="pills-note1-tab" data-toggle="pill" href="#pills-note1"
-                                    role="tab" aria-controls="pills-note1" aria-selected="true">Note-Taking</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="pills-dash1-tab" data-toggle="pill" href="#pills-dash1"
-                                    role="tab" aria-controls="pills-dash1" aria-selected="false">Dashboard
-                                    Customization</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content px-3" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-note1" role="tabpanel"
-                                aria-labelledby="pills-note1-tab">
-
-                                <!-- Image Carousel -->
-                                <div id="carouselDesign1Indicators" class="carousel slide pb-3" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carouselDesign1Indicators" data-slide-to="0" class="active">
-                                        </li>
-                                        <li data-target="#carouselDesign1Indicators" data-slide-to="1"></li>
-                                    </ol>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <!-- Image -->
-                                            <figure class="projectContentImg figure">
-                                                <img src="../images/projects/fulcrumlabs/1notes1.png"
-                                                    class="figure-img img-fluid rounded d-block w-100"
-                                                    alt="Note-Taking">
-                                                <figcaption class="figure-caption text-center">
-                                                    <strong>Highlight</strong> and <strong>Add Note</strong> icons are
-                                                    enabled after learner highlights text with cursor.
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <!-- Image -->
-                                            <figure class="projectContentImg figure">
-                                                <img src="../images/projects/fulcrumlabs/1notes2.png"
-                                                    class="figure-img img-fluid rounded d-block w-100"
-                                                    alt="Note-Taking">
-                                                <figcaption class="figure-caption text-center">After the text is
-                                                    highlighted, an indicator is placed to the right of the text.
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <p>I designed a native note-taking that would allow learners to directly interact with
-                                    the text module. Learners would be able to interact with the text in two ways:
-                                    highlighting a section of text or adding a note to a section of text. In order to
-                                    access these options, learners would have to highlight a section of text with their
-                                    cursors, in which the “Highlight” and “Add Note” icons would toggle from disabled to
-                                    enabled. After the learners highlight or add a note, an indicator would appear to
-                                    the right of the text as a reference point to their notes. Additionally, I designed
-                                    a separate “Notes” page for learners to access all of their notes in the course.</p>
-                            </div>
-                            <div class="tab-pane fade" id="pills-dash1" role="tabpanel"
-                                aria-labelledby="pills-dash1-tab">
-
-                                <!-- Image Carousel -->
-                                <div id="carouselDesign2Indicators" class="carousel slide pb-3" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carouselDesign2Indicators" data-slide-to="0" class="active">
-                                        </li>
-                                        <li data-target="#carouselDesign2Indicators" data-slide-to="1"></li>
-                                    </ol>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <!-- Image -->
-                                            <figure class="projectContentImg figure">
-                                                <img src="../images/projects/fulcrumlabs/1theme1.png"
-                                                    class="figure-img img-fluid rounded d-block w-100"
-                                                    alt="Dashboard Customization">
-                                                <figcaption class="figure-caption text-center">I designed two pages of
-                                                    themes.
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <!-- Image -->
-                                            <figure class="projectContentImg figure">
-                                                <img src="../images/projects/fulcrumlabs/1theme2.png"
-                                                    class="figure-img img-fluid rounded d-block w-100"
-                                                    alt="Dashboard Customization">
-                                                <figcaption class="figure-caption text-center">The themes were
-                                                    accessible via a link at the bottom of the page.
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>
-                                    I designed several themes for the learner dashboard to give learners the option to
-                                    customize their online learning environment, which aimed to engage learners with the
-                                    course content. The themes were accessible via a link to a pop-up, as I did not want
-                                    to
-                                    direct learners away from the course content.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-
-            <!-- User Tests & Design II -->
-            <div id="usertests" class="row px-3 py-5 justify-content-center">
-                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
-                    <h5 class="mt-3">User Tests &amp; Design II</h5>
-                    <h4>The note-taking feature wasn’t as intuitive as I had thought, and users had difficulty finding
-                        where to customize their themes.</h4>
-                    <p>I conducted two in-person user tests with people who had no previous knowledge of Fulcrum Labs. I
-                        prompted the users with tasks to gauge the usability of my designs and screen-recorded their
-                        interactions with the prototype as I took notes of my observations.</p>
-                    <!-- Tab Carousel -->
-                    <div class="projectCarousel my-4 py-3 px-3">
-                        <ul id="personasCarousel" class="nav nav-pills mb-2 py-3 px-3" id="pills-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="pills-note2-tab" data-toggle="pill" href="#pills-note2"
-                                    role="tab" aria-controls="pills-note2" aria-selected="true">Note-Taking</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="pills-dash2-tab" data-toggle="pill" href="#pills-dash2"
-                                    role="tab" aria-controls="pills-dash2" aria-selected="false">Dashboard
-                                    Customization</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content px-3" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-note2" role="tabpanel"
-                                aria-labelledby="pills-note2-tab">
-                                <p>Both users were confused with how to take notes. Although both the “Highlight” and
-                                    “Add Note” icons toggled from disabled to enabled after the users highlighted the
-                                    text with their cursors, both users navigated only to the highlight button.</p>
-                                <p>Considering this interaction, I decided to <strong>make the “Add Notes” button larger
-                                        and present it on the right side of the screen at all times.</strong> Instead of
-                                    assuming that learners would use their cursors to highlight the text in order to
-                                    make a note, I labeled the note-taking icon to make this feature more apparent for
-                                    learners.</p>
-                                <!-- Image -->
-                                <figure class="projectContentImg figure">
-                                    <img src="../images/projects/fulcrumlabs/2notes.png"
-                                        class="figure-img img-fluid rounded d-block w-100" alt="Note-Taking">
-                                    <figcaption class="figure-caption text-center">I labeled the note-taking icon and
-                                        scaled it to be more visible.
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="tab-pane fade" id="pills-dash2" role="tabpanel"
-                                aria-labelledby="pills-dash2-tab">
-                                <p>When I tasked the two users with customizing their dashboard theme, both of them
-                                    looked through their account settings before finding the pop-up link at the bottom
-                                    of the page. Additionally, after the users had found the theme customization pop-up,
-                                    they chose one of the first few themes without scrolling through the second page of
-                                    themes.</p>
-                                <p>In order to “onboard” learners on how to customize their dashboards, I decided to
-                                    <strong>gamify the dashboard customization feature</strong> by unlocking this
-                                    feature for learners as they progress through the course. I also reduced the number
-                                    of available themes, as learners did not seem to prioritize this new feature in
-                                    their learning experience.</p>
-                                <!-- Image -->
-                                <figure class="projectContentImg figure">
-                                    <img src="../images/projects/fulcrumlabs/2theme.png"
-                                        class="figure-img img-fluid rounded d-block w-100"
-                                        alt="Dashboard Customization">
-                                    <figcaption class="figure-caption text-center">The pop-up would appear as learners
-                                        progressed through the course.
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <!-- Reflection -->
-            <div id="reflection" class="projectBackground row px-3 py-5 justify-content-center">
-                <div class="col-xl-7 col-lg-8 col-md-9 px-md-0 px-sm-5 px-3 col">
-                    <h5 class="mt-3">Reflection</h5>
-                    <h4>Communicate well. Test early and often.</h4>
-                    <p>Throughout the design process, I recognized the importance of user testing to either support or
-                        undermine my design decisions. In the research and discussion phase of these two ideas, I was
-                        relying on assumptions and feedback from the rest of the product team to drive my design
-                        decisions. With user testing, I was able to test these assumptions and the usability of my
-                        designs. Ultimately, after meeting with the product design team and discussing the viability of
-                        my design propositions, we decided to scrap the idea of customization, as it didn’t seem to add
-                        as much value to the learning platform as the note-taking feature.</p>
-                    <p>Being able to take ownership of this project from research to testing was exciting, and I am
-                        grateful to the product team at Fulcrum Labs for giving me the opportunity to do so. While I
-                        learned a great deal about collaborating between the design team and receiving feedback on
-                        designs, one thing I would have done differently is communicate my ideas earlier and more often
-                        throughout the project. That would have helped me to develop one product feature more thoroughly
-                        rather than splitting my focus between two features.</p>
-                    <p>At the end of my internship, I presented and delivered my research, wireframes, and prototypes to
-                        the team.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <div id="projectFooter" class="container row">
-            <div class="col py-5 text-center">
-                <h5 class="mb-3">Take a peek into my other projects:</h5>
-                <h3>
-                    <a href="../projects/valoursf">
-                        Valour SF
+        <div class="container h-100 d-flex pt-sm-5 pt-4">
+            <div class="row w-100">
+                <div id="nav-title" class="px-sm-4 px-4 col-lg-8 col-md-6 col-8">
+                    <a href="../">
+                        <h3>Hannah Pham –</h3>
                     </a>
-                </h3>
-                <h3>
-                    <a href="../projects/disney">Disney Parks, Experiences, and Products</a>
-                </h3>
-                <h3>
-                    <a href="../projects/uber">Ethical Surveillance Design Analysis – Uber</a>
-                </h3>
-                <h3>
-                    <a href="../projects/royalway">
-                        Royal Way Spiritual Center
-                    </a>
-                </h3>
-                <h3>
-                    <a href="../projects/workingwomansfight">
-                        A Working Woman's Fight
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div id="message">
+        <div class="container h-100 justify-content-center d-flex">
+            <div class="col-sm-10 col-md-8 col-lg-7 align-self-center">
+                <h1>Be right back!</h1>
+                <h3>I am currently editing this project and will publish it soon. Thanks for your patience! (In the
+                    meantime, <a href="https://linkedin.com/in/hannahhp" target="_blank">contact me on LinkedIn!</a>)
                 </h3>
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <div id="next">
+        <div class="container d-flex h-100 justify-content-center text-center">
+            <h4 class="align-self-center">Next: <a href="disney">Disney Parks Mobile Dine Check-In &rarr;</a></h4>
+        </div>
+    </div>
+
+    <footer class="text-center mt-3">
+        <h4><a href="../">Home</a> / <a href="https://linkedin.com/in/hannahhp" target="_blank">LinkedIn</a> / <a
+                href="https://goo.gl/nWZd5k" target="_blank">Resume</a> / <a
+                href="mailto:hannah.pham@gmail.com">Email</a></h4>
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JQuery -->
-    <script src="../jquery/projects.js"></script>
 
 
 </body>
