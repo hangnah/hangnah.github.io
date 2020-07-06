@@ -105,28 +105,26 @@ $(document).ready(function () {
     });
 
 });
-
 // Move Hero Images
-$(document).ready(function () {
-    var heroimg = document.getElementById('hero-img-girl');
-    heroimg.homePos = { x: heroimg.offsetLeft, y: heroimg.offsetTop };
+// $(document).ready(function () {
+//     var heroimg = document.getElementById('hero-img-girl');
+//     heroimg.homePos = { x: heroimg.offsetLeft, y: heroimg.offsetTop };
 
-    $('#hero').mousemove(function (e) {
-        parallax(e, heroimg, 60);
-    });
+//     $('#hero').mousemove(function (e) {
+//         parallax(e, heroimg, 60);
+//     });
 
     
-});
+// });
 
-function parallax(e, target, layer) {
-    var x = target.homePos.x - (e.pageX - target.homePos.x) / layer;
-    var y = target.homePos.y - (e.pageY - target.homePos.y) / layer;
+// function parallax(e, target, layer) {
+//     var x = target.homePos.x - (e.pageX - target.homePos.x) / layer;
+//     var y = target.homePos.y - (e.pageY - target.homePos.y) / layer;
 
-    targetLocation = $(target).offset({ top: y ,left : x });
+//     targetLocation = $(target).offset({ top: y ,left : x });
 
-    $(target).animate({
-        'top': targetLocation.top,
-        'left': targetLocation.left
-  }, 10, "linear");
-    //$(target).offset({ top: y ,left : x });
-};
+//     $(target).animate({
+//         'top': targetLocation.top,
+//         'left': targetLocation.left
+//   }, 10, "linear");
+// };
