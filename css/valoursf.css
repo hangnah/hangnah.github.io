@@ -1,0 +1,63 @@
+.snippetbg {
+    background-color: #FAE0C3;
+}
+
+.coloredbg {
+    background-color: #FEF9F3;
+}
+/* Users */
+#userTable td {
+    border-top: none !important;
+    border-radius:8px;
+}
+
+#users table {
+    border-collapse: separate !important;
+    border-spacing: 0.75em 0 !important;
+}
+
+.blocks {
+    background-color: #FAE0C3;
+}
+
+/* Personas */
+#personas .carousel-inner {
+    border:solid #252525 2px;
+    border-radius: 8px;
+    background-color: #F9F9F9;
+}
+
+#personas .carousel-indicators {
+    bottom: 0px;
+}
+
+#personas .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius:50%;
+    background-color: #2D1E0D;
+    top: 0;
+}
+
+/* Design Decisions */
+#designDecisions table {
+    border: solid #252525 2px;
+    border-radius: 8px;
+    border-collapse: separate !important;
+}
+
+#designDecisions .table thead th {
+    border-bottom: none !important;
+}
+
+#designDecisions table td, th {
+    border-top: none !important;
+}
+
+/* XSmall: up to 576px */
+@media only screen and (max-width: 576px) {
+    #users td {
+        display:block;
+        margin: 0.75em 0 !important;
+    }
+}
