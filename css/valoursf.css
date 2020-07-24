@@ -1,14 +1,29 @@
 .snippetbg {
-    background-color: #FAE0C3;
+    background-color: #ffcc92;
 }
 
 .coloredbg {
     background-color: #FEF9F3;
 }
+
+/* Header */
+#header {
+    background: rgb(254,249,243);
+    background: linear-gradient(0deg, #ffcc92 0%, rgba(254,249,243,1) 44%, rgba(255,255,255,1) 100%);
+}
+
+#projectTitle h1 {
+    color: #ce6d00;
+}
+
+
 /* Users */
 #userTable td {
-    border-top: none !important;
     border-radius:8px;
+    width: 33.3333%;
+
+    border: 1.5px black solid;
+    background-color:#F9F9F9;
 }
 
 #users table {
@@ -16,13 +31,10 @@
     border-spacing: 0.75em 0 !important;
 }
 
-.blocks {
-    background-color: #FAE0C3;
-}
 
 /* Personas */
 #personas .carousel-inner {
-    border:solid #252525 2px;
+    border:solid #3a3a3a 1.5px;
     border-radius: 8px;
     background-color: #F9F9F9;
 }
@@ -39,9 +51,14 @@
     top: 0;
 }
 
+#personas svg {
+    background-color: #F9F9F9;
+}
+
 /* Design Decisions */
 #designDecisions table {
-    border: solid #252525 2px;
+    background-color: #F9F9F9;
+    border: solid #3a3a3a 1.5px;
     border-radius: 8px;
     border-collapse: separate !important;
 }
@@ -59,5 +76,6 @@
     #users td {
         display:block;
         margin: 0.75em 0 !important;
+        width:100%;
     }
 }

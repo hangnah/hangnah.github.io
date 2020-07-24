@@ -14,7 +14,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Hannah Pham – Product Designer">
+    <meta name="description" content="Encouraging San Francisco residents to volunteer at local homeless organizations.">
     <meta name="author" content="Hannah Pham">
     <meta name="keywords" content="Hannah Pham, Hannah Pham Design, Product Designer, UX Designer, Hannah Pham UCLA">
     <link href="https://www.hannahpham.co/projects/valoursf" rel="canonical" />
@@ -34,15 +34,32 @@
 </head>
 
 <body>
+    <!-- Scroll Indicator -->
+    <div id="scrollIndicator">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+
+    <!-- Arrow Up -->
+    <div id="scrollTop">
+        <a href="#">
+            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-up-circle-fill" fill="currentColor"
+                opacity="0.25" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-10.646.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z" />
+            </svg>
+        </a>
+    </div>
 
     <!-- Nav Bar -->
-    <div id="nav">
+    <div id="navProjects">
 
         <div class="container h-100 d-flex pt-sm-5 pt-4">
             <div class="row w-100">
                 <div id="nav-title" class="px-sm-4 px-4 col-lg-8 col-md-6 col-8">
                     <a href="../">
-                        <h3>– Back to Home</h3>
+                        <h3>&larr; Back to Home</h3>
                     </a>
                 </div>
             </div>
@@ -50,23 +67,24 @@
     </div>
 
     <!-- Header -->
-    <div id="header" class="w-100">
-        <img class="w-100" src="../images/projects/valoursf/header.png">
-    </div>
-    <!-- Project Title -->
-    <div id="project">
+    <div id="header" class="w-100 mt-sm-5 mt-3">
         <div id="projectTitle">
-            <div class="container py-5">
+            <div class="container pb-5">
                 <div class="row justify-content-center">
-                    <div class="col-xl-6 col-md-8 col">
-                        <h1 class="text-center">Valour SF</h1>
-                        <h3>A mobile application that encourages people to volunteer at local homeless organizations in
-                            San
-                            Francisco.</h3>
+                    <div class="text-center col-xl-8 col-md-10 col">
+                        <h1 class="mb-3">Valour SF</h1>
+                        <h2>Encouraging San Francisco residents to volunteer at local homeless organizations.</h2>
                     </div>
                 </div>
             </div>
         </div>
+        <img class="w-100" src="../images/projects/valoursf/header.png">
+
+
+    </div>
+    <!-- Project Title -->
+    <div id="project">
+
 
         <!-- Snippet -->
         <div id="projectSnippet" class="snippetbg">
@@ -84,7 +102,7 @@
                         <p><strong>Timeline</strong></p>
                     </div>
                     <div class="col-8">
-                        <p>24 Hours</p>
+                        <p>24 Hours / Nov 2019</p>
                     </div>
                 </div>
                 <div class="row">
@@ -101,7 +119,8 @@
                     </div>
                     <div class="col-8">
                         <p>Hackathon, Mobile App</p>
-                        <p class="small">This project was completed at the Girls in SF’s Hacking for Humanity hackathon in November
+                        <p class="small">This project was completed at the Girls in SF’s Hacking for Humanity hackathon
+                            in November
                             2019
                             and received an honorable mention from the judges. I worked in a team with four other people
                             as
@@ -143,13 +162,13 @@
                         <table id="userTable" class="table text-center">
                             <tbody>
                                 <tr>
-                                    <td class="blocks align-middle pt-4">
+                                    <td class="align-middle pt-4">
                                         <p>Homeless Individuals</p>
                                     </td>
-                                    <td class="blocks align-middle pt-4">
+                                    <td class="align-middle pt-4">
                                         <p>Non-Profit Organizations</p>
                                     </td>
-                                    <td class="blocks align-middle pt-4">
+                                    <td class="align-middle pt-4">
                                         <p>Volunteers</p>
                                     </td>
                                 </tr>
@@ -181,18 +200,19 @@
                             community (similar to a sponsorship program), but recognized the potential hesitation that
                             might
                             be felt by residents from participating in an independent program.</p>
+                        <p class="imgCaption small">Pictured: Initial whiteboarding session</p>
                     </div>
                 </div>
             </div>
             <div class="container pt-4">
-                <!-- LIGHTBOX !! -->
+                <!-- Lightbox -->
+                <a href="../images/projects/valoursf/ideation.jpg" data-toggle="lightbox">
+
                 <figure class="projectContentImg figure">
                     <img src="../images/projects/valoursf/ideation.jpg" class="figure-img img-fluid w-100"
                         alt="Whiteboard with initial ideation ideas">
-                    <figcaption class="figure-caption text-center pt-2">
-                        <p>Initial whiteboard ideation session</p>
-                    </figcaption>
                 </figure>
+                </a>
             </div>
             <div class="container pb-5">
                 <div class="row justify-content-center">
@@ -290,9 +310,8 @@
                             <!--Controls-->
                             <div class="controls-top text-center mt-3">
                                 <a class="btn-floating" href="#personasCarousel" data-slide="prev">
-                                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16"
-                                        class="bi bi-arrow-left-circle" fill="currentColor"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
                                             d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                         <path fill-rule="evenodd"
@@ -303,9 +322,8 @@
                                 <span>&nbsp;&nbsp;</span>
 
                                 <a class="btn-floating" href="#personasCarousel" data-slide="next">
-                                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16"
-                                        class="bi bi-arrow-right-circle" fill="currentColor"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
                                             d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                         <path fill-rule="evenodd"
@@ -315,14 +333,6 @@
                                     </svg>
                                 </a>
                             </div>
-                            <!--/.Controls-->
-                            <!--Indicators
-                            <ol class="carousel-indicators">
-                                <li data-target="#personasCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#personasCarousel" data-slide-to="1"></li>
-                                <li data-target="#personasCarousel" data-slide-to="2"></li>
-                            </ol>
-                        -->
 
                         </div>
                         <!--/.Carousel Wrapper-->
@@ -347,7 +357,7 @@
         </div>
 
         <!-- Design Decisions -->
-        <div id="designDecisions">
+        <div id="designDecisions" class="coloredbg">
             <div class="container py-5">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col">
@@ -377,20 +387,20 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">Social Component</th>
-                                    <td>Share current volunteering activities at organizations</td>
+                                    <td>Share current volunteering activities at organizations with friends</td>
                                 </tr>
                             </tbody>
                         </table>
                         <p>With a little over 12 hours left in the hackathon, I organized the information architecture
-                            and designed high-fidelity wireframes and prototypes while providing design support for my
-                            team with the application onboarding experience.</p>
+                            and designed high-fidelity wireframes and prototypes, and provided design support for my
+                            team with the onboarding experience.</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Information Architecture -->
-        <div id="infoArch" class="coloredbg">
+        <div id="infoArch">
             <div class="container pt-5">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col">
@@ -408,7 +418,7 @@
         </div>
 
         <!-- Onboarding -->
-        <div id="onboarding">
+        <div id="onboarding" class="coloredbg">
             <div class="container pt-5">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col">
@@ -417,50 +427,49 @@
                             experience for new users. Duolingo’s onboarding process asks users to quickly assess their
                             level of language mastery and outline their personal goals with using the application,
                             personalizing their language learning experience.</p>
+                        <p class="imgCaption small">Pictured: Comparison between Duolingo and our proposed onboarding
+                            experience</p>
                     </div>
                 </div>
             </div>
             <div class="container pt-4">
-                <!-- LIGHTBOX !! -->
+                <!-- Lightbox -->
+                <a href="../images/projects/valoursf/onboardingDuo.png" data-toggle="lightbox">
+
                 <figure class="projectContentImg figure">
                     <img src="../images/projects/valoursf/onboardingDuo.png" class="figure-img img-fluid w-100"
                         alt="Comparing Duolingo with our onboarding sketches">
-                    <figcaption class="figure-caption text-center pt-2">
+                    <!-- <figcaption class="figure-caption text-center pt-2">
                         <p>Comparison between Duolingo and our proposed onboarding experience</p>
-                    </figcaption>
+                    </figcaption> -->
                 </figure>
+                </a>
             </div>
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col">
-                        <p>Taking these sketches, I designed a high-fidelity prototype for the onboarding experience.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="container pt-4 text-center">
-                <!-- LIGHTBOX !! -->
-                <figure class="projectContentImg figure">
-                    <img src="../images/projects/valoursf/onboarding.gif" class="figure-img img-fluid w-50"
-                        alt="A walkthrough of our onboarding process">
-                    <figcaption class="figure-caption text-center pt-2">
-                        <p>Final onboarding flow</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="container pb-4">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col">
                         <p>Our onboarding experience would ask new users to define their goals as volunteers. The goals
                             of this experience were to set the expectation that volunteering is easy and to introduce
                             the rewards volunteers can achieve by volunteering.</p>
+                        <p>Taking the sketches, I designed a high-fidelity prototype for the onboarding experience:
+                        </p>
+                        <p class="imgCaption small">Pictured: Final onboarding flow</p>
                     </div>
                 </div>
+            </div>
+            <div class="container pt-4 pb-5 text-center">
+                <!-- Lightbox -->
+                <a href="../images/projects/valoursf/onboarding.gif" data-toggle="lightbox">
+                <figure class="projectContentImg figure">
+                    <img src="../images/projects/valoursf/onboarding.gif" class="figure-img img-fluid w-50"
+                        alt="A walkthrough of our onboarding process">
+                </figure>
+                </a>
             </div>
         </div>
 
         <!-- Solutions -->
-        <div id="solutions" class="coloredbg">
+        <div id="solutions">
             <div class="container pt-5">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col">
@@ -478,18 +487,20 @@
             <div class="container my-4 py-3">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-7 col-md-6">
-                        <!-- LIGHTBOX !! -->
+                        <!-- Lightbox -->
+                        <a href="../images/projects/valoursf/partnership.png" data-toggle="lightbox">
                         <figure class="projectContentImg figure">
                             <img src="../images/projects/valoursf/partnership.png" class="figure-img img-fluid w-100"
                                 alt="Progression of screens from home page to volunteer time page">
                         </figure>
+                        </a>
                     </div>
-                    <div class="col-lg-5 col-md-6 mt-md-0 mt-3">
+                    <div class="offset-lg-1 offset-0 col-lg-4 col-md-6 mt-md-0 mt-3">
                         <h3><strong>Partnership</strong></h3>
                         <p>By eventually partnering with non-profit organizations, we hoped to directly connect
                             volunteers with organizations through our mobile application and streamline the process of
                             volunteers tracking their volunteering.</p>
-                        <p class="small">Pictured: Process of logging volunteer hours</p>
+                        <p class="imgCaption small">Pictured: Process of logging volunteer hours</p>
                     </div>
                 </div>
             </div>
@@ -497,20 +508,25 @@
             <!-- Gamification -->
             <div class="container my-4 py-3">
                 <div class="row d-flex align-items-center">
-                    <div class="col-lg-7 col-md-6 order-md-2 order-1">
-                        <!-- LIGHTBOX !! -->
+                    <div class="offset-lg-1 offset-0 col-lg-7 col-md-6 order-md-2 order-1">
+                        <!-- Lightbox -->
+                        <a href="../images/projects/valoursf/gamification.png" data-toggle="lightbox">
+
                         <figure class="projectContentImg figure">
                             <img src="../images/projects/valoursf/gamification.png" class="figure-img img-fluid w-100"
                                 alt="Achievements and badges volunteers can obtain">
                         </figure>
+                    </a>
+
                     </div>
-                    <div class="col-lg-5 col-md-6 mt-md-0 mt-3 order-md-1 order-2">
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-3 order-md-1 order-2">
                         <h3><strong>Gamification</strong></h3>
                         <p>Gamifying the experience with achievements, status levels, and experience points gives extra
                             incentives for users to continue volunteering and using the application. This would
                             hopefully lead volunteers to develop the habit of voluntarily spending their time at
                             charitable organizations.</p>
-                        <p class="small">Pictured: A volunteer's profile page with his or her list of achievements</p>
+                        <p class="imgCaption small">Pictured: A volunteer's profile page with his or her list of
+                            achievements</p>
                     </div>
                 </div>
             </div>
@@ -519,11 +535,15 @@
             <div class="container my-4 py-3">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-7 col-md-6 text-center">
-                        <!-- LIGHTBOX !! -->
+                        <!-- Lightbox -->
+                        <a href="../images/projects/valoursf/social.png" data-toggle="lightbox">
+
                         <figure class="projectContentImg figure">
                             <img src="../images/projects/valoursf/social.png" class="figure-img img-fluid w-100"
                                 alt="Social feed">
                         </figure>
+                    </a>
+
                     </div>
                     <div class="col-lg-5 col-md-6 mt-md-0 mt-3">
                         <h3><strong>Social</strong></h3>
@@ -531,7 +551,7 @@
                             acquired badges, and activities at local organizations. One decision we came to was omitting
                             the option to like or comment on friends’ activities, as we did not want volunteerism to
                             become a competition with other people.</p>
-                        <p class="small">Pictured: Social feed of friends' activities</p>
+                        <p class="imgCaption small">Pictured: Social feed of friends' activities</p>
 
                     </div>
                 </div>
@@ -540,21 +560,32 @@
             <div class="container pb-5">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col">
-                        <p>In the remaining 8 hours of the hackathon, I <a href="https://xd.adobe.com/view/df18674b-bbc6-4ab1-48c6-385ec0302c17-a929/" target="_blank">designed a full prototype on Adobe XD.</a></p>
+                        <p>In the remaining 8 hours of the hackathon, I <a
+                                href="https://xd.adobe.com/view/df18674b-bbc6-4ab1-48c6-385ec0302c17-a929/"
+                                target="_blank">designed a full prototype on Adobe XD.</a></p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Reflection -->
-        <div id="reflection">
+        <div id="reflection" class="coloredbg">
             <div class="container py-5">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col">
                         <h2 class="mb-3">Takeaways</h2>
-                        <p>&bull;&nbsp;&nbsp;<strong>Defining a target audience is essential for driving design decisions.</strong> Given that my team consisted mostly of people new to hackathons and design thinking, our initial ideations were broad, exciting, and perplexing. After I led my team to create user personas to better frame our problem, it was easier to narrow down our project scope.</p>
-                        <p>&bull;&nbsp;&nbsp;<strong>Every single screen, design element, or interaction should contribute to the end goal of the user.</strong> The discussions my team had on gamification led to a few disagreements, but once I advocated for the user personas we had defined together, the gamification ideas become a secondary priority. Setting that expectation helped to simplify the user experience of the application.</p>
-                        <p>&bull;&nbsp;&nbsp;And possibly the most important takeaway: <strong>It’s possible to sleep at hackathons!</strong></p>
+                        <p>&bull;&nbsp;&nbsp;<strong>Defining a target audience is essential for driving design
+                                decisions.</strong> Given that my team consisted mostly of people new to hackathons and
+                            design thinking, our initial ideations were broad, exciting, and perplexing. After I led my
+                            team to create user personas to better frame our problem, it was easier to narrow down our
+                            project scope.</p>
+                        <p>&bull;&nbsp;&nbsp;<strong>Every single screen, design element, or interaction should
+                                contribute to the end goal of the user.</strong> The discussions my team had on
+                            gamification led to a few disagreements, but once I advocated for the user personas we had
+                            defined together, the gamification ideas become a secondary priority. Setting that
+                            expectation helped to simplify the user experience of the application.</p>
+                        <p>&bull;&nbsp;&nbsp;And possibly the most important takeaway: <strong>It’s possible to sleep at
+                                hackathons!</strong></p>
                     </div>
                 </div>
             </div>
@@ -569,7 +600,7 @@
         </div>
     </div>
 
-    <footer class="text-center mt-3">
+    <footer class="text-center my-3">
         <h4><a href="../">Home</a> / <a href="https://linkedin.com/in/hannahhp" target="_blank">LinkedIn</a> / <a
                 href="https://goo.gl/nWZd5k" target="_blank">Resume</a> / <a
                 href="mailto:hannah.pham@gmail.com">Email</a></h4>
@@ -579,7 +610,12 @@
     <script src="../vendor/jquery/jquery.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+
+    <!-- Lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
     <!-- Custom JQuery -->
+    <script src="../jquery/projects.js"></script>
 
 
 </body>
