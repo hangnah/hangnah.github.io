@@ -6,6 +6,17 @@ window.addEventListener('resize', () => {
 });
 
 $(document).ready(function () {
+
+    // Show Hover Me text
+    var $hoverme = $("#hoverme");
+
+    $(document).ready(function () {
+        setTimeout(function(){
+            $hoverme.addClass('fullOpacity');
+        }, 2000);
+    });
+
+
     // Hero Text
     var $text = $("#hero-text .hero-text-opacity");
     var $funkytextOne = $("#hero-text #funkyOne")
@@ -19,7 +30,6 @@ $(document).ready(function () {
     var $herobg = $("#hero");
     var $navbg = $("#nav");
 
-
     $('#funkyOne').mouseenter(function () {
         $main.fadeToggle(350, "swing");
         $funkyOne.fadeToggle(350, "swing")
@@ -32,6 +42,7 @@ $(document).ready(function () {
 
         $navbg.addClass('navcolor');
 
+        $hoverme.removeClass('fullOpacity');
 
     });
 
@@ -60,6 +71,9 @@ $(document).ready(function () {
         $navbg.addClass('herobg');
 
         $navbg.addClass('navcolor');
+
+        $hoverme.removeClass('fullOpacity');
+
     });
 
     $('#funkyTwo').mouseleave(function () {

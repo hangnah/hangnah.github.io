@@ -21,6 +21,14 @@ html{ /* root size: 14px */
     margin-right: 0 !important;
 }
 
+
+.fullOpacity {
+    opacity: 1 !important;
+    -webkit-transition: all 0.3s ease-in-out .1s;
+    -moz-transition: all 0.3s ease-in-out .1s;
+    transition: all 0.3s ease-in-out .1s;
+}
+
 /* Fonts Styles */
 h1 { /* Page Titles */
     font-family: Rubik;

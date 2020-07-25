@@ -45,6 +45,15 @@
 #funkyTwo {
     cursor:url('../images/home/cursormoon.png'), auto;
 }
+
+/* Hover Me */
+#hoverme{
+    opacity: 0;
+    position:absolute;
+    left: 35%;
+    top: -25%;
+}
+
 /* Hero Images */
 .hero-img {
     right: 10%;
