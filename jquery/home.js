@@ -5,6 +5,8 @@ window.addEventListener('resize', () => {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
+// Check if using touchscreen device
+
 $(document).ready(function () {
 
     // Show Hover Me text

@@ -43,9 +43,6 @@
     transition: all 0.3s ease-in-out .1s;
 }
 
-.fullOpacity {
-    opacity: 1 !important;
-}
 
 /* Project Title */
 #projectTitle h2 {
