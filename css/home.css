@@ -99,13 +99,14 @@
     transition: all 0.3s ease-in-out 0s;
 }
 
-/* About */
+/* About 
 #about {
     height:100%;
     width: 100vw;
     z-index: -2 !important;
     background-color:#F6F6F5;
 }
+*/
 
 /* Projects */
 .projectContainer{
@@ -167,7 +168,7 @@
 }
 
 /* Contact */
-#contact {
+#about {
     background-color: #F6F6F5;
 }
 
