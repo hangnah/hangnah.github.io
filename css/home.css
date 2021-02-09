@@ -38,6 +38,7 @@
     transition: all 0.3s ease-in-out 0s;
 }
 
+/*
 #funkyOne {
     cursor:url('../images/home/cursorsun.png'), auto;
 }
@@ -45,7 +46,7 @@
 #funkyTwo {
     cursor:url('../images/home/cursormoon.png'), auto;
 }
-
+*/
 /* Hover Me */
 #hoverme{
     opacity: 0;
@@ -68,7 +69,7 @@
 #hero-img-pd img {
     max-width:300px;
     width:100%;
-    border-radius: 5px;
+    border-radius: 16px;
 
     display: none;
 }
