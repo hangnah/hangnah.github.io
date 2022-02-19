@@ -161,10 +161,10 @@ footer {
     }
 
     #hero-text {
+        opacity:.8;
         bottom: 15%;
     }
     .hero-img {
-        opacity:.8;
         right:0;
         top: 42.5%;
     }
