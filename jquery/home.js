@@ -8,7 +8,6 @@ window.addEventListener('resize', () => {
 // Check if using touchscreen device
 
 $(document).ready(function () {
-
     // Show Hover Me text
     var $hoverme = $("#hoverme");
 
@@ -17,7 +16,6 @@ $(document).ready(function () {
             $hoverme.addClass('fullOpacity');
         }, 2000);
     });
-
 
     // Hero Text
     var $text = $("#hero-text .hero-text-opacity");
@@ -101,28 +99,28 @@ $(document).ready(function () {
     var $aboutFunkyNoteTwo = $("#aboutFunkyNoteTwo");
     var $aboutFunkyNoteThree = $("#aboutFunkyNoteThree");
 
-    $aboutFunkyOne.mouseenter(function() {
-        $aboutFunkyNoteOne.animate({opacity: 1}, 350);
+    $aboutFunkyOne.mouseenter(function () {
+        $aboutFunkyNoteOne.animate({ opacity: 1 }, 350);
     });
 
     $aboutFunkyOne.mouseleave(function () {
-        $aboutFunkyNoteOne.animate({opacity: 0}, 350);
+        $aboutFunkyNoteOne.animate({ opacity: 0 }, 350);
     });
 
     $aboutFunkyTwo.mouseenter(function () {
-        $aboutFunkyNoteTwo.animate({opacity: 1}, 350);
+        $aboutFunkyNoteTwo.animate({ opacity: 1 }, 350);
     });
 
     $aboutFunkyTwo.mouseleave(function () {
-        $aboutFunkyNoteTwo.animate({opacity: 0}, 350);
+        $aboutFunkyNoteTwo.animate({ opacity: 0 }, 350);
     });
 
     $aboutFunkyThree.mouseenter(function () {
-        $aboutFunkyNoteThree.animate({opacity: 1}, 350);
+        $aboutFunkyNoteThree.animate({ opacity: 1 }, 350);
     });
 
     $aboutFunkyThree.mouseleave(function () {
-        $aboutFunkyNoteThree.animate({opacity: 0}, 350);
+        $aboutFunkyNoteThree.animate({ opacity: 0 }, 350);
     });
 
 
