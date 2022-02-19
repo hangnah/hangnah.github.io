@@ -21,8 +21,8 @@ $(document).ready(function () {
 
     // Hero Text
     var $text = $("#hero-text .hero-text-opacity");
-    var $funkytextOne = $("#hero-text #funkyOne")
-    var $funkytextTwo = $("#hero-text #funkyTwo")
+    var $funkytextOne = $("#hero-text #funkyOne");
+    var $funkytextTwo = $("#hero-text #funkyTwo");
 
     // Hero Images
     var $main = $("#hero-img-girl img");
@@ -91,6 +91,42 @@ $(document).ready(function () {
         $navbg.removeClass('navcolor');
     });
 
+    // About text
+    var $aboutFunkyOne = $("#aboutFunkyOne");
+    var $aboutFunkyTwo = $("#aboutFunkyTwo");
+    var $aboutFunkyThree = $("#aboutFunkyThree");
+
+    // About note
+    var $aboutFunkyNoteOne = $("#aboutFunkyNoteOne");
+    var $aboutFunkyNoteTwo = $("#aboutFunkyNoteTwo");
+    var $aboutFunkyNoteThree = $("#aboutFunkyNoteThree");
+
+    $aboutFunkyOne.mouseenter(function() {
+        $aboutFunkyNoteOne.animate({opacity: 1}, 350);
+    });
+
+    $aboutFunkyOne.mouseleave(function () {
+        $aboutFunkyNoteOne.animate({opacity: 0}, 350);
+    });
+
+    $aboutFunkyTwo.mouseenter(function () {
+        $aboutFunkyNoteTwo.animate({opacity: 1}, 350);
+    });
+
+    $aboutFunkyTwo.mouseleave(function () {
+        $aboutFunkyNoteTwo.animate({opacity: 0}, 350);
+    });
+
+    $aboutFunkyThree.mouseenter(function () {
+        $aboutFunkyNoteThree.animate({opacity: 1}, 350);
+    });
+
+    $aboutFunkyThree.mouseleave(function () {
+        $aboutFunkyNoteThree.animate({opacity: 0}, 350);
+    });
+
+
+
     // Add smooth scrolling to navigation
     $("#hero a").on('click', function (event) { // Projects
 
@@ -121,26 +157,3 @@ $(document).ready(function () {
     });
 
 });
-// Move Hero Images
-// $(document).ready(function () {
-//     var heroimg = document.getElementById('hero-img-girl');
-//     heroimg.homePos = { x: heroimg.offsetLeft, y: heroimg.offsetTop };
-
-//     $('#hero').mousemove(function (e) {
-//         parallax(e, heroimg, 60);
-//     });
-
-    
-// });
-
-// function parallax(e, target, layer) {
-//     var x = target.homePos.x - (e.pageX - target.homePos.x) / layer;
-//     var y = target.homePos.y - (e.pageY - target.homePos.y) / layer;
-
-//     targetLocation = $(target).offset({ top: y ,left : x });
-
-//     $(target).animate({
-//         'top': targetLocation.top,
-//         'left': targetLocation.left
-//   }, 10, "linear");
-// };

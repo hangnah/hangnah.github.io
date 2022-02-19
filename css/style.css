@@ -9,6 +9,7 @@ html{ /* root size: 14px */
     -moz-transition: all 0.3s ease-in-out .1s;
     transition: all 0.3s ease-in-out .1s;
 }
+
 .container, .container-fluid, .row, .col {
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
@@ -32,7 +33,7 @@ html{ /* root size: 14px */
 /* Fonts Styles */
 h1 { /* Page Titles */
     font-family: Rubik;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 4em; /* 64px */
     line-height: 1.25em;
 
@@ -41,7 +42,7 @@ h1 { /* Page Titles */
 
 h2 { /* Section Titles */
     font-family: Rubik;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 2em;
     line-height: 1.5em;
 
@@ -94,22 +95,22 @@ u {
 a {
     font-family: Rubik;
     color: #1E1E1E !important;
-    font-weight:500;
+    font-weight:400;
     text-decoration: underline;
 
-    -webkit-transition: all 0.3s ease-in-out .1s;
-    transition: all 0.3s ease-in-out .1s;
+    -webkit-transition: all 0.2s ease-in-out .1s;
+    transition: all 0.2s ease-in-out .1s;
 }
 
 a:hover {
-    opacity: 0.75;
-    -webkit-transition: all 0.3s ease-in-out .1s;
-    transition: all 0.3s ease-in-out .1s;
+    opacity: 0.5;
+    -webkit-transition: all 0.2s ease-in-out .1s;
+    transition: all 0.2s ease-in-out .1s;
 }
 
 .small, small {
-    font-size: 90% !important;
-    font-weight: 500 !important;
+    font-size: 75% !important;
+    font-weight: 400 !important;
 }
 
 /* Nav Bar */

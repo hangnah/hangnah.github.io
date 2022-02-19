@@ -1,14 +1,11 @@
-/* Nav Bar */
-.navcolor h3 {
-    color: #F6F6F5 !important;
-
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+/* Logo */
+#logo {
+    position:absolute;
 }
-
 /* Hero */
 #hero {
-    height:calc(100vh - 75px);
+    height:100vh;
+    /* height:calc(100vh - 75px); */
     width: 100vw;
     z-index: 0 !important;
 
@@ -21,13 +18,13 @@
 }
 
 .herobg {
-    /* background-color: #b4aaaa; */
-
     background-color: #3b3737;
 }
 
 #hero-text {
     z-index:99;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .funky-opacity {
@@ -52,7 +49,7 @@
     opacity: 0;
     position:absolute;
     left: 35%;
-    top: -25%;
+    top: -30%;
 }
 
 /* Hero Images */
@@ -100,86 +97,29 @@
     transition: all 0.3s ease-in-out 0s;
 }
 
-/* About 
-#about {
-    height:100%;
-    width: 100vw;
-    z-index: -2 !important;
-    background-color:#F6F6F5;
-}
-*/
-
-/* Projects */
-.projectContainer{
-    margin: 8em 0;
-    height: 100%;
-}
-
-#projects img {
-    -webkit-transition: all 0.35s ease-in-out .05s;
-    transition: all 0.35s ease-in-out .05s;
-}
-
-#projects img:hover {
-    transform: scale(1.03);
-
-    
-}
-
-.project-img-mobile {
-    max-width:175px;
-    width:100%;
-}
-
-#disney .project-img {
-    position: relative;
-    max-width:200px;
-    width:100%;
-}
-
-#disney-img:hover .overlay-container{
-    opacity: 1;
-    -webkit-transition: all 0.35s ease-in-out .05s;
-    transition: all 0.35s ease-in-out .05s;
-}
-
-.overlay-container {
-    opacity: 0;
-    position: absolute;
-    top:0;
-    left:0;
-    -webkit-transition: all 0.35s ease-in-out .05s;
-    transition: all 0.35s ease-in-out .05s;
-}
-
-.overlay-locked img{
-    max-width:75px;
-    width:100%;
-    opacity:.85;
-}
-
-#valoursf .project-img {
-    max-width:500px;
-    width:100%;
-}
-
-#fulcrumlabs .project-img {
-    max-width:750px;
-    width:100%;
-}
-
-/* Contact */
+/* About */
 #about {
     background-color: #F6F6F5;
 }
 
+.about-note-container {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.about-note {
+    opacity: 0;
+    position:absolute;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+}
 
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
-    #nav-pages {
-        display:none;
-    }
     .projectImgDesktop img {
         width: 500px;
     }
@@ -198,11 +138,19 @@
     }
 
     #hero-text {
-        bottom: 25%;
+        bottom: 15%;
     }
     .hero-img {
         right:0;
-        top: 50%;
+        top: 43%;
+    }
+    #logo, #hero-down {
+        left:45%;
+    }
+
+    #logo svg{
+        width:60px;
+        height:auto;
     }
 
 }
