@@ -1,2 +1,7 @@
-User-agent: Googlebot-Image
-Disallow: /
+## User-agent: Googlebot-Image
+User-agent: *
+
+Disallow: /images/home/girl.gif
+Disallow: /images/home/baby.JPG
+Disallow: /images/home/ja.png
+Disallow: /images/home/hp.SVG
