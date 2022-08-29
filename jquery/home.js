@@ -115,14 +115,6 @@ $(document).ready(function () {
         $aboutFunkyNoteTwo.animate({ opacity: 0 }, 350);
     });
 
-    $aboutFunkyThree.mouseenter(function () {
-        $aboutFunkyNoteThree.animate({ opacity: 1 }, 350);
-    });
-
-    $aboutFunkyThree.mouseleave(function () {
-        $aboutFunkyNoteThree.animate({ opacity: 0 }, 350);
-    });
-
 
 
     // Add smooth scrolling to navigation
