@@ -23,7 +23,7 @@
 }
 
 .herobg {
-    background-color: #3b3737;
+    background-color: #3b3737 !important;
 }
 
 #hero-text {
@@ -64,20 +64,20 @@
 }
 
 #hero-img-girl img {
-    max-width:600px;
+    max-width:480px;
     width:100%;
 }
 
 #hero-img-pd img {
-    max-width:300px;
+    max-width:250px;
     width:100%;
-    border-radius: 16px;
+    border-radius: 200px;
 
     display: none;
 }
 
 #hero-img-ja img {
-    max-width:600px;
+    max-width:400px;
     width:100%;
 
     display:none;
@@ -108,7 +108,7 @@
 
 /* About */
 #about {
-    background-color: #F6F6F5;
+    background-color: #E2DCD3;
 
     animation: slide ease-in-out 2s;
     animation-iteration-count: 1;
@@ -126,9 +126,7 @@
 }
 
 /* Footer */
-footer {
-    background-color: white;
-}
+
 
 /* Animations */
 @keyframes slide {

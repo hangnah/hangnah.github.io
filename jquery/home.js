@@ -14,7 +14,7 @@ $(document).ready(function () {
     $(document).ready(function () {
         setTimeout(function(){
             $hoverme.addClass('fullOpacity');
-        }, 2000);
+        }, 600);
     });
 
     // Hero Text
